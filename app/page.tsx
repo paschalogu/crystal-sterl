@@ -69,10 +69,10 @@ export default function HomePage() {
                 Delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions.
               </p>
               <div className="flex items-center gap-3 text-[0.7rem] font-medium tracking-[0.16em] uppercase text-white/40 mb-12 animate-[fadeUp_0.9s_ease_0.5s_both]">
-                {["Excellence", "Clarity", "Precision"].map((p, i) => (
+                {["Excellence", "Clarity", "Precision", "Execution"].map((p, i) => (
                   <Fragment key={p}>
                     <span>{p}</span>
-                    {i < 2 && <span className="text-[#c6a84a]">·</span>}
+                    {i < 3 && <span className="text-[#c6a84a]">·</span>}
                   </Fragment>
                 ))}
               </div>

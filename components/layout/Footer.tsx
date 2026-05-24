@@ -115,7 +115,7 @@ export default function Footer() {
             <p className="font-elegant italic text-white/40 text-[0.92rem] leading-[1.75] max-w-xs mb-7">
               A leading African law firm delivering world-class legal advisory with a distinctly global outlook.
             </p>
-            <p className="text-[0.7rem] font-semibold tracking-[0.22em] uppercase text-[#c6a84a] mb-5">Excellence · Clarity · Precision</p>
+            <p className="text-[0.7rem] font-semibold tracking-[0.22em] uppercase text-[#c6a84a] mb-5">Excellence · Clarity · Precision · Execution</p>
             <div className="flex gap-2.5">
               {socialLinks.map(({ label, href, icon }) => (
                 <a
