@@ -45,7 +45,7 @@ export default function Footer() {
             <p className="font-elegant italic text-white/40 text-[0.92rem] leading-[1.75] max-w-xs mb-7">
               A leading African law firm delivering world-class legal advisory with a distinctly global outlook.
             </p>
-            <p className="text-[0.7rem] font-semibold tracking-[0.22em] uppercase text-[#c6a84a] mb-3">Excellence · Clarity · Precision · Execution</p>
+            <p className="text-[0.7rem] font-semibold tracking-[0.22em] uppercase text-[#c6a84a] mb-3">Excellence · Clarity · Precision</p>
             <div className="flex gap-2.5 mt-6">
               {["in", "𝕏", "f"].map((s, i) => (
                 <a key={i} href="#" className="w-9 h-9 border border-white/10 flex items-center justify-center text-white/40 text-[0.8rem] font-bold hover:border-[#c6a84a] hover:text-[#c6a84a] transition-colors duration-300">
