@@ -1,0 +1,58 @@
+import type { Metadata } from "next";
+import { Playfair_Display, Inter, Cormorant_Garamond } from "next/font/google";
+import "./globals.css";
+import Navigation from "@/components/layout/Navigation";
+import Footer from "@/components/layout/Footer";
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: "Crystal Sterl Partners | Excellence · Clarity · Precision · Execution",
+    template: "%s | Crystal Sterl Partners",
+  },
+  description:
+    "Crystal Sterl Partners is a leading law firm with a distinctly global outlook, delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions across Africa and beyond.",
+  keywords: ["law firm", "Nigeria", "Lagos", "Abuja", "corporate law", "litigation", "Africa", "legal advisory"],
+  openGraph: {
+    type: "website",
+    locale: "en_NG",
+    siteName: "Crystal Sterl Partners",
+  },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html
+      lang="en"
+      className={`${playfair.variable} ${inter.variable} ${cormorant.variable}`}
+    >
+      <body className="min-h-screen flex flex-col bg-white">
+        <Navigation />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
