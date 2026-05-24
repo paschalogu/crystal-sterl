@@ -29,7 +29,7 @@ export default function HomePage() {
   return (
     <>
       {/* ─── HERO ─────────────────────────────────── */}
-      <section className="relative min-h-screen flex flex-col overflow-hidden bg-[#0c1a2b]">
+      <section className="relative min-h-[92vh] flex flex-col overflow-hidden bg-[#0c1a2b]">
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
@@ -68,10 +68,10 @@ export default function HomePage() {
                 Delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions.
               </p>
               <div className="flex items-center gap-3 text-[0.7rem] font-medium tracking-[0.16em] uppercase text-white/40 mb-12 animate-[fadeUp_0.9s_ease_0.5s_both]">
-                {["Excellence", "Clarity", "Precision", "Execution"].map((p, i) => (
+                {["Excellence", "Clarity", "Precision"].map((p, i) => (
                   <>
                     <span key={p}>{p}</span>
-                    {i < 3 && <span key={`dot-${i}`} className="text-[#c6a84a]">·</span>}
+                    {i < 2 && <span key={`dot-${i}`} className="text-[#c6a84a]">·</span>}
                   </>
                 ))}
               </div>
