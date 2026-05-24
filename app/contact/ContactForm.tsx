@@ -127,17 +127,6 @@ export default function ContactForm() {
                     value: firm.email,
                     href: `mailto:${firm.email}`,
                   },
-                  {
-                    icon: (
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <circle cx="9" cy="9" r="7" stroke="#c6a84a" strokeWidth="1.3" />
-                        <path d="M2 9h14M9 2c-2 2-3 4-3 7s1 5 3 7M9 2c2 2 3 4 3 7s-1 5-3 7" stroke="#c6a84a" strokeWidth="1.3" strokeLinecap="round" />
-                      </svg>
-                    ),
-                    label: "Website",
-                    value: firm.website,
-                    href: `https://${firm.website}`,
-                  },
                 ].map(({ icon, label, value, href }) => (
                   <div key={label} className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-9 h-9 border border-white/10 flex items-center justify-center">
