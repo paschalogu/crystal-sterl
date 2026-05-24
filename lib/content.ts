@@ -5,12 +5,11 @@
 export const firm = {
   name: "Crystal Sterl Partners",
   shortName: "Crystal Sterl",
-  tagline: "Excellence · Clarity · Precision · Execution",
+  tagline: "Excellence · Clarity · Precision",
   description:
     "Crystal Sterl Partners is a leading law firm with a distinctly global outlook, delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions.",
   phone: "+234 806 331 4898",
   email: "info@crystalsterl.com",
-  website: "www.crystalsterl.com",
   offices: ["Lagos", "Abuja"],
   founded: "Established in Nigeria",
 };
@@ -20,7 +19,7 @@ export const philosophy = [
     number: "01",
     name: "Excellence",
     description:
-      "At Crystal Sterl, excellence is not an aspiration — it is our operating standard. Every mandate receives our highest commitment to quality and rigour.",
+      "At Crystal Sterl, excellence is not an aspiration, it is our operating standard. Every mandate receives our highest commitment to quality and rigour.",
   },
   {
     number: "02",
@@ -32,7 +31,7 @@ export const philosophy = [
     number: "03",
     name: "Clarity",
     description:
-      "We simplify complex legal issues into structured, actionable advice — empowering confident, informed decision-making at every level.",
+      "We simplify complex legal issues into structured, actionable advice, empowering confident, informed decision-making at every level.",
   },
   {
     number: "04",
@@ -289,7 +288,7 @@ export const esgPillars = [
     letter: "G",
     title: "Governance",
     description:
-      "We embed strong governance frameworks into every corporate advisory engagement — structuring board accountability, anti-corruption protocols, regulatory compliance systems, and transparent reporting mechanisms for our clients.",
+      "We embed strong governance frameworks into every corporate advisory engagement, structuring board accountability, anti-corruption protocols, regulatory compliance systems, and transparent reporting mechanisms for our clients.",
     commitments: [
       "Board governance and accountability",
       "Anti-bribery and corruption compliance",
