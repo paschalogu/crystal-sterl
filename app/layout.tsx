@@ -47,8 +47,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       className={`${playfair.variable} ${inter.variable} ${cormorant.variable}`}
+      suppressHydrationWarning
     >
-      <body className="min-h-screen flex flex-col bg-white">
+      <body className="min-h-screen flex flex-col bg-white" suppressHydrationWarning>
         <Navigation />
         <main className="flex-1">{children}</main>
         <Footer />
