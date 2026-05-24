@@ -5,7 +5,7 @@ import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
   title: "Key Sectors | Crystal Sterl Partners",
-  description: "Crystal Sterl Partners serves 11 key sectors across Africa — from financial services to healthcare, technology, energy, and beyond.",
+  description: "Crystal Sterl Partners serves 11 key sectors across Africa, from financial services to healthcare, technology, energy, and beyond.",
 };
 
 const sectorImages: Record<string, string> = {
@@ -47,7 +47,7 @@ export default function SectorsPage() {
               <span className="italic font-normal text-[#c6a84a]">Knowledge</span>
             </h1>
             <p className="font-elegant italic text-white/40 text-[1rem] leading-[1.85] pb-1">
-              Our lawyers combine legal expertise with genuine sector insight — understanding the commercial dynamics that shape your industry.
+              Our lawyers combine legal expertise with genuine sector insight, understanding the commercial dynamics that shape your industry.
             </p>
           </div>
           <span className="block w-14 h-0.5 bg-[#c6a84a] mt-10" />

@@ -24,7 +24,7 @@ Accessing this website or reading its content does not create a lawyer-client re
   },
   {
     title: "4. Intellectual Property",
-    body: `All content on this website — including text, graphics, logos, images, icons, and the overall design — is the property of Crystal Sterl Partners or its licensors and is protected by applicable intellectual property laws.
+    body: `All content on this website, including text, graphics, logos, images, icons, and the overall design, is the property of Crystal Sterl Partners or its licensors and is protected by applicable intellectual property laws.
 
 You may not reproduce, distribute, modify, publish, or create derivative works from any content on this website without prior written consent from Crystal Sterl Partners. Limited personal, non-commercial use is permitted provided attribution is maintained.`,
   },
@@ -36,7 +36,7 @@ You may not reproduce, distribute, modify, publish, or create derivative works f
     title: "6. Limitation of Liability",
     body: `To the fullest extent permitted by law, Crystal Sterl Partners shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to or use of this website or any content contained herein.
 
-We make no warranties — express or implied — regarding the accuracy, completeness, reliability, or availability of the website or its content.`,
+We make no warranties, express or implied, regarding the accuracy, completeness, reliability, or availability of the website or its content.`,
   },
   {
     title: "7. Confidentiality of Communications",

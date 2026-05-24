@@ -37,7 +37,7 @@ export const philosophy = [
     number: "04",
     name: "Execution",
     description:
-      "We focus on outcomes — closing transactions, resolving disputes, delivering results. We structure and execute deals, not just advise on them.",
+      "We focus on outcomes: closing transactions, resolving disputes, and delivering results. We structure and execute deals, not just advise on them.",
   },
 ];
 
@@ -123,7 +123,7 @@ export const practiceAreas = [
     title: "Intellectual Property, Data Protection & Privacy",
     shortTitle: "IP, Data & Privacy",
     description:
-      "We protect our clients' most valuable assets — their intellectual property and data. From trademark registration and patent strategy to NDPR/GDPR compliance and data breach response, we provide comprehensive IP and privacy counsel.",
+      "We protect our clients' most valuable assets: their intellectual property and data. From trademark registration and patent strategy to NDPR/GDPR compliance and data breach response, we provide comprehensive IP and privacy counsel.",
     services: [
       "Trademark Registration & Protection",
       "Copyright & Licensing",
@@ -171,7 +171,7 @@ export const practiceAreas = [
     title: "Technology, Media and Telecommunication",
     shortTitle: "Technology, Media & Telecoms",
     description:
-      "We advise technology companies, telecom operators, media businesses, and digital platforms on the complex legal issues at the intersection of law and technology — from regulatory licensing to emerging AI governance.",
+      "We advise technology companies, telecom operators, media businesses, and digital platforms on the complex legal issues at the intersection of law and technology, from regulatory licensing to emerging AI governance.",
     services: [
       "Telecom Licensing & Regulation",
       "Technology Transactions & SaaS",
@@ -276,7 +276,7 @@ export const esgPillars = [
     letter: "S",
     title: "Social",
     description:
-      "We support responsible business practices across our client base — advising on stakeholder engagement, labour standards, community impact assessments, and human rights due diligence in accordance with the UN Guiding Principles.",
+      "We support responsible business practices across our client base, advising on stakeholder engagement, labour standards, community impact assessments, and human rights due diligence in accordance with the UN Guiding Principles.",
     commitments: [
       "Human rights due diligence",
       "Community development agreements",

@@ -83,7 +83,7 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
                 {area.description}
               </p>
               <p className="text-[0.95rem] text-[#4a5a6a] leading-[1.9]">
-                Our lawyers operating in this practice area bring a combination of technical legal expertise and commercial insight that translates directly into value for our clients. We work across sectors and jurisdictions, advising businesses at every stage of their lifecycle — from startup to multinational.
+                Our lawyers operating in this practice area bring a combination of technical legal expertise and commercial insight that translates directly into value for our clients. We work across sectors and jurisdictions, advising businesses at every stage of their lifecycle, from startup to multinational.
               </p>
             </Reveal>
 
@@ -95,7 +95,7 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   {[
                     { title: "Commercial Focus", body: "We understand your business objectives and structure our advice to achieve them, not just manage legal risk." },
-                    { title: "Transaction Management", body: "We drive transactions to close — managing counterparties, timelines, and documentation with discipline." },
+                    { title: "Transaction Management", body: "We drive transactions to close, managing counterparties, timelines, and documentation with discipline." },
                     { title: "Cross-Border Capability", body: "We coordinate seamlessly with counsel across African jurisdictions and international markets." },
                     { title: "Responsive Team", body: "Our partners and senior lawyers are directly accessible, ensuring speed and continuity on every matter." },
                   ].map(({ title, body }) => (

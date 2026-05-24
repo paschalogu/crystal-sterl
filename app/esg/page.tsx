@@ -5,7 +5,7 @@ import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
   title: "ESG Compliance | Crystal Sterl Partners",
-  description: "Crystal Sterl Partners is committed to environmental, social, and governance (ESG) principles — integrating responsible practices into everything we do.",
+  description: "Crystal Sterl Partners is committed to environmental, social, and governance (ESG) principles, integrating responsible practices into everything we do.",
 };
 
 const pillarColors: Record<string, { bg: string; border: string }> = {
@@ -58,7 +58,7 @@ export default function ESGPage() {
               </h2>
               <div className="space-y-5 text-[0.92rem] text-[#4a5a6a] leading-[1.9]">
                 <p>
-                  At Crystal Sterl Partners, ESG is not a compliance checkbox — it is a fundamental lens through which we approach every client mandate and every internal decision.
+                  At Crystal Sterl Partners, ESG is not a compliance checkbox. It is a fundamental lens through which we approach every client mandate and every internal decision.
                 </p>
                 <p>
                   We believe that legal counsel has a role to play in shaping a more sustainable, equitable, and well-governed business landscape. When we advise on transactions, we raise ESG questions. When we structure governance frameworks, we embed accountability. When we counsel on disputes, we consider stakeholder impact.
@@ -159,7 +159,7 @@ export default function ESGPage() {
             {[
               {
                 title: "Transaction Due Diligence",
-                body: "We integrate ESG due diligence into every M&A, finance, and investment transaction — identifying risks and opportunities that create long-term value.",
+                body: "We integrate ESG due diligence into every M&A, finance, and investment transaction, identifying risks and opportunities that create long-term value.",
                 icon: (
                   <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                     <rect x="4" y="4" width="20" height="20" rx="2" stroke="#c6a84a" strokeWidth="1.5" />
@@ -169,7 +169,7 @@ export default function ESGPage() {
               },
               {
                 title: "Governance Frameworks",
-                body: "We design and implement governance frameworks for boards, management teams, and regulators — establishing accountability and transparency at every level.",
+                body: "We design and implement governance frameworks for boards, management teams, and regulators, establishing accountability and transparency at every level.",
                 icon: (
                   <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                     <circle cx="14" cy="10" r="4" stroke="#c6a84a" strokeWidth="1.5" />
@@ -179,7 +179,7 @@ export default function ESGPage() {
               },
               {
                 title: "Sustainability Finance",
-                body: "We advise on green bonds, sustainability-linked loans, carbon markets, and other ESG-aligned financial instruments — structuring them to meet international standards.",
+                body: "We advise on green bonds, sustainability-linked loans, carbon markets, and other ESG-aligned financial instruments, structuring them to meet international standards.",
                 icon: (
                   <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                     <path d="M14 4v8m0 0c-3 0-6 1.5-6 5s3 5 6 5 6-1.5 6-5-3-5-6-5z" stroke="#c6a84a" strokeWidth="1.5" strokeLinecap="round" />
@@ -198,7 +198,7 @@ export default function ESGPage() {
               },
               {
                 title: "Stakeholder Engagement",
-                body: "We advise on community impact assessments, stakeholder engagement processes, and social licence obligations — particularly for infrastructure and energy projects.",
+                body: "We advise on community impact assessments, stakeholder engagement processes, and social licence obligations, particularly for infrastructure and energy projects.",
                 icon: (
                   <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                     <circle cx="9" cy="11" r="3.5" stroke="#c6a84a" strokeWidth="1.5" />

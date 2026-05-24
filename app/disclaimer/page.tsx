@@ -20,7 +20,7 @@ Until such a relationship is formally established, you should not disclose infor
   },
   {
     title: "3. Accuracy of Information",
-    body: `While Crystal Sterl Partners endeavours to ensure the accuracy and currency of the information on this website, we make no representations or warranties — express or implied — as to the accuracy, completeness, timeliness, or suitability of any information contained herein.
+    body: `While Crystal Sterl Partners endeavours to ensure the accuracy and currency of the information on this website, we make no representations or warranties, express or implied, as to the accuracy, completeness, timeliness, or suitability of any information contained herein.
 
 Laws and regulations change frequently. Information on this website reflects the law as at the time of publication and may be out of date. You should always verify current law before relying on any information provided here.`,
   },
@@ -38,7 +38,7 @@ Laws and regulations change frequently. Information on this website reflects the
   },
   {
     title: "7. Limitation of Liability",
-    body: `To the maximum extent permitted by applicable law, Crystal Sterl Partners, its partners, associates, and employees shall not be liable for any loss or damage — whether direct, indirect, consequential, or otherwise — arising from your use of or reliance on this website or its content.`,
+    body: `To the maximum extent permitted by applicable law, Crystal Sterl Partners, its partners, associates, and employees shall not be liable for any loss or damage, whether direct, indirect, consequential, or otherwise, arising from your use of or reliance on this website or its content.`,
   },
   {
     title: "8. Professional Responsibility",

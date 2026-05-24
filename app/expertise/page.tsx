@@ -4,7 +4,7 @@ import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
   title: "Expertise | Crystal Sterl Partners",
-  description: "Our seven core practice areas span corporate, energy, litigation, IP, tax, technology and governance — delivered with world-class precision.",
+  description: "Our seven core practice areas span corporate, energy, litigation, IP, tax, technology and governance, delivered with world-class precision.",
 };
 
 const practiceImages: Record<string, string> = {

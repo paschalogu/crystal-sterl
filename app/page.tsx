@@ -136,7 +136,7 @@ export default function HomePage() {
                 Crystal Sterl Partners is a leading law firm delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions. Beyond interpreting the law, we position our clients to move forward with confidence, speed, and strategic clarity.
               </p>
               <p className="text-[0.93rem] text-[#4a5a6a] leading-[1.88] mb-10">
-                Our work extends across Africa and beyond — collaborating with foreign law and financial advisory firms on complex cross-border transactions, bringing a truly international perspective to every mandate.
+                Our work extends across Africa and beyond, collaborating with foreign law and financial advisory firms on complex cross-border transactions and bringing a truly international perspective to every mandate.
               </p>
               <Link href="/about" className="inline-flex items-center gap-2 text-[0.76rem] font-bold tracking-[0.1em] uppercase text-[#c6a84a] hover:gap-3 transition-all duration-300">
                 Learn More About Us →
@@ -217,7 +217,7 @@ export default function HomePage() {
               </h2>
               <span className="block w-14 h-0.5 bg-[#c6a84a] mb-7" />
               <p className="text-[0.92rem] text-[#4a5a6a] leading-[1.88] mb-8">
-                Seven core practice areas covering the full spectrum of corporate and commercial legal services — from capital markets and energy to disputes and technology.
+                Seven core practice areas covering the full spectrum of corporate and commercial legal services, from capital markets and energy to disputes and technology.
               </p>
               <Link href="/expertise" className="inline-flex items-center gap-2 text-[0.76rem] font-bold tracking-[0.1em] uppercase text-[#c6a84a] hover:gap-3 transition-all duration-300">
                 All Practice Areas →
@@ -262,7 +262,7 @@ export default function HomePage() {
                 ESG Compliance &<br/>Responsible Advisory
               </h2>
               <p className="text-[0.9rem] text-white/55 leading-[1.85] mb-8">
-                We embed Environmental, Social, and Governance principles into every engagement — ensuring our clients build resilient, future-ready enterprises.
+                We embed Environmental, Social, and Governance principles into every engagement, ensuring our clients build resilient, future-ready enterprises.
               </p>
               <Link href="/esg" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-[#0c1a2b] bg-[#c6a84a] hover:bg-[#dfc07a] px-7 py-3.5 transition-colors duration-300">
                 Our ESG Commitment →

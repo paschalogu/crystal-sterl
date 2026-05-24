@@ -5,7 +5,7 @@ import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
   title: "About Us | Crystal Sterl Partners",
-  description: "Learn about Crystal Sterl Partners — our history, philosophy, vision, and what sets us apart as a leading African law firm.",
+  description: "Learn about Crystal Sterl Partners: our history, philosophy, vision, and what sets us apart as a leading African law firm.",
 };
 
 export default function AboutPage() {
@@ -73,7 +73,7 @@ export default function AboutPage() {
                   With offices in Lagos and Abuja, we combine deep local knowledge with international-standard practice to serve clients at the intersection of law, business, and policy across Nigeria and the African continent.
                 </p>
                 <p>
-                  Our lawyers bring broad multidisciplinary expertise spanning corporate transactions, capital markets, energy, disputes, technology, and regulatory compliance — providing integrated legal solutions that align with our clients' strategic and commercial objectives.
+                  Our lawyers bring broad multidisciplinary expertise spanning corporate transactions, capital markets, energy, disputes, technology, and regulatory compliance, providing integrated legal solutions that align with our clients' strategic and commercial objectives.
                 </p>
               </div>
               <div className="mt-10 grid grid-cols-2 gap-6">
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 </h2>
                 <span className="block w-10 h-0.5 bg-[#c6a84a] mb-7" />
                 <p className="text-[0.9rem] text-white/55 leading-[1.85]">
-                  We aspire to set the standard for legal excellence across the African continent — combining world-class expertise with deep local insight to build a firm that institutions, businesses, and governments trust at their most critical moments.
+                  We aspire to set the standard for legal excellence across the African continent, combining world-class expertise with deep local insight to build a firm that institutions, businesses, and governments trust at their most critical moments.
                 </p>
               </div>
             </Reveal>
@@ -154,7 +154,7 @@ export default function AboutPage() {
                 </h2>
                 <span className="block w-10 h-0.5 bg-[#c6a84a] mb-7" />
                 <p className="text-[0.9rem] text-[#4a5a6a] leading-[1.85]">
-                  We exist to serve — bringing intelligence, precision, and relentless commitment to every mandate. We close deals, win disputes, and solve complex legal challenges with the same commercial urgency our clients bring to their businesses.
+                  We exist to serve, bringing intelligence, precision, and relentless commitment to every mandate. We close deals, win disputes, and solve complex legal challenges with the same commercial urgency our clients bring to their businesses.
                 </p>
               </div>
             </Reveal>

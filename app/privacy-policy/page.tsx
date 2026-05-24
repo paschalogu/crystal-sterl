@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Privacy Policy | Crystal Sterl Partners",
-  description: "Crystal Sterl Partners' Privacy Policy — how we collect, use, and protect your personal information.",
+  description: "Crystal Sterl Partners' Privacy Policy: how we collect, use, and protect your personal information.",
 };
 
 const sections = [
@@ -16,10 +16,10 @@ For questions about this policy or how we handle your data, contact us at info@c
     title: "2. Information We Collect",
     body: `We may collect the following categories of personal information:
 
-— Contact and identity data: name, email address, phone number, company or organisation name.
-— Enquiry and correspondence data: the content of messages you send us via our contact form or by email.
-— Technical data: IP address, browser type, device type, pages visited, and time spent on our website (collected via analytics tools).
-— Usage data: how you interact with our website, including which pages you visit and what links you follow.
+·Contact and identity data: name, email address, phone number, company or organisation name.
+·Enquiry and correspondence data: the content of messages you send us via our contact form or by email.
+·Technical data: IP address, browser type, device type, pages visited, and time spent on our website (collected via analytics tools).
+·Usage data: how you interact with our website, including which pages you visit and what links you follow.
 
 We do not collect sensitive personal data (such as health data, financial account details, or national identification numbers) through our website.`,
   },
@@ -27,11 +27,11 @@ We do not collect sensitive personal data (such as health data, financial accoun
     title: "3. How We Use Your Information",
     body: `We use the information we collect for the following purposes:
 
-— To respond to enquiries and provide legal services where instructed.
-— To manage our relationship with you, including sending relevant communications.
-— To improve our website and understand how visitors use it.
-— To comply with our legal obligations and professional responsibilities as a law firm.
-— To protect against fraud, abuse, or other legal risks.
+·To respond to enquiries and provide legal services where instructed.
+·To manage our relationship with you, including sending relevant communications.
+·To improve our website and understand how visitors use it.
+·To comply with our legal obligations and professional responsibilities as a law firm.
+·To protect against fraud, abuse, or other legal risks.
 
 We do not sell, rent, or trade your personal information to third parties.`,
   },
@@ -39,19 +39,19 @@ We do not sell, rent, or trade your personal information to third parties.`,
     title: "4. Legal Basis for Processing",
     body: `We process your personal data on the following legal bases:
 
-— Consent: where you have expressly agreed to receive communications from us.
-— Legitimate interests: to operate our website, respond to enquiries, and improve our services.
-— Contractual necessity: to perform legal services under an engagement agreement.
-— Legal obligation: where processing is required to comply with applicable law or regulatory requirements.`,
+·Consent: where you have expressly agreed to receive communications from us.
+·Legitimate interests: to operate our website, respond to enquiries, and improve our services.
+·Contractual necessity: to perform legal services under an engagement agreement.
+·Legal obligation: where processing is required to comply with applicable law or regulatory requirements.`,
   },
   {
     title: "5. Data Sharing and Disclosure",
     body: `We may share your personal information with:
 
-— Our personnel (lawyers, paralegals, and staff) who need access to perform their duties.
-— Third-party service providers who support our operations (e.g., IT infrastructure, email delivery, analytics), subject to appropriate confidentiality and data protection obligations.
-— Regulators, courts, or law enforcement where required by law or court order.
-— Counterparties or their representatives where you have instructed us to share information in connection with a legal matter.
+·Our personnel (lawyers, paralegals, and staff) who need access to perform their duties.
+·Third-party service providers who support our operations (e.g., IT infrastructure, email delivery, analytics), subject to appropriate confidentiality and data protection obligations.
+·Regulators, courts, or law enforcement where required by law or court order.
+·Counterparties or their representatives where you have instructed us to share information in connection with a legal matter.
 
 All third parties with whom we share data are required to handle it in accordance with applicable data protection laws.`,
   },
@@ -67,11 +67,11 @@ All third parties with whom we share data are required to handle it in accordanc
     title: "8. Your Rights",
     body: `Subject to applicable law, including the Nigeria Data Protection Act (NDPA) and the Nigeria Data Protection Regulation (NDPR), you may have the right to:
 
-— Access the personal data we hold about you.
-— Request correction of inaccurate or incomplete data.
-— Request erasure of your data in certain circumstances.
-— Object to or restrict our processing of your data.
-— Withdraw consent where processing is based on consent.
+·Access the personal data we hold about you.
+·Request correction of inaccurate or incomplete data.
+·Request erasure of your data in certain circumstances.
+·Object to or restrict our processing of your data.
+·Withdraw consent where processing is based on consent.
 
 To exercise any of these rights, please contact us at info@crystalsterl.com. We will respond within the timeframe required by applicable law.`,
   },
