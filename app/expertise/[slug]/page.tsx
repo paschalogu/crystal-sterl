@@ -79,10 +79,10 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
               <h2 className="font-serif text-[clamp(1.4rem,2.2vw,1.8rem)] font-bold text-[#002233] leading-[1.3] mb-7">
                 Overview
               </h2>
-              <p className="text-[0.95rem] text-[#4a5a6a] leading-[1.9] mb-8">
+              <p className="text-[0.95rem] text-[#4a5a6a] leading-[1.9] mb-8 text-justify">
                 {area.description}
               </p>
-              <p className="text-[0.95rem] text-[#4a5a6a] leading-[1.9]">
+              <p className="text-[0.95rem] text-[#4a5a6a] leading-[1.9] text-justify">
                 Our lawyers operating in this practice area bring a combination of technical legal expertise and commercial insight that translates directly into value for our clients. We work across sectors and jurisdictions, advising businesses at every stage of their lifecycle, from startup to multinational.
               </p>
             </Reveal>
@@ -103,7 +103,7 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
                       <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#ce5e00] mt-[7px]" />
                       <div>
                         <h4 className="font-semibold text-[#002233] text-[0.88rem] mb-1">{title}</h4>
-                        <p className="text-[0.84rem] text-[#4a5a6a] leading-[1.75]">{body}</p>
+                        <p className="text-[0.84rem] text-[#4a5a6a] leading-[1.75] text-justify">{body}</p>
                       </div>
                     </div>
                   ))}
