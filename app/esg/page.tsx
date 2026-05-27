@@ -56,7 +56,7 @@ export default function ESGPage() {
               <h2 className="font-serif text-[clamp(1.6rem,2.8vw,2.4rem)] font-bold text-[#002233] leading-[1.18] mb-7">
                 Responsible Counsel for a Sustainable Future
               </h2>
-              <div className="space-y-5 text-[0.92rem] text-[#4a5a6a] leading-[1.9]">
+              <div className="space-y-5 text-[0.92rem] text-[#4a5a6a] leading-[1.9] text-justify">
                 <p>
                   At Crystal Sterl Partners, ESG is not a compliance checkbox. It is a fundamental lens through which we approach every client mandate and every internal decision.
                 </p>
@@ -121,7 +121,7 @@ export default function ESGPage() {
                   </div>
                   <div className="p-10 border-b lg:border-b-0 lg:border-r border-white/[0.07]">
                     <h3 className="font-serif text-[1.2rem] font-bold text-white mb-5">{pillar.title} Commitment</h3>
-                    <p className="text-[0.87rem] text-white/50 leading-[1.85]">{pillar.description}</p>
+                    <p className="text-[0.87rem] text-white/50 leading-[1.85] text-justify">{pillar.description}</p>
                   </div>
                   <div className="p-10">
                     <h4 className="text-[0.62rem] font-semibold tracking-[0.24em] uppercase text-[#ce5e00] mb-5">Key Areas</h4>
@@ -224,7 +224,7 @@ export default function ESGPage() {
                 <div className="bg-white border border-[#ede9e2] p-9 hover:border-[#ce5e00]/30 hover:shadow-[0_4px_32px_rgba(198,168,74,0.07)] transition-all duration-400 h-full">
                   <div className="mb-6">{icon}</div>
                   <h3 className="font-serif text-[1rem] font-bold text-[#002233] mb-3">{title}</h3>
-                  <p className="text-[0.83rem] text-[#4a5a6a] leading-[1.8]">{body}</p>
+                  <p className="text-[0.83rem] text-[#4a5a6a] leading-[1.8] text-justify">{body}</p>
                 </div>
               </Reveal>
             ))}
