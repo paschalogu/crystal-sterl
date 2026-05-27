@@ -21,7 +21,7 @@ export default function ContactPage() {
               Speak Directly with{" "}
               <span className="italic font-normal text-[#ce5e00]">Our Partners</span>
             </h1>
-            <p className="font-elegant italic text-white/45 text-[1rem] leading-[1.85] pb-2">
+            <p className="font-elegant italic text-white/45 text-[1rem] leading-[1.85] pb-2 text-justify">
               Whether you have a specific mandate or want to explore how we can support your business, our partners are available to discuss your requirements.
             </p>
           </div>

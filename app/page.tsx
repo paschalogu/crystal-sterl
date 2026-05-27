@@ -34,8 +34,8 @@ export default function HomePage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&q=90&auto=format&fit=crop&sat=40"
-            alt="Scales of Justice"
+            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1800&q=90&auto=format&fit=crop&sat=40"
+            alt="Crystal Sterl Partners"
             fill
             className="object-cover object-center"
             priority
@@ -164,7 +164,7 @@ export default function HomePage() {
               <Reveal key={p.name} delay={i * 0.07} className="group bg-[#002233] p-10 relative overflow-hidden hover:bg-[#ce5e00]/[0.04] transition-colors duration-400 cursor-default">
                 <span className="absolute top-4 right-5 font-serif text-[4.5rem] font-bold text-[#ce5e00]/05 leading-none pointer-events-none">{p.number}</span>
                 <h3 className="font-serif text-[1.3rem] font-bold text-[#ce5e00] mb-3">{p.name}</h3>
-                <p className="text-[0.86rem] leading-[1.8] text-white/50">{p.description}</p>
+                <p className="text-[0.86rem] leading-[1.8] text-white/50 text-justify">{p.description}</p>
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#ce5e00] group-hover:w-full transition-[width] duration-500" />
               </Reveal>
             ))}
@@ -283,7 +283,7 @@ export default function HomePage() {
               Ready to Discuss<br/>
               <span className="italic font-normal text-[#ce5e00]">Your Legal Needs?</span>
             </h2>
-            <p className="font-elegant italic text-[1.1rem] text-[#4a5a6a] leading-[1.78] max-w-xl mx-auto mb-10">
+            <p className="font-elegant italic text-[1.1rem] text-[#4a5a6a] leading-[1.78] max-w-xl mx-auto mb-10 text-justify">
               Our team delivers clear, commercially intelligent counsel aligned with your business timeline.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">

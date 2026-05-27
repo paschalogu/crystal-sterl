@@ -49,7 +49,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="absolute -bottom-8 -right-8 bg-[#002233] p-8 max-w-[260px]">
-                <p className="font-elegant italic text-white/70 text-[0.92rem] leading-[1.75]">
+                <p className="font-elegant italic text-white/70 text-[0.92rem] leading-[1.75] text-justify">
                   "A world-class firm with a distinctly African perspective."
                 </p>
                 <span className="block w-8 h-px bg-[#ce5e00] mt-4" />
@@ -65,7 +65,7 @@ export default function AboutPage() {
               <h2 className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] font-bold leading-[1.15] text-[#002233] mb-7">
                 A Leading African Law Firm with a Global Outlook
               </h2>
-              <div className="space-y-5 text-[0.95rem] text-[#4a5a6a] leading-[1.85]">
+              <div className="space-y-5 text-[0.95rem] text-[#4a5a6a] leading-[1.85] text-justify">
                 <p>
                   Crystal Sterl Partners is a full-service commercial law firm delivering sophisticated legal advisory to businesses, investors, institutions, and governments operating in and across Africa.
                 </p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                   <span className="block text-[0.62rem] font-semibold tracking-[0.3em] text-[#ce5e00] mb-8">{p.number}</span>
                   <h3 className="font-serif text-[1.35rem] font-bold text-white mb-1">{p.name}</h3>
                   <div className="w-8 h-0.5 bg-[#ce5e00] mb-5 group-hover:w-14 transition-all duration-500" />
-                  <p className="text-[0.85rem] text-white/50 leading-[1.8]">{p.description}</p>
+                  <p className="text-[0.85rem] text-white/50 leading-[1.8] text-justify">{p.description}</p>
                 </div>
               </Reveal>
             ))}
@@ -138,7 +138,7 @@ export default function AboutPage() {
                   To be Africa's most trusted and impactful commercial law firm
                 </h2>
                 <span className="block w-10 h-0.5 bg-[#ce5e00] mb-7" />
-                <p className="text-[0.9rem] text-white/55 leading-[1.85]">
+                <p className="text-[0.9rem] text-white/55 leading-[1.85] text-justify">
                   We aspire to set the standard for legal excellence across the African continent, combining world-class expertise with deep local insight to build a firm that institutions, businesses, and governments trust at their most critical moments.
                 </p>
               </div>
@@ -153,7 +153,7 @@ export default function AboutPage() {
                   To deliver outcomes-focused legal solutions that advance our clients' objectives
                 </h2>
                 <span className="block w-10 h-0.5 bg-[#ce5e00] mb-7" />
-                <p className="text-[0.9rem] text-[#4a5a6a] leading-[1.85]">
+                <p className="text-[0.9rem] text-[#4a5a6a] leading-[1.85] text-justify">
                   We exist to serve, bringing intelligence, precision, and relentless commitment to every mandate. We close deals, win disputes, and solve complex legal challenges with the same commercial urgency our clients bring to their businesses.
                 </p>
               </div>
@@ -185,7 +185,7 @@ export default function AboutPage() {
                     <div>
                       <p className="text-[0.7rem] font-semibold tracking-[0.22em] uppercase text-white/30 mb-3">{d.title}</p>
                       <h3 className="font-serif text-[1.45rem] font-bold text-white mb-5">{d.headline}</h3>
-                      <p className="text-[0.88rem] text-white/50 leading-[1.85] max-w-lg">{d.description}</p>
+                      <p className="text-[0.88rem] text-white/50 leading-[1.85] max-w-lg text-justify">{d.description}</p>
                     </div>
                   </div>
                   <div className="relative h-64 lg:h-auto overflow-hidden">

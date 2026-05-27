@@ -1,25 +1,25 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { sectors, practiceAreas } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
-  title: "Key Sectors | Crystal Sterl Partners",
-  description: "Crystal Sterl Partners serves 11 key sectors across Africa, from financial services to healthcare, technology, energy, and beyond.",
+  title: "Sectors | Crystal Sterl Partners",
+  description: "Crystal Sterl Partners advises clients across 11 key sectors in Nigeria and across the African continent.",
 };
 
 const sectorImages: Record<string, string> = {
-  "financial-services": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=900&q=90&auto=format&fit=crop&sat=40",
-  "energy-infrastructure": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=900&q=90&auto=format&fit=crop&sat=40",
-  "insurance-pensions": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=90&auto=format&fit=crop&sat=40",
-  "technology-ai": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=90&auto=format&fit=crop&sat=40",
-  "healthcare": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=900&q=90&auto=format&fit=crop&sat=40",
-  "real-estate": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=90&auto=format&fit=crop&sat=40",
-  "consumer-retail": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900&q=90&auto=format&fit=crop&sat=40",
-  "agriculture": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=900&q=90&auto=format&fit=crop&sat=40",
-  "transportation": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=900&q=90&auto=format&fit=crop&sat=40",
-  "sport-entertainment": "https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?w=900&q=90&auto=format&fit=crop&sat=40",
-  "public-sector": "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?w=900&q=90&auto=format&fit=crop&sat=40",
+  "financial-services":    "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=90&auto=format&fit=crop&sat=40",
+  "energy-infrastructure": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&q=90&auto=format&fit=crop&sat=40",
+  "insurance-pensions":    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=90&auto=format&fit=crop&sat=40",
+  "technology-ai":         "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=90&auto=format&fit=crop&sat=40",
+  "healthcare":            "https://images.unsplash.com/photo-1504813184591-01572f98c85f?w=800&q=90&auto=format&fit=crop&sat=40",
+  "real-estate":           "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=90&auto=format&fit=crop&sat=40",
+  "consumer-retail":       "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=90&auto=format&fit=crop&sat=40",
+  "agriculture":           "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&q=90&auto=format&fit=crop&sat=40",
+  "transportation":        "https://images.unsplash.com/photo-1494949649109-ecfc3b8c35df?w=800&q=90&auto=format&fit=crop&sat=40",
+  "sport-entertainment":   "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=90&auto=format&fit=crop&sat=40",
+  "public-sector":         "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800&q=90&auto=format&fit=crop&sat=40",
 };
 
 export default function SectorsPage() {
@@ -27,72 +27,79 @@ export default function SectorsPage() {
     <main>
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
-      <section className="relative h-[62vh] min-h-[460px] flex items-end bg-[#002233] overflow-hidden">
+      <section className="relative bg-[#002233] overflow-hidden pt-32 pb-20">
         <Image
-          src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?w=1600&q=90&auto=format&fit=crop&sat=40"
-          alt="Sectors"
+          src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&q=90&auto=format&fit=crop&sat=40"
+          alt=""
           fill
-          className="object-cover object-top opacity-25"
+          className="object-cover object-top opacity-10"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#002233] via-[#002233]/50 to-transparent" />
-        <div className="relative z-10 max-w-[1260px] mx-auto px-8 md:px-12 pb-20 w-full">
-          <div className="flex items-center gap-3 text-[0.68rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-5">
-            <span className="block w-7 h-px bg-[#ce5e00]" />
-            Industries We Serve
+        <div className="relative z-10 max-w-[1260px] mx-auto px-8 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-12 items-end">
+            <div>
+              <div className="flex items-center gap-3 text-[0.65rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-6">
+                <span className="block w-7 h-px bg-[#ce5e00]" />
+                Industries We Serve
+              </div>
+              <h1 className="font-serif text-[clamp(2.6rem,5.5vw,4.4rem)] font-bold leading-[1.06] text-white">
+                Deep Sector{" "}
+                <span className="italic font-normal text-[#ce5e00]">Knowledge</span>
+              </h1>
+              <span className="block w-14 h-0.5 bg-[#ce5e00] mt-8" />
+            </div>
+            <div className="pb-1">
+              <p className="text-[0.88rem] text-white/45 leading-[1.85] text-justify">
+                Our lawyers combine legal expertise with genuine sector insight, understanding the commercial dynamics that shape your industry.
+              </p>
+            </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-10 items-end">
-            <h1 className="font-serif text-[clamp(2.4rem,5vw,4rem)] font-bold leading-[1.08] text-white">
-              Deep Sector{" "}
-              <span className="italic font-normal text-[#ce5e00]">Knowledge</span>
-            </h1>
-            <p className="font-elegant italic text-white/40 text-[1rem] leading-[1.85] pb-1 text-justify">
-              Our lawyers combine legal expertise with genuine sector insight, understanding the commercial dynamics that shape your industry.
-            </p>
-          </div>
-          <span className="block w-14 h-0.5 bg-[#ce5e00] mt-10" />
         </div>
       </section>
 
-      {/* ── Stats bar ───────────────────────────────────────────────────── */}
-      <section className="bg-[#ce5e00]">
-        <div className="max-w-[1260px] mx-auto px-8 md:px-12 py-7 flex flex-wrap gap-8 items-center justify-between">
-          <p className="text-[0.72rem] font-semibold tracking-[0.22em] uppercase text-[#002233]/70">
-            Serving clients across 11 key sectors
+      {/* ── Banner Strip ────────────────────────────────────────────────── */}
+      <div className="bg-[#ce5e00]">
+        <div className="max-w-[1260px] mx-auto px-8 md:px-12 py-4 flex items-center justify-between gap-6">
+          <p className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#002233]">
+            Serving Clients Across 11 Key Sectors
           </p>
-          <Link href="/expertise" className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-[#002233] flex items-center gap-2 hover:gap-3 transition-all duration-300">
+          <Link
+            href="/expertise"
+            className="flex items-center gap-2 text-[0.62rem] font-semibold tracking-[0.22em] uppercase text-[#002233] hover:opacity-70 transition-opacity"
+          >
             View Practice Areas
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
           </Link>
         </div>
-      </section>
+      </div>
 
-      {/* ── Sector Cards ────────────────────────────────────────────────── */}
-      <section className="bg-[#002233] py-24">
+      {/* ── Sector Grid ─────────────────────────────────────────────────── */}
+      <section className="bg-[#002233] py-20">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.07]">
             {sectors.map((sector, i) => (
-              <Reveal key={sector.id} delay={Math.min((i % 3) * 0.08, 0.2)}>
-                <div
-                  id={sector.id}
-                  className="group relative overflow-hidden bg-[#001a28] border border-white/[0.06] hover:border-[#ce5e00]/30 transition-all duration-500 min-h-[300px] flex flex-col justify-end"
-                >
-                  <Image
-                    src={sectorImages[sector.id] ?? sectorImages["financial-services"]}
-                    alt={sector.name}
-                    fill
-                    className="object-cover opacity-20 group-hover:opacity-35 group-hover:scale-105 transition-all duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#002233]/90 via-[#002233]/40 to-transparent" />
-                  <div className="relative z-10 p-8">
-                    <span className="block text-[0.58rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-3">
+              <Reveal key={sector.id} delay={i * 0.05}>
+                <div className="group bg-[#002233] flex flex-col">
+                  <div className="relative h-44 overflow-hidden flex-shrink-0">
+                    <Image
+                      src={sectorImages[sector.id] ?? sectorImages["financial-services"]}
+                      alt={sector.name}
+                      fill
+                      className="object-cover opacity-55 group-hover:opacity-75 group-hover:scale-105 transition-all duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002233]/20 to-[#002233]/70" />
+                  </div>
+                  <div className="p-7 flex flex-col flex-1">
+                    <p className="text-[0.58rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-3">
                       {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="font-serif text-[1.15rem] font-bold text-white leading-[1.3] mb-3">
+                    </p>
+                    <h3 className="font-serif text-[1.02rem] font-bold text-white leading-[1.3] mb-3">
                       {sector.name}
                     </h3>
-                    <div className="w-6 h-0.5 bg-[#ce5e00] mb-4 group-hover:w-10 transition-all duration-400" />
-                    <p className="text-[0.82rem] text-white/45 leading-[1.75]">
+                    <div className="w-6 h-0.5 bg-[#ce5e00] mb-4 group-hover:w-10 transition-all duration-500" />
+                    <p className="text-[0.8rem] text-white/45 leading-[1.72] text-justify">
                       {sector.description}
                     </p>
                   </div>
@@ -103,58 +110,63 @@ export default function SectorsPage() {
         </div>
       </section>
 
-      {/* ── Cross-Sector Expertise ──────────────────────────────────────── */}
+      {/* ── Cross-Practice Integration ───────────────────────────────────── */}
       <section className="bg-[#f6f3ee] py-24">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <Reveal>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-16 items-start">
+
+              {/* Left */}
               <div>
-                <div className="flex items-center gap-3 text-[0.65rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-6">
+                <div className="flex items-center gap-3 text-[0.62rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-6">
                   <span className="block w-6 h-px bg-[#ce5e00]" />
                   Cross-Practice Integration
                 </div>
-                <h2 className="font-serif text-[clamp(1.6rem,2.8vw,2.4rem)] font-bold text-[#002233] leading-[1.18] mb-7">
+                <h2 className="font-serif text-[clamp(1.7rem,3vw,2.6rem)] font-bold text-[#002233] leading-[1.15] mb-7">
                   Integrated Legal Solutions Across Every Sector
                 </h2>
-                <p className="text-[0.9rem] text-[#4a5a6a] leading-[1.85] mb-5 text-justify">
+                <p className="text-[0.92rem] text-[#4a5a6a] leading-[1.85] mb-5 text-justify">
                   In every sector we serve, we bring together lawyers from across our practice areas to deliver holistic, fully integrated legal advice that addresses every dimension of your business challenges.
                 </p>
-                <p className="text-[0.9rem] text-[#4a5a6a] leading-[1.85] text-justify">
+                <p className="text-[0.92rem] text-[#4a5a6a] leading-[1.85] text-justify">
                   Our cross-practice approach ensures that a technology company going through a capital markets transaction, for example, benefits simultaneously from our technology regulatory expertise, our securities law capability, and our corporate governance counsel.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-1">
-                {practiceAreas.slice(0, 4).map(area => (
+
+              {/* Right: 2×2 practice area grid */}
+              <div className="grid grid-cols-2 gap-px bg-[#002233]/10 mt-2">
+                {practiceAreas.slice(0, 4).map((p) => (
                   <Link
-                    key={area.slug}
-                    href={`/expertise/${area.slug}`}
-                    className="group bg-[#002233] p-7 hover:bg-[#003d5a] transition-colors duration-300"
+                    key={p.slug}
+                    href={`/expertise/${p.slug}`}
+                    className="group bg-[#002233] p-7 hover:bg-[#ce5e00]/[0.08] transition-colors duration-300"
                   >
-                    <span className="block text-[0.58rem] font-semibold tracking-[0.26em] uppercase text-[#ce5e00] mb-3">{area.number}</span>
-                    <h4 className="font-serif text-[0.9rem] font-bold text-white leading-[1.3] mb-2 group-hover:text-[#ce5e00] transition-colors duration-300">
-                      {area.shortTitle}
+                    <p className="text-[0.57rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-3">{p.number}</p>
+                    <h4 className="font-serif text-[0.92rem] font-bold text-white leading-[1.3] group-hover:text-[#ce5e00] transition-colors duration-300">
+                      {p.shortTitle}
                     </h4>
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="text-[#ce5e00] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
                   </Link>
                 ))}
               </div>
+
             </div>
           </Reveal>
         </div>
       </section>
 
       {/* ── CTA ─────────────────────────────────────────────────────────── */}
-      <section className="bg-[#002233] py-20 border-t border-[#ce5e00]/10">
+      <section className="bg-[#002233] py-20">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-8">
           <div>
-            <h2 className="font-serif text-[clamp(1.4rem,2.5vw,1.9rem)] font-bold text-white leading-[1.2]">
+            <h2 className="font-serif text-[clamp(1.5rem,3vw,2.2rem)] font-bold text-white leading-[1.2]">
               Operating in one of these sectors?
             </h2>
-            <p className="text-white/35 text-[0.88rem] mt-2">Let's discuss how we can support your legal needs.</p>
+            <p className="text-[0.85rem] text-white/45 mt-2">Let's discuss how we can support your legal needs.</p>
           </div>
-          <Link href="/contact" className="flex-shrink-0 text-[0.73rem] font-bold tracking-[0.14em] uppercase text-[#002233] bg-[#ce5e00] hover:bg-[#e8740f] px-8 py-4 transition-colors duration-300">
+          <Link
+            href="/contact"
+            className="flex-shrink-0 text-[0.7rem] font-bold tracking-[0.14em] uppercase bg-[#ce5e00] text-[#002233] hover:bg-[#e8740f] px-8 py-4 transition-colors duration-300"
+          >
             Contact Us
           </Link>
         </div>

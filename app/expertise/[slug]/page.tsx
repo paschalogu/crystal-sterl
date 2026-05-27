@@ -129,7 +129,7 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
 
               <div className="mt-1 bg-[#ce5e00] p-8">
                 <h3 className="font-serif text-[#002233] font-bold text-[1.05rem] mb-3">Speak with a Partner</h3>
-                <p className="text-[0.82rem] text-[#002233]/65 mb-6 leading-[1.7]">
+                <p className="text-[0.82rem] text-[#002233]/65 mb-6 leading-[1.7] text-justify">
                   Our specialist lawyers are available to discuss your requirements in confidence.
                 </p>
                 <Link

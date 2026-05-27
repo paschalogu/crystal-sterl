@@ -56,7 +56,7 @@ export default function ExpertisePage() {
                     <h2 className="font-serif text-[1.18rem] font-bold text-[#002233] leading-[1.3] mb-3 group-hover:text-[#ce5e00] transition-colors duration-300">
                       {area.title}
                     </h2>
-                    <p className="text-[0.84rem] text-[#4a5a6a] leading-[1.75] max-w-2xl">
+                    <p className="text-[0.84rem] text-[#4a5a6a] leading-[1.75] max-w-2xl text-justify">
                       {area.description}
                     </p>
                     <div className="flex flex-wrap gap-2 mt-5">
@@ -88,7 +88,7 @@ export default function ExpertisePage() {
               Need specialist counsel?{" "}
               <span className="italic font-normal text-[#ce5e00]">Talk to our team.</span>
             </h2>
-            <p className="text-white/40 text-[0.9rem] max-w-lg mx-auto mb-10 leading-[1.8]">
+            <p className="text-white/40 text-[0.9rem] max-w-lg mx-auto mb-10 leading-[1.8] text-justify">
               Our partners have deep expertise in each practice area and are available to discuss your specific legal needs.
             </p>
             <Link

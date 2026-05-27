@@ -31,7 +31,7 @@ export default function ContactForm() {
                 </svg>
               </div>
               <h2 className="font-serif text-[1.6rem] font-bold text-white mb-4">Message Received</h2>
-              <p className="text-white/50 text-[0.9rem] leading-[1.85] max-w-sm mb-8">
+              <p className="text-white/50 text-[0.9rem] leading-[1.85] max-w-sm mb-8 text-justify">
                 Thank you for reaching out. A member of our team will respond to your enquiry within one business day.
               </p>
               <button
@@ -84,7 +84,7 @@ export default function ContactForm() {
                   className="bg-white border border-[#ede9e2] text-[0.87rem] text-[#002233] px-4 py-3.5 resize-none focus:outline-none focus:border-[#ce5e00] transition-colors duration-300 leading-[1.7]"
                 />
               </div>
-              <p className="text-[0.72rem] text-[#4a5a6a] leading-[1.7]">
+              <p className="text-[0.72rem] text-[#4a5a6a] leading-[1.7] text-justify">
                 By submitting this form, you agree that your information will be used to respond to your enquiry. We do not share your details with third parties.
               </p>
               <button
