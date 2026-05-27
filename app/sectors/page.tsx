@@ -46,7 +46,7 @@ export default function SectorsPage() {
               Deep Sector{" "}
               <span className="italic font-normal text-[#ce5e00]">Knowledge</span>
             </h1>
-            <p className="font-elegant italic text-white/40 text-[1rem] leading-[1.85] pb-1 text-center">
+            <p className="font-elegant italic text-white/40 text-[1rem] leading-[1.85] pb-1 text-justify">
               Our lawyers combine legal expertise with genuine sector insight, understanding the commercial dynamics that shape your industry.
             </p>
           </div>

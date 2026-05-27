@@ -65,7 +65,7 @@ export default function HomePage() {
                   Strategic Clarity
                 </em>
               </h1>
-              <p className="font-elegant text-[clamp(1rem,1.7vw,1.22rem)] font-light leading-[1.8] text-white/60 max-w-[540px] mb-11 animate-[fadeUp_0.9s_ease_0.4s_both] text-center">
+              <p className="font-elegant text-[clamp(1rem,1.7vw,1.22rem)] font-light leading-[1.8] text-white/60 max-w-[540px] mb-11 animate-[fadeUp_0.9s_ease_0.4s_both] text-justify">
                 Delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions.
               </p>
               <div className="flex items-center gap-3 text-[0.7rem] font-medium tracking-[0.16em] uppercase text-white/40 mb-12 animate-[fadeUp_0.9s_ease_0.5s_both]">
@@ -261,7 +261,7 @@ export default function HomePage() {
               <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.8rem)] font-bold text-white leading-[1.15] mb-5">
                 ESG Compliance &<br/>Responsible Advisory
               </h2>
-              <p className="text-[0.9rem] text-white/55 leading-[1.85] mb-8 text-center">
+              <p className="text-[0.9rem] text-white/55 leading-[1.85] mb-8 text-justify">
                 We embed Environmental, Social, and Governance principles into every engagement, ensuring our clients build resilient, future-ready enterprises.
               </p>
               <Link href="/esg" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-[#002233] bg-[#ce5e00] hover:bg-[#e8740f] px-7 py-3.5 transition-colors duration-300">

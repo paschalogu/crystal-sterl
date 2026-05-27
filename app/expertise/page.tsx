@@ -33,7 +33,7 @@ export default function ExpertisePage() {
               Our Areas of{" "}
               <span className="italic font-normal text-[#ce5e00]">Expertise</span>
             </h1>
-            <p className="font-elegant italic text-white/45 text-[1.05rem] leading-[1.85] pb-2 text-center">
+            <p className="font-elegant italic text-white/45 text-[1.05rem] leading-[1.85] pb-2 text-justify">
               Seven integrated practice areas designed to serve the full spectrum of complex legal needs across Africa and international markets.
             </p>
           </div>

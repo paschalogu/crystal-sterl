@@ -37,7 +37,7 @@ export default function ESGPage() {
             ESG at the{" "}
             <span className="italic font-normal text-[#ce5e00]">Heart of Our Practice</span>
           </h1>
-          <p className="font-elegant italic text-white/45 text-[1.05rem] leading-[1.85] mt-7 max-w-xl mx-auto text-center">
+          <p className="font-elegant italic text-white/45 text-[1.05rem] leading-[1.85] mt-7 max-w-xl mx-auto text-justify">
             We embed environmental, social, and governance principles into our counsel, our operations, and our client relationships.
           </p>
           <span className="block w-14 h-0.5 bg-[#ce5e00] mt-8" />
