@@ -132,10 +132,10 @@ export default function HomePage() {
                 African Law Firm
               </h2>
               <span className="block w-14 h-0.5 bg-[#ce5e00] mb-7" />
-              <p className="text-[0.93rem] text-[#4a5a6a] leading-[1.88] mb-5">
+              <p className="text-[0.93rem] text-[#4a5a6a] leading-[1.88] mb-5 text-justify">
                 Crystal Sterl Partners is a leading law firm delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions. Beyond interpreting the law, we position our clients to move forward with confidence, speed, and strategic clarity.
               </p>
-              <p className="text-[0.93rem] text-[#4a5a6a] leading-[1.88] mb-10">
+              <p className="text-[0.93rem] text-[#4a5a6a] leading-[1.88] mb-10 text-justify">
                 Our work extends across Africa and beyond, collaborating with foreign law and financial advisory firms on complex cross-border transactions and bringing a truly international perspective to every mandate.
               </p>
               <Link href="/about" className="inline-flex items-center gap-2 text-[0.76rem] font-bold tracking-[0.1em] uppercase text-[#ce5e00] hover:gap-3 transition-all duration-300">
