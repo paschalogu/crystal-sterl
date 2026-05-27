@@ -216,7 +216,7 @@ export default function HomePage() {
                 Our<br/>Expertise
               </h2>
               <span className="block w-14 h-0.5 bg-[#ce5e00] mb-7" />
-              <p className="text-[0.92rem] text-[#4a5a6a] leading-[1.88] mb-8">
+              <p className="text-[0.92rem] text-[#4a5a6a] leading-[1.88] mb-8 text-justify">
                 Seven core practice areas covering the full spectrum of corporate and commercial legal services, from capital markets and energy to disputes and technology.
               </p>
               <Link href="/expertise" className="inline-flex items-center gap-2 text-[0.76rem] font-bold tracking-[0.1em] uppercase text-[#ce5e00] hover:gap-3 transition-all duration-300">

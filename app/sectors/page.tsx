@@ -116,10 +116,10 @@ export default function SectorsPage() {
                 <h2 className="font-serif text-[clamp(1.6rem,2.8vw,2.4rem)] font-bold text-[#002233] leading-[1.18] mb-7">
                   Integrated Legal Solutions Across Every Sector
                 </h2>
-                <p className="text-[0.9rem] text-[#4a5a6a] leading-[1.85] mb-5">
+                <p className="text-[0.9rem] text-[#4a5a6a] leading-[1.85] mb-5 text-justify">
                   In every sector we serve, we bring together lawyers from across our practice areas to deliver holistic, fully integrated legal advice that addresses every dimension of your business challenges.
                 </p>
-                <p className="text-[0.9rem] text-[#4a5a6a] leading-[1.85]">
+                <p className="text-[0.9rem] text-[#4a5a6a] leading-[1.85] text-justify">
                   Our cross-practice approach ensures that a technology company going through a capital markets transaction, for example, benefits simultaneously from our technology regulatory expertise, our securities law capability, and our corporate governance counsel.
                 </p>
               </div>

@@ -97,14 +97,14 @@ export default function TermsOfUsePage() {
 
           {/* Content */}
           <div className="max-w-3xl">
-            <p className="text-[0.95rem] text-[#4a5a6a] leading-[1.9] mb-12 pb-12 border-b border-[#ede9e2]">
+            <p className="text-[0.95rem] text-[#4a5a6a] leading-[1.9] mb-12 pb-12 border-b border-[#ede9e2] text-justify">
               These Terms of Use govern your access to and use of the Crystal Sterl Partners website. Please read them carefully before using this site.
             </p>
             <div className="flex flex-col gap-12">
               {sections.map(s => (
                 <div key={s.title} id={s.title.replace(/\s+/g, "-").toLowerCase()}>
                   <h2 className="font-serif text-[1.1rem] font-bold text-[#002233] mb-4">{s.title}</h2>
-                  <div className="text-[0.9rem] text-[#4a5a6a] leading-[1.9] whitespace-pre-line">{s.body}</div>
+                  <div className="text-[0.9rem] text-[#4a5a6a] leading-[1.9] whitespace-pre-line text-justify">{s.body}</div>
                 </div>
               ))}
             </div>

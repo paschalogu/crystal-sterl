@@ -134,14 +134,14 @@ export default function PrivacyPolicyPage() {
 
           {/* Content */}
           <div className="max-w-3xl">
-            <p className="text-[0.95rem] text-[#4a5a6a] leading-[1.9] mb-12 pb-12 border-b border-[#ede9e2]">
+            <p className="text-[0.95rem] text-[#4a5a6a] leading-[1.9] mb-12 pb-12 border-b border-[#ede9e2] text-justify">
               This Privacy Policy describes how Crystal Sterl Partners collects, uses, and protects personal information submitted through this website or in connection with our legal services. We are committed to protecting your privacy and handling your information responsibly.
             </p>
             <div className="flex flex-col gap-12">
               {sections.map(s => (
                 <div key={s.title} id={s.title.replace(/\s+/g, "-").toLowerCase()}>
                   <h2 className="font-serif text-[1.1rem] font-bold text-[#002233] mb-4">{s.title}</h2>
-                  <div className="text-[0.9rem] text-[#4a5a6a] leading-[1.9] whitespace-pre-line">{s.body}</div>
+                  <div className="text-[0.9rem] text-[#4a5a6a] leading-[1.9] whitespace-pre-line text-justify">{s.body}</div>
                 </div>
               ))}
             </div>
