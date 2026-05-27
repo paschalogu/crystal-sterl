@@ -79,9 +79,13 @@ export default function SectorsPage() {
       <section className="bg-[#002233] py-20">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.07]">
-            {sectors.map((sector, i) => (
-              <Reveal key={sector.id} delay={i * 0.05}>
-                <div className="group bg-[#002233] flex flex-col">
+            {sectors.map((sector, i) => {
+              const isLast = i === sectors.length - 1;
+              const remainder = sectors.length % 3;
+              const spanTwo = isLast && remainder === 2;
+              return (
+              <Reveal key={sector.id} delay={i * 0.05} className={`h-full${spanTwo ? " sm:col-span-1 lg:col-span-2" : ""}`}>
+                <div className="group bg-[#002233] flex flex-col h-full">
                   <div className="relative h-44 overflow-hidden flex-shrink-0">
                     <Image
                       src={sectorImages[sector.id] ?? sectorImages["financial-services"]}
@@ -105,7 +109,8 @@ export default function SectorsPage() {
                   </div>
                 </div>
               </Reveal>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
