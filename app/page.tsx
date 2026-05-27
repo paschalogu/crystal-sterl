@@ -58,7 +58,7 @@ export default function HomePage() {
                 Leading African Law Firm
                 <span className="w-1 h-1 rounded-full bg-[#ce5e00]" />
               </div>
-              <h1 className="font-serif text-[clamp(3rem,6.8vw,6rem)] font-bold leading-[1.02] text-white mb-7 animate-[fadeUp_0.9s_ease_0.25s_both]">
+              <h1 className="font-serif text-[clamp(2.2rem,4.8vw,4.2rem)] font-bold leading-[1.08] text-white mb-7 animate-[fadeUp_0.9s_ease_0.25s_both]">
                 Where Precision<br />
                 Meets{" "}
                 <em className="text-[#ce5e00] font-normal not-italic font-serif italic">
