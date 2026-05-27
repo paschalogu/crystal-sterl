@@ -24,10 +24,10 @@ export default function ContactForm() {
         {/* ── Form ──────────────────────────────────────────────────── */}
         <Reveal direction="left">
           {sent ? (
-            <div className="bg-[#0c1a2b] p-14 flex flex-col items-start justify-center min-h-[480px]">
-              <div className="w-12 h-12 bg-[#c6a84a] flex items-center justify-center mb-7">
+            <div className="bg-[#002233] p-14 flex flex-col items-start justify-center min-h-[480px]">
+              <div className="w-12 h-12 bg-[#ce5e00] flex items-center justify-center mb-7">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                  <path d="M4 11l5 5L18 6" stroke="#0c1a2b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M4 11l5 5L18 6" stroke="#002233" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
               <h2 className="font-serif text-[1.6rem] font-bold text-white mb-4">Message Received</h2>
@@ -36,14 +36,14 @@ export default function ContactForm() {
               </p>
               <button
                 onClick={() => { setSent(false); setForm({ name: "", company: "", email: "", phone: "", subject: "", message: "" }); }}
-                className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-[#c6a84a] border border-[#c6a84a]/40 px-6 py-3 hover:bg-[#c6a84a] hover:text-[#0c1a2b] transition-colors duration-300"
+                className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-[#ce5e00] border border-[#ce5e00]/40 px-6 py-3 hover:bg-[#ce5e00] hover:text-[#002233] transition-colors duration-300"
               >
                 Send Another Message
               </button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-              <h2 className="font-serif text-[1.4rem] font-bold text-[#0c1a2b] mb-2">Send an Enquiry</h2>
+              <h2 className="font-serif text-[1.4rem] font-bold text-[#002233] mb-2">Send an Enquiry</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <FormField label="Full Name *" name="name" type="text" value={form.name} onChange={handleChange} required placeholder="e.g. Adaobi Okonkwo" />
                 <FormField label="Company / Organisation" name="company" type="text" value={form.company} onChange={handleChange} placeholder="Company name" />
@@ -53,13 +53,13 @@ export default function ContactForm() {
                 <FormField label="Phone Number" name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="+234 000 000 0000" />
               </div>
               <div className="flex flex-col gap-1.5">
-                <label className="text-[0.68rem] font-semibold tracking-[0.16em] uppercase text-[#0c1a2b]">Subject *</label>
+                <label className="text-[0.68rem] font-semibold tracking-[0.16em] uppercase text-[#002233]">Subject *</label>
                 <select
                   name="subject"
                   value={form.subject}
                   onChange={handleChange}
                   required
-                  className="bg-white border border-[#ede9e2] text-[0.87rem] text-[#0c1a2b] px-4 py-3.5 focus:outline-none focus:border-[#c6a84a] transition-colors duration-300"
+                  className="bg-white border border-[#ede9e2] text-[0.87rem] text-[#002233] px-4 py-3.5 focus:outline-none focus:border-[#ce5e00] transition-colors duration-300"
                 >
                   <option value="">Select a practice area</option>
                   <option>Corporate Securities, Finance & Funds</option>
@@ -73,7 +73,7 @@ export default function ContactForm() {
                 </select>
               </div>
               <div className="flex flex-col gap-1.5">
-                <label className="text-[0.68rem] font-semibold tracking-[0.16em] uppercase text-[#0c1a2b]">Message *</label>
+                <label className="text-[0.68rem] font-semibold tracking-[0.16em] uppercase text-[#002233]">Message *</label>
                 <textarea
                   name="message"
                   value={form.message}
@@ -81,7 +81,7 @@ export default function ContactForm() {
                   required
                   rows={6}
                   placeholder="Please describe your legal needs..."
-                  className="bg-white border border-[#ede9e2] text-[0.87rem] text-[#0c1a2b] px-4 py-3.5 resize-none focus:outline-none focus:border-[#c6a84a] transition-colors duration-300 leading-[1.7]"
+                  className="bg-white border border-[#ede9e2] text-[0.87rem] text-[#002233] px-4 py-3.5 resize-none focus:outline-none focus:border-[#ce5e00] transition-colors duration-300 leading-[1.7]"
                 />
               </div>
               <p className="text-[0.72rem] text-[#4a5a6a] leading-[1.7]">
@@ -89,7 +89,7 @@ export default function ContactForm() {
               </p>
               <button
                 type="submit"
-                className="self-start text-[0.73rem] font-bold tracking-[0.14em] uppercase text-[#0c1a2b] bg-[#c6a84a] hover:bg-[#dfc07a] px-8 py-4 transition-colors duration-300 mt-2"
+                className="self-start text-[0.73rem] font-bold tracking-[0.14em] uppercase text-[#002233] bg-[#ce5e00] hover:bg-[#e8740f] px-8 py-4 transition-colors duration-300 mt-2"
               >
                 Submit Enquiry
               </button>
@@ -102,14 +102,14 @@ export default function ContactForm() {
           <div className="flex flex-col gap-1">
 
             {/* Direct contact */}
-            <div className="bg-[#0c1a2b] p-10">
-              <h3 className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#c6a84a] mb-7">Direct Contact</h3>
+            <div className="bg-[#002233] p-10">
+              <h3 className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-7">Direct Contact</h3>
               <div className="flex flex-col gap-6">
                 {[
                   {
                     icon: (
                       <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path d="M3 3h3l1.5 3.75-2 1.5C6.5 10.5 7.5 11.5 9.75 12.5l1.5-2L15 12v3c-6 0-12-6-12-12z" stroke="#c6a84a" strokeWidth="1.3" strokeLinejoin="round" />
+                        <path d="M3 3h3l1.5 3.75-2 1.5C6.5 10.5 7.5 11.5 9.75 12.5l1.5-2L15 12v3c-6 0-12-6-12-12z" stroke="#ce5e00" strokeWidth="1.3" strokeLinejoin="round" />
                       </svg>
                     ),
                     label: "Telephone",
@@ -119,8 +119,8 @@ export default function ContactForm() {
                   {
                     icon: (
                       <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <rect x="2" y="4" width="14" height="10" rx="1.5" stroke="#c6a84a" strokeWidth="1.3" />
-                        <path d="M2 6l7 5 7-5" stroke="#c6a84a" strokeWidth="1.3" strokeLinecap="round" />
+                        <rect x="2" y="4" width="14" height="10" rx="1.5" stroke="#ce5e00" strokeWidth="1.3" />
+                        <path d="M2 6l7 5 7-5" stroke="#ce5e00" strokeWidth="1.3" strokeLinecap="round" />
                       </svg>
                     ),
                     label: "Email",
@@ -134,7 +134,7 @@ export default function ContactForm() {
                     </div>
                     <div>
                       <p className="text-[0.6rem] font-semibold tracking-[0.22em] uppercase text-white/30 mb-0.5">{label}</p>
-                      <a href={href} className="text-[0.87rem] text-white/75 hover:text-[#c6a84a] transition-colors duration-300">
+                      <a href={href} className="text-[0.87rem] text-white/75 hover:text-[#ce5e00] transition-colors duration-300">
                         {value}
                       </a>
                     </div>
@@ -151,12 +151,12 @@ export default function ContactForm() {
               <div key={office.city} className="bg-white border border-[#ede9e2] p-8">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h4 className="font-serif font-bold text-[#0c1a2b] text-[1.05rem]">{office.city}</h4>
-                    <p className="text-[0.62rem] font-semibold tracking-[0.2em] uppercase text-[#c6a84a] mt-0.5">{office.label}</p>
+                    <h4 className="font-serif font-bold text-[#002233] text-[1.05rem]">{office.city}</h4>
+                    <p className="text-[0.62rem] font-semibold tracking-[0.2em] uppercase text-[#ce5e00] mt-0.5">{office.label}</p>
                   </div>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M8 2C5.791 2 4 3.791 4 6c0 3.5 4 8 4 8s4-4.5 4-8c0-2.209-1.791-4-4-4z" stroke="#c6a84a" strokeWidth="1.3" />
-                    <circle cx="8" cy="6" r="1.5" stroke="#c6a84a" strokeWidth="1.3" />
+                    <path d="M8 2C5.791 2 4 3.791 4 6c0 3.5 4 8 4 8s4-4.5 4-8c0-2.209-1.791-4-4-4z" stroke="#ce5e00" strokeWidth="1.3" />
+                    <circle cx="8" cy="6" r="1.5" stroke="#ce5e00" strokeWidth="1.3" />
                   </svg>
                 </div>
                 {office.address.map(line => (
@@ -167,7 +167,7 @@ export default function ContactForm() {
 
             {/* Business hours */}
             <div className="bg-[#f6f3ee] border border-[#ede9e2] p-8">
-              <h4 className="text-[0.62rem] font-semibold tracking-[0.24em] uppercase text-[#c6a84a] mb-5">Business Hours</h4>
+              <h4 className="text-[0.62rem] font-semibold tracking-[0.24em] uppercase text-[#ce5e00] mb-5">Business Hours</h4>
               <div className="flex flex-col gap-2.5">
                 {[
                   { day: "Monday – Friday", hours: "8:00 AM – 6:00 PM" },
@@ -175,7 +175,7 @@ export default function ContactForm() {
                   { day: "Sunday",          hours: "Closed" },
                 ].map(({ day, hours }) => (
                   <div key={day} className="flex justify-between text-[0.82rem]">
-                    <span className="text-[#0c1a2b]">{day}</span>
+                    <span className="text-[#002233]">{day}</span>
                     <span className="text-[#4a5a6a]">{hours}</span>
                   </div>
                 ))}
@@ -199,7 +199,7 @@ function FormField({
 }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <label className="text-[0.68rem] font-semibold tracking-[0.16em] uppercase text-[#0c1a2b]">{label}</label>
+      <label className="text-[0.68rem] font-semibold tracking-[0.16em] uppercase text-[#002233]">{label}</label>
       <input
         type={type}
         name={name}
@@ -207,7 +207,7 @@ function FormField({
         onChange={onChange}
         required={required}
         placeholder={placeholder}
-        className="bg-white border border-[#ede9e2] text-[0.87rem] text-[#0c1a2b] px-4 py-3.5 focus:outline-none focus:border-[#c6a84a] transition-colors duration-300 placeholder:text-[#b0b8c4]"
+        className="bg-white border border-[#ede9e2] text-[0.87rem] text-[#002233] px-4 py-3.5 focus:outline-none focus:border-[#ce5e00] transition-colors duration-300 placeholder:text-[#b0b8c4]"
       />
     </div>
   );

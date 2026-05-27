@@ -8,7 +8,7 @@ export const firm = {
   tagline: "Excellence · Clarity · Precision",
   description:
     "Crystal Sterl Partners is a leading law firm with a distinctly global outlook, delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions.",
-  phone: "+234 806 331 4898",
+  phone: "+234 810 092 2401",
   email: "info@crystalsterl.com",
   offices: ["Lagos", "Abuja"],
   founded: "Established in Nigeria",

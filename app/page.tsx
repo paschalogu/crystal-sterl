@@ -30,58 +30,58 @@ export default function HomePage() {
   return (
     <>
       {/* ─── HERO ─────────────────────────────────── */}
-      <section className="relative min-h-[92vh] flex flex-col overflow-hidden bg-[#0c1a2b]">
+      <section className="relative min-h-[92vh] flex flex-col overflow-hidden bg-[#002233]">
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1800&q=85&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&q=90&auto=format&fit=crop&sat=40"
             alt="Scales of Justice"
             fill
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0c1a2b]/90 via-[#0c1a2b]/65 to-[#0c1a2b]/25" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#002233]/90 via-[#002233]/65 to-[#002233]/25" />
         </div>
 
         {/* Geometric accents */}
         <div className="absolute right-0 top-0 bottom-0 w-1/2 pointer-events-none">
-          <div className="absolute right-[-80px] top-[-80px] w-[500px] h-[500px] border border-[#c6a84a]/10 rotate-45" />
-          <div className="absolute right-[60px] top-[60px] w-[320px] h-[320px] border border-[#c6a84a]/06 rotate-45" />
+          <div className="absolute right-[-80px] top-[-80px] w-[500px] h-[500px] border border-[#ce5e00]/10 rotate-45" />
+          <div className="absolute right-[60px] top-[60px] w-[320px] h-[320px] border border-[#ce5e00]/06 rotate-45" />
         </div>
 
         {/* Content */}
         <div className="relative z-10 flex-1 flex items-center">
           <div className="max-w-[1400px] mx-auto px-8 md:px-12 w-full py-32">
             <div className="max-w-3xl">
-              <div className="flex items-center gap-2.5 text-[0.66rem] font-semibold tracking-[0.32em] uppercase text-[#c6a84a] mb-7 animate-[fadeUp_0.9s_ease_0.1s_both]">
-                <span className="w-1 h-1 rounded-full bg-[#c6a84a]" />
+              <div className="flex items-center gap-2.5 text-[0.66rem] font-semibold tracking-[0.32em] uppercase text-[#ce5e00] mb-7 animate-[fadeUp_0.9s_ease_0.1s_both]">
+                <span className="w-1 h-1 rounded-full bg-[#ce5e00]" />
                 Leading African Law Firm
-                <span className="w-1 h-1 rounded-full bg-[#c6a84a]" />
+                <span className="w-1 h-1 rounded-full bg-[#ce5e00]" />
               </div>
-              <h1 className="font-serif text-[clamp(3rem,6.8vw,6rem)] font-800 leading-[1.02] text-white mb-7 animate-[fadeUp_0.9s_ease_0.25s_both]">
+              <h1 className="font-serif text-[clamp(3rem,6.8vw,6rem)] font-bold leading-[1.02] text-white mb-7 animate-[fadeUp_0.9s_ease_0.25s_both]">
                 Where Precision<br />
                 Meets{" "}
-                <em className="text-[#c6a84a] font-normal not-italic font-serif italic">
+                <em className="text-[#ce5e00] font-normal not-italic font-serif italic">
                   Strategic Clarity
                 </em>
               </h1>
-              <p className="font-elegant text-[clamp(1rem,1.7vw,1.22rem)] font-light leading-[1.8] text-white/60 max-w-[540px] mb-11 animate-[fadeUp_0.9s_ease_0.4s_both]">
+              <p className="font-elegant text-[clamp(1rem,1.7vw,1.22rem)] font-light leading-[1.8] text-white/60 max-w-[540px] mb-11 animate-[fadeUp_0.9s_ease_0.4s_both] text-center">
                 Delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions.
               </p>
               <div className="flex items-center gap-3 text-[0.7rem] font-medium tracking-[0.16em] uppercase text-white/40 mb-12 animate-[fadeUp_0.9s_ease_0.5s_both]">
                 {["Excellence", "Clarity", "Precision", "Execution"].map((p, i) => (
                   <Fragment key={p}>
                     <span>{p}</span>
-                    {i < 3 && <span className="text-[#c6a84a]">·</span>}
+                    {i < 3 && <span className="text-[#ce5e00]">·</span>}
                   </Fragment>
                 ))}
               </div>
               <div className="flex gap-4 flex-wrap animate-[fadeUp_0.9s_ease_0.6s_both]">
-                <Link href="/about" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-[#0c1a2b] bg-[#c6a84a] hover:bg-[#dfc07a] px-8 py-4 transition-colors duration-300">
+                <Link href="/about" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-[#002233] bg-[#ce5e00] hover:bg-[#e8740f] px-8 py-4 transition-colors duration-300">
                   Discover Our Firm
                   <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </Link>
-                <Link href="/contact" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-white border border-white/25 hover:border-[#c6a84a] hover:text-[#c6a84a] px-8 py-4 transition-colors duration-300">
+                <Link href="/contact" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-white border border-white/25 hover:border-[#ce5e00] hover:text-[#ce5e00] px-8 py-4 transition-colors duration-300">
                   Get In Touch →
                 </Link>
               </div>
@@ -90,11 +90,11 @@ export default function HomePage() {
         </div>
 
         {/* Stats band */}
-        <div className="relative z-10 bg-[#152336]/80 backdrop-blur-md border-t border-[#c6a84a]/18">
+        <div className="relative z-10 bg-[#003045]/80 backdrop-blur-md border-t border-[#ce5e00]/18">
           <div className="max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-4">
             {stats.map((s, i) => (
-              <div key={i} className="py-5 px-8 text-center border-r border-[#c6a84a]/10 last:border-r-0">
-                <div className="font-serif text-[1.7rem] font-700 text-[#c6a84a] leading-none">{s.number}</div>
+              <div key={i} className="py-5 px-8 text-center border-r border-[#ce5e00]/10 last:border-r-0">
+                <div className="font-serif text-[1.7rem] font-bold text-[#ce5e00] leading-none">{s.number}</div>
                 <div className="text-[0.62rem] font-semibold tracking-[0.18em] uppercase text-white/35 mt-1">{s.label}</div>
               </div>
             ))}
@@ -108,37 +108,37 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch">
             <Reveal direction="left" className="relative overflow-hidden min-h-[500px]">
               <Image
-                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900&q=85&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=90&auto=format&fit=crop&sat=40"
                 alt="Crystal Sterl Partners"
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1a2b]/55 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#002233]/55 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <blockquote className="font-elegant italic text-[1.1rem] text-white/90 leading-[1.68] border-l-2 border-[#c6a84a] pl-4">
+                <blockquote className="font-elegant italic text-[1.1rem] text-white/90 leading-[1.68] border-l-2 border-[#ce5e00] pl-4">
                   "Legal advice should be clear, commercially grounded, and relentlessly execution focused."
                 </blockquote>
               </div>
             </Reveal>
 
             <Reveal direction="right" className="bg-[#f6f3ee] p-12 lg:p-16 flex flex-col justify-center">
-              <div className="eyebrow flex items-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#c6a84a] mb-4 before:block before:w-7 before:h-px before:bg-[#c6a84a]">
+              <div className="eyebrow flex items-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-4 before:block before:w-7 before:h-px before:bg-[#ce5e00]">
                 About the Firm
               </div>
-              <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.8rem)] font-700 leading-[1.18] text-[#0c1a2b] mb-1">
+              <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.8rem)] font-bold leading-[1.18] text-[#002233] mb-1">
                 A Distinctly Global
               </h2>
-              <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.8rem)] font-700 leading-[1.18] text-[#0c1a2b] mb-6">
+              <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.8rem)] font-bold leading-[1.18] text-[#002233] mb-6">
                 African Law Firm
               </h2>
-              <span className="block w-14 h-0.5 bg-[#c6a84a] mb-7" />
+              <span className="block w-14 h-0.5 bg-[#ce5e00] mb-7" />
               <p className="text-[0.93rem] text-[#4a5a6a] leading-[1.88] mb-5">
                 Crystal Sterl Partners is a leading law firm delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions. Beyond interpreting the law, we position our clients to move forward with confidence, speed, and strategic clarity.
               </p>
               <p className="text-[0.93rem] text-[#4a5a6a] leading-[1.88] mb-10">
                 Our work extends across Africa and beyond, collaborating with foreign law and financial advisory firms on complex cross-border transactions and bringing a truly international perspective to every mandate.
               </p>
-              <Link href="/about" className="inline-flex items-center gap-2 text-[0.76rem] font-bold tracking-[0.1em] uppercase text-[#c6a84a] hover:gap-3 transition-all duration-300">
+              <Link href="/about" className="inline-flex items-center gap-2 text-[0.76rem] font-bold tracking-[0.1em] uppercase text-[#ce5e00] hover:gap-3 transition-all duration-300">
                 Learn More About Us →
               </Link>
             </Reveal>
@@ -147,25 +147,25 @@ export default function HomePage() {
       </section>
 
       {/* ─── PHILOSOPHY ──────────────────────────── */}
-      <section className="py-28 bg-[#0c1a2b] relative overflow-hidden">
+      <section className="py-28 bg-[#002233] relative overflow-hidden">
         <div className="absolute inset-0 opacity-[0.025]"
-          style={{ backgroundImage: "repeating-linear-gradient(45deg, #c6a84a 0, #c6a84a 1px, transparent 0, transparent 50%)", backgroundSize: "60px 60px" }}
+          style={{ backgroundImage: "repeating-linear-gradient(45deg, #ce5e00 0, #ce5e00 1px, transparent 0, transparent 50%)", backgroundSize: "60px 60px" }}
         />
         <div className="relative z-10 max-w-[1260px] mx-auto px-8 md:px-12">
           <Reveal className="text-center mb-16">
-            <div className="flex items-center justify-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#c6a84a] mb-4">
-              <span className="block w-7 h-px bg-[#c6a84a]" />Our Foundation<span className="block w-7 h-px bg-[#c6a84a]" />
+            <div className="flex items-center justify-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-4">
+              <span className="block w-7 h-px bg-[#ce5e00]" />Our Foundation<span className="block w-7 h-px bg-[#ce5e00]" />
             </div>
-            <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-700 text-white">Our Philosophy</h2>
-            <span className="block w-14 h-0.5 bg-[#c6a84a] mt-5 mx-auto" />
+            <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-bold text-white">Our Philosophy</h2>
+            <span className="block w-14 h-0.5 bg-[#ce5e00] mt-5 mx-auto" />
           </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[#c6a84a]/08">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[#ce5e00]/08">
             {philosophy.map((p, i) => (
-              <Reveal key={p.name} delay={i * 0.07} className="group bg-[#0c1a2b] p-10 relative overflow-hidden hover:bg-[#c6a84a]/[0.04] transition-colors duration-400 cursor-default">
-                <span className="absolute top-4 right-5 font-serif text-[4.5rem] font-800 text-[#c6a84a]/05 leading-none pointer-events-none">{p.number}</span>
-                <h3 className="font-serif text-[1.3rem] font-700 text-[#c6a84a] mb-3">{p.name}</h3>
+              <Reveal key={p.name} delay={i * 0.07} className="group bg-[#002233] p-10 relative overflow-hidden hover:bg-[#ce5e00]/[0.04] transition-colors duration-400 cursor-default">
+                <span className="absolute top-4 right-5 font-serif text-[4.5rem] font-bold text-[#ce5e00]/05 leading-none pointer-events-none">{p.number}</span>
+                <h3 className="font-serif text-[1.3rem] font-bold text-[#ce5e00] mb-3">{p.name}</h3>
                 <p className="text-[0.86rem] leading-[1.8] text-white/50">{p.description}</p>
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#c6a84a] group-hover:w-full transition-[width] duration-500" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#ce5e00] group-hover:w-full transition-[width] duration-500" />
               </Reveal>
             ))}
           </div>
@@ -173,25 +173,25 @@ export default function HomePage() {
       </section>
 
       {/* ─── SECTORS PREVIEW ──────────────────────── */}
-      <section className="py-28 bg-[#152336]">
+      <section className="py-28 bg-[#003045]">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14">
             <Reveal>
-              <div className="flex items-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#c6a84a] mb-3 before:block before:w-7 before:h-px before:bg-[#c6a84a]">
+              <div className="flex items-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-3 before:block before:w-7 before:h-px before:bg-[#ce5e00]">
                 Our Reach
               </div>
-              <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-700 text-white">Key Sectors</h2>
+              <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-bold text-white">Key Sectors</h2>
             </Reveal>
             <Reveal>
-              <Link href="/sectors" className="text-[0.74rem] font-semibold tracking-[0.1em] uppercase text-[#c6a84a] hover:text-[#dfc07a] border-b border-[#c6a84a]/40 pb-0.5 transition-colors">
+              <Link href="/sectors" className="text-[0.74rem] font-semibold tracking-[0.1em] uppercase text-[#ce5e00] hover:text-[#e8740f] border-b border-[#ce5e00]/40 pb-0.5 transition-colors">
                 View All Sectors →
               </Link>
             </Reveal>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#c6a84a]/08">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#ce5e00]/08">
             {sectors.slice(0, 6).map((s, i) => (
-              <Reveal key={s.id} delay={i * 0.05} className="group bg-[#152336] p-7 flex items-start gap-4 hover:bg-[#c6a84a]/[0.05] transition-colors duration-300 cursor-default">
-                <span className="text-[#c6a84a] mt-0.5 group-hover:text-[#dfc07a] transition-colors duration-300">
+              <Reveal key={s.id} delay={i * 0.05} className="group bg-[#003045] p-7 flex items-start gap-4 hover:bg-[#ce5e00]/[0.05] transition-colors duration-300 cursor-default">
+                <span className="text-[#ce5e00] mt-0.5 group-hover:text-[#e8740f] transition-colors duration-300">
                   <SectorIcon id={s.id} />
                 </span>
                 <div>
@@ -209,17 +209,17 @@ export default function HomePage() {
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-[380px_1fr] gap-16 lg:gap-24 items-start">
             <Reveal direction="left" className="lg:sticky lg:top-28">
-              <div className="flex items-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#c6a84a] mb-4 before:block before:w-7 before:h-px before:bg-[#c6a84a]">
+              <div className="flex items-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-4 before:block before:w-7 before:h-px before:bg-[#ce5e00]">
                 Practice Areas
               </div>
-              <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-700 text-[#0c1a2b] leading-[1.15] mb-5">
+              <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-bold text-[#002233] leading-[1.15] mb-5">
                 Our<br/>Expertise
               </h2>
-              <span className="block w-14 h-0.5 bg-[#c6a84a] mb-7" />
+              <span className="block w-14 h-0.5 bg-[#ce5e00] mb-7" />
               <p className="text-[0.92rem] text-[#4a5a6a] leading-[1.88] mb-8">
                 Seven core practice areas covering the full spectrum of corporate and commercial legal services, from capital markets and energy to disputes and technology.
               </p>
-              <Link href="/expertise" className="inline-flex items-center gap-2 text-[0.76rem] font-bold tracking-[0.1em] uppercase text-[#c6a84a] hover:gap-3 transition-all duration-300">
+              <Link href="/expertise" className="inline-flex items-center gap-2 text-[0.76rem] font-bold tracking-[0.1em] uppercase text-[#ce5e00] hover:gap-3 transition-all duration-300">
                 All Practice Areas →
               </Link>
             </Reveal>
@@ -229,11 +229,11 @@ export default function HomePage() {
                 <Link
                   key={p.slug}
                   href={`/expertise/${p.slug}`}
-                  className="group grid grid-cols-[52px_1fr_24px] items-center gap-4 py-5 border-b border-[#ede9e2] hover:pl-4 transition-all duration-300 relative before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0 before:bg-[#c6a84a] before:transition-[width] before:duration-300 hover:before:w-[3px]"
+                  className="group grid grid-cols-[52px_1fr_24px] items-center gap-4 py-5 border-b border-[#ede9e2] hover:pl-4 transition-all duration-300 relative before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0 before:bg-[#ce5e00] before:transition-[width] before:duration-300 hover:before:w-[3px]"
                 >
-                  <span className="font-serif text-[0.9rem] font-700 text-[#c6a84a]/50 group-hover:text-[#c6a84a] transition-colors duration-300">{p.number}</span>
-                  <span className="text-[0.9rem] font-semibold text-[#4a5a6a] group-hover:text-[#0c1a2b] transition-colors duration-300 leading-snug">{p.title}</span>
-                  <svg className="w-4 h-4 text-[#c6a84a] opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" viewBox="0 0 16 16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+                  <span className="font-serif text-[0.9rem] font-bold text-[#ce5e00]/50 group-hover:text-[#ce5e00] transition-colors duration-300">{p.number}</span>
+                  <span className="text-[0.9rem] font-semibold text-[#4a5a6a] group-hover:text-[#002233] transition-colors duration-300 leading-snug">{p.title}</span>
+                  <svg className="w-4 h-4 text-[#ce5e00] opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="none" viewBox="0 0 16 16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
                     <path d="M3 8h10M9 4l4 4-4 4"/>
                   </svg>
                 </Link>
@@ -246,25 +246,25 @@ export default function HomePage() {
       {/* ─── ESG STRIP ─────────────────────────────── */}
       <section className="relative overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=85&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&q=90&auto=format&fit=crop&sat=40"
           alt="ESG"
           width={1600}
           height={600}
           className="w-full h-[380px] object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0c1a2b]/95 via-[#0c1a2b]/75 to-[#0c1a2b]/30 flex items-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#002233]/95 via-[#002233]/75 to-[#002233]/30 flex items-center">
           <div className="max-w-[1260px] mx-auto px-8 md:px-12 w-full">
             <div className="max-w-xl">
-              <div className="flex items-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#c6a84a] mb-4 before:block before:w-7 before:h-px before:bg-[#c6a84a]">
+              <div className="flex items-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-4 before:block before:w-7 before:h-px before:bg-[#ce5e00]">
                 Sustainability
               </div>
-              <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.8rem)] font-700 text-white leading-[1.15] mb-5">
+              <h2 className="font-serif text-[clamp(1.8rem,3.2vw,2.8rem)] font-bold text-white leading-[1.15] mb-5">
                 ESG Compliance &<br/>Responsible Advisory
               </h2>
-              <p className="text-[0.9rem] text-white/55 leading-[1.85] mb-8">
+              <p className="text-[0.9rem] text-white/55 leading-[1.85] mb-8 text-center">
                 We embed Environmental, Social, and Governance principles into every engagement, ensuring our clients build resilient, future-ready enterprises.
               </p>
-              <Link href="/esg" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-[#0c1a2b] bg-[#c6a84a] hover:bg-[#dfc07a] px-7 py-3.5 transition-colors duration-300">
+              <Link href="/esg" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-[#002233] bg-[#ce5e00] hover:bg-[#e8740f] px-7 py-3.5 transition-colors duration-300">
                 Our ESG Commitment →
               </Link>
             </div>
@@ -276,21 +276,21 @@ export default function HomePage() {
       <section className="py-28 bg-[#f6f3ee]">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12 text-center">
           <Reveal>
-            <div className="flex items-center justify-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#c6a84a] mb-5">
-              <span className="block w-7 h-px bg-[#c6a84a]" />Get In Touch<span className="block w-7 h-px bg-[#c6a84a]" />
+            <div className="flex items-center justify-center gap-3 text-[0.66rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-5">
+              <span className="block w-7 h-px bg-[#ce5e00]" />Get In Touch<span className="block w-7 h-px bg-[#ce5e00]" />
             </div>
-            <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] font-700 text-[#0c1a2b] leading-[1.12] mb-5">
+            <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] font-bold text-[#002233] leading-[1.12] mb-5">
               Ready to Discuss<br/>
-              <span className="italic font-normal text-[#c6a84a]">Your Legal Needs?</span>
+              <span className="italic font-normal text-[#ce5e00]">Your Legal Needs?</span>
             </h2>
             <p className="font-elegant italic text-[1.1rem] text-[#4a5a6a] leading-[1.78] max-w-xl mx-auto mb-10">
               Our team delivers clear, commercially intelligent counsel aligned with your business timeline.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <Link href="/contact" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-[#0c1a2b] bg-[#c6a84a] hover:bg-[#dfc07a] px-10 py-4 transition-colors duration-300">
+              <Link href="/contact" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-[#002233] bg-[#ce5e00] hover:bg-[#e8740f] px-10 py-4 transition-colors duration-300">
                 Contact Us →
               </Link>
-              <a href="mailto:info@crystalsterl.com" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-[#0c1a2b] border border-[#0c1a2b]/25 hover:border-[#c6a84a] px-10 py-4 transition-colors duration-300">
+              <a href="mailto:info@crystalsterl.com" className="inline-flex items-center gap-2.5 text-[0.76rem] font-bold tracking-[0.12em] uppercase text-[#002233] border border-[#002233]/25 hover:border-[#ce5e00] px-10 py-4 transition-colors duration-300">
                 info@crystalsterl.com
               </a>
             </div>

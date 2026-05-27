@@ -13,25 +13,25 @@ export default function AboutPage() {
     <main>
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
-      <section className="relative h-[70vh] min-h-[520px] flex items-end bg-[#0c1a2b] overflow-hidden">
+      <section className="relative h-[70vh] min-h-[520px] flex items-end bg-[#002233] overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=85&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=90&auto=format&fit=crop&sat=40"
           alt="Crystal Sterl Partners"
           fill
           className="object-cover object-center opacity-35"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0c1a2b] via-[#0c1a2b]/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#002233] via-[#002233]/60 to-transparent" />
         <div className="relative z-10 max-w-[1260px] mx-auto px-8 md:px-12 pb-20 w-full">
-          <div className="flex items-center gap-3 text-[0.68rem] font-semibold tracking-[0.28em] uppercase text-[#c6a84a] mb-5">
-            <span className="block w-7 h-px bg-[#c6a84a]" />
+          <div className="flex items-center gap-3 text-[0.68rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-5">
+            <span className="block w-7 h-px bg-[#ce5e00]" />
             The Firm
           </div>
-          <h1 className="font-serif text-[clamp(2.6rem,5.5vw,4.6rem)] font-800 leading-[1.06] text-white max-w-3xl">
+          <h1 className="font-serif text-[clamp(2.6rem,5.5vw,4.6rem)] font-bold leading-[1.06] text-white max-w-3xl">
             Rooted in Africa,{" "}
-            <span className="italic font-normal text-[#c6a84a]">Built for the World</span>
+            <span className="italic font-normal text-[#ce5e00]">Built for the World</span>
           </h1>
-          <span className="block w-14 h-0.5 bg-[#c6a84a] mt-8" />
+          <span className="block w-14 h-0.5 bg-[#ce5e00] mt-8" />
         </div>
       </section>
 
@@ -42,27 +42,27 @@ export default function AboutPage() {
             <div className="relative">
               <div className="aspect-[4/5] relative overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=85&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=90&auto=format&fit=crop&sat=40"
                   alt="Crystal Sterl Partners Office"
                   fill
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-8 -right-8 bg-[#0c1a2b] p-8 max-w-[260px]">
+              <div className="absolute -bottom-8 -right-8 bg-[#002233] p-8 max-w-[260px]">
                 <p className="font-elegant italic text-white/70 text-[0.92rem] leading-[1.75]">
                   "A world-class firm with a distinctly African perspective."
                 </p>
-                <span className="block w-8 h-px bg-[#c6a84a] mt-4" />
+                <span className="block w-8 h-px bg-[#ce5e00] mt-4" />
               </div>
             </div>
           </Reveal>
           <Reveal direction="right">
             <div>
-              <div className="flex items-center gap-3 text-[0.65rem] font-semibold tracking-[0.3em] uppercase text-[#c6a84a] mb-6">
-                <span className="block w-6 h-px bg-[#c6a84a]" />
+              <div className="flex items-center gap-3 text-[0.65rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-6">
+                <span className="block w-6 h-px bg-[#ce5e00]" />
                 About Crystal Sterl
               </div>
-              <h2 className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] font-bold leading-[1.15] text-[#0c1a2b] mb-7">
+              <h2 className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] font-bold leading-[1.15] text-[#002233] mb-7">
                 A Leading African Law Firm with a Global Outlook
               </h2>
               <div className="space-y-5 text-[0.95rem] text-[#4a5a6a] leading-[1.85]">
@@ -83,9 +83,9 @@ export default function AboutPage() {
                   { label: "Founded",        value: "Crystal Sterl Partners" },
                   { label: "Reach",          value: "Pan-Africa & Global" },
                 ].map(({ label, value }) => (
-                  <div key={label} className="border-l-2 border-[#c6a84a] pl-4">
-                    <p className="text-[0.62rem] font-semibold tracking-[0.2em] uppercase text-[#c6a84a] mb-0.5">{label}</p>
-                    <p className="font-serif text-[#0c1a2b] font-semibold text-[0.88rem]">{value}</p>
+                  <div key={label} className="border-l-2 border-[#ce5e00] pl-4">
+                    <p className="text-[0.62rem] font-semibold tracking-[0.2em] uppercase text-[#ce5e00] mb-0.5">{label}</p>
+                    <p className="font-serif text-[#002233] font-semibold text-[0.88rem]">{value}</p>
                   </div>
                 ))}
               </div>
@@ -95,14 +95,14 @@ export default function AboutPage() {
       </section>
 
       {/* ── Philosophy ──────────────────────────────────────────────────── */}
-      <section id="philosophy" className="bg-[#0c1a2b] py-28">
+      <section id="philosophy" className="bg-[#002233] py-28">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <Reveal>
             <div className="text-center mb-16">
-              <div className="flex items-center justify-center gap-3 text-[0.65rem] font-semibold tracking-[0.3em] uppercase text-[#c6a84a] mb-5">
-                <span className="block w-6 h-px bg-[#c6a84a]" />
+              <div className="flex items-center justify-center gap-3 text-[0.65rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-5">
+                <span className="block w-6 h-px bg-[#ce5e00]" />
                 Our Guiding Principles
-                <span className="block w-6 h-px bg-[#c6a84a]" />
+                <span className="block w-6 h-px bg-[#ce5e00]" />
               </div>
               <h2 className="font-serif text-[clamp(1.8rem,3vw,2.8rem)] font-bold text-white leading-[1.15]">
                 The Philosophy Behind Our Practice
@@ -113,9 +113,9 @@ export default function AboutPage() {
             {philosophy.map((p, i) => (
               <Reveal key={p.number} delay={i * 0.1}>
                 <div className="group p-10 border-b sm:border-b-0 border-white/[0.07] sm:[&:nth-child(n+3)]:border-t lg:[&:nth-child(n+3)]:border-t-0 lg:border-r last:border-r-0 border-white/[0.07] hover:bg-white/[0.03] transition-colors duration-300">
-                  <span className="block text-[0.62rem] font-semibold tracking-[0.3em] text-[#c6a84a] mb-8">{p.number}</span>
+                  <span className="block text-[0.62rem] font-semibold tracking-[0.3em] text-[#ce5e00] mb-8">{p.number}</span>
                   <h3 className="font-serif text-[1.35rem] font-bold text-white mb-1">{p.name}</h3>
-                  <div className="w-8 h-0.5 bg-[#c6a84a] mb-5 group-hover:w-14 transition-all duration-500" />
+                  <div className="w-8 h-0.5 bg-[#ce5e00] mb-5 group-hover:w-14 transition-all duration-500" />
                   <p className="text-[0.85rem] text-white/50 leading-[1.8]">{p.description}</p>
                 </div>
               </Reveal>
@@ -129,15 +129,15 @@ export default function AboutPage() {
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
             <Reveal direction="left">
-              <div className="bg-[#0c1a2b] p-14 lg:p-16">
-                <div className="flex items-center gap-3 text-[0.62rem] font-semibold tracking-[0.3em] uppercase text-[#c6a84a] mb-7">
-                  <span className="block w-5 h-px bg-[#c6a84a]" />
+              <div className="bg-[#002233] p-14 lg:p-16">
+                <div className="flex items-center gap-3 text-[0.62rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-7">
+                  <span className="block w-5 h-px bg-[#ce5e00]" />
                   Our Vision
                 </div>
                 <h2 className="font-serif text-[clamp(1.6rem,2.5vw,2.2rem)] font-bold text-white leading-[1.2] mb-6">
                   To be Africa's most trusted and impactful commercial law firm
                 </h2>
-                <span className="block w-10 h-0.5 bg-[#c6a84a] mb-7" />
+                <span className="block w-10 h-0.5 bg-[#ce5e00] mb-7" />
                 <p className="text-[0.9rem] text-white/55 leading-[1.85]">
                   We aspire to set the standard for legal excellence across the African continent, combining world-class expertise with deep local insight to build a firm that institutions, businesses, and governments trust at their most critical moments.
                 </p>
@@ -145,14 +145,14 @@ export default function AboutPage() {
             </Reveal>
             <Reveal direction="right">
               <div className="bg-white p-14 lg:p-16 border border-[#ede9e2]">
-                <div className="flex items-center gap-3 text-[0.62rem] font-semibold tracking-[0.3em] uppercase text-[#c6a84a] mb-7">
-                  <span className="block w-5 h-px bg-[#c6a84a]" />
+                <div className="flex items-center gap-3 text-[0.62rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-7">
+                  <span className="block w-5 h-px bg-[#ce5e00]" />
                   Our Mission
                 </div>
-                <h2 className="font-serif text-[clamp(1.6rem,2.5vw,2.2rem)] font-bold text-[#0c1a2b] leading-[1.2] mb-6">
+                <h2 className="font-serif text-[clamp(1.6rem,2.5vw,2.2rem)] font-bold text-[#002233] leading-[1.2] mb-6">
                   To deliver outcomes-focused legal solutions that advance our clients' objectives
                 </h2>
-                <span className="block w-10 h-0.5 bg-[#c6a84a] mb-7" />
+                <span className="block w-10 h-0.5 bg-[#ce5e00] mb-7" />
                 <p className="text-[0.9rem] text-[#4a5a6a] leading-[1.85]">
                   We exist to serve, bringing intelligence, precision, and relentless commitment to every mandate. We close deals, win disputes, and solve complex legal challenges with the same commercial urgency our clients bring to their businesses.
                 </p>
@@ -163,12 +163,12 @@ export default function AboutPage() {
       </section>
 
       {/* ── Differentiators ─────────────────────────────────────────────── */}
-      <section id="differentiators" className="bg-[#0c1a2b] py-28">
+      <section id="differentiators" className="bg-[#002233] py-28">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <Reveal>
             <div className="mb-16">
-              <div className="flex items-center gap-3 text-[0.65rem] font-semibold tracking-[0.3em] uppercase text-[#c6a84a] mb-5">
-                <span className="block w-6 h-px bg-[#c6a84a]" />
+              <div className="flex items-center gap-3 text-[0.65rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-5">
+                <span className="block w-6 h-px bg-[#ce5e00]" />
                 What Sets Us Apart
               </div>
               <h2 className="font-serif text-[clamp(1.8rem,3vw,2.8rem)] font-bold text-white leading-[1.15] max-w-xl">
@@ -181,7 +181,7 @@ export default function AboutPage() {
               <Reveal key={d.number} delay={i * 0.1}>
                 <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-0 border-b border-white/[0.08] group">
                   <div className="py-14 pr-0 lg:pr-16 flex gap-10 items-start">
-                    <span className="text-[0.62rem] font-semibold tracking-[0.3em] text-[#c6a84a] pt-1 flex-shrink-0">{d.number}</span>
+                    <span className="text-[0.62rem] font-semibold tracking-[0.3em] text-[#ce5e00] pt-1 flex-shrink-0">{d.number}</span>
                     <div>
                       <p className="text-[0.7rem] font-semibold tracking-[0.22em] uppercase text-white/30 mb-3">{d.title}</p>
                       <h3 className="font-serif text-[1.45rem] font-bold text-white mb-5">{d.headline}</h3>
@@ -204,17 +204,17 @@ export default function AboutPage() {
       </section>
 
       {/* ── CTA ─────────────────────────────────────────────────────────── */}
-      <section className="bg-[#c6a84a] py-20">
+      <section className="bg-[#ce5e00] py-20">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-8">
           <div>
-            <h2 className="font-serif text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-[#0c1a2b] leading-[1.2]">
+            <h2 className="font-serif text-[clamp(1.4rem,2.5vw,2rem)] font-bold text-[#002233] leading-[1.2]">
               Ready to work with us?
             </h2>
-            <p className="text-[0.88rem] text-[#0c1a2b]/65 mt-2">Speak directly with our partners.</p>
+            <p className="text-[0.88rem] text-[#002233]/65 mt-2">Speak directly with our partners.</p>
           </div>
           <Link
             href="/contact"
-            className="flex-shrink-0 text-[0.73rem] font-bold tracking-[0.14em] uppercase bg-[#0c1a2b] text-white hover:bg-[#162d47] px-8 py-4 transition-colors duration-300"
+            className="flex-shrink-0 text-[0.73rem] font-bold tracking-[0.14em] uppercase bg-[#002233] text-white hover:bg-[#003d5a] px-8 py-4 transition-colors duration-300"
           >
             Get in Touch
           </Link>

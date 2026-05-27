@@ -5,13 +5,13 @@ import { practiceAreas } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
 
 const practiceImages: Record<string, string> = {
-  "corporate-securities-finance-funds": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1600&q=85&auto=format&fit=crop",
-  "energy-oil-gas-natural-resources": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1600&q=85&auto=format&fit=crop",
-  "corporate-governance-regulatory-compliance": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=85&auto=format&fit=crop",
-  "intellectual-property-data-protection": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=85&auto=format&fit=crop",
-  "litigation-arbitration-adr": "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=1600&q=85&auto=format&fit=crop",
-  "tax-real-estate-privatisation-procurement": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=85&auto=format&fit=crop",
-  "technology-media-telecommunication": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=85&auto=format&fit=crop",
+  "corporate-securities-finance-funds": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1600&q=90&auto=format&fit=crop&sat=40",
+  "energy-oil-gas-natural-resources": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1600&q=90&auto=format&fit=crop&sat=40",
+  "corporate-governance-regulatory-compliance": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=90&auto=format&fit=crop&sat=40",
+  "intellectual-property-data-protection": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=90&auto=format&fit=crop&sat=40",
+  "litigation-arbitration-adr": "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=1600&q=90&auto=format&fit=crop&sat=40",
+  "tax-real-estate-privatisation-procurement": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=90&auto=format&fit=crop&sat=40",
+  "technology-media-telecommunication": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1600&q=90&auto=format&fit=crop&sat=40",
 };
 
 export async function generateStaticParams() {
@@ -41,7 +41,7 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
     <main>
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
-      <section className="relative h-[65vh] min-h-[480px] flex items-end bg-[#0c1a2b] overflow-hidden">
+      <section className="relative h-[65vh] min-h-[480px] flex items-end bg-[#002233] overflow-hidden">
         <Image
           src={practiceImages[area.slug] ?? practiceImages["corporate-securities-finance-funds"]}
           alt={area.title}
@@ -49,9 +49,9 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
           className="object-cover opacity-30"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0c1a2b] via-[#0c1a2b]/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#002233] via-[#002233]/50 to-transparent" />
         <div className="relative z-10 max-w-[1260px] mx-auto px-8 md:px-12 pb-20 w-full">
-          <Link href="/expertise" className="inline-flex items-center gap-2 text-[0.68rem] font-semibold tracking-[0.2em] uppercase text-[#c6a84a] hover:text-[#dfc07a] transition-colors mb-6">
+          <Link href="/expertise" className="inline-flex items-center gap-2 text-[0.68rem] font-semibold tracking-[0.2em] uppercase text-[#ce5e00] hover:text-[#e8740f] transition-colors mb-6">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M11 7H3M7 3l-4 4 4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -62,10 +62,10 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
             <span className="block w-5 h-px bg-white/20" />
             <span>Practice Area</span>
           </div>
-          <h1 className="font-serif text-[clamp(2rem,4.5vw,3.6rem)] font-800 leading-[1.1] text-white max-w-3xl">
+          <h1 className="font-serif text-[clamp(2rem,4.5vw,3.6rem)] font-bold leading-[1.1] text-white max-w-3xl">
             {area.title}
           </h1>
-          <span className="block w-14 h-0.5 bg-[#c6a84a] mt-8" />
+          <span className="block w-14 h-0.5 bg-[#ce5e00] mt-8" />
         </div>
       </section>
 
@@ -76,7 +76,7 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
           {/* Left: main content */}
           <div>
             <Reveal>
-              <h2 className="font-serif text-[clamp(1.4rem,2.2vw,1.8rem)] font-bold text-[#0c1a2b] leading-[1.3] mb-7">
+              <h2 className="font-serif text-[clamp(1.4rem,2.2vw,1.8rem)] font-bold text-[#002233] leading-[1.3] mb-7">
                 Overview
               </h2>
               <p className="text-[0.95rem] text-[#4a5a6a] leading-[1.9] mb-8">
@@ -89,7 +89,7 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
 
             <Reveal delay={0.1}>
               <div className="mt-14 pt-14 border-t border-[#ede9e2]">
-                <h2 className="font-serif text-[clamp(1.3rem,2vw,1.65rem)] font-bold text-[#0c1a2b] leading-[1.3] mb-8">
+                <h2 className="font-serif text-[clamp(1.3rem,2vw,1.65rem)] font-bold text-[#002233] leading-[1.3] mb-8">
                   Our Approach
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -100,9 +100,9 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
                     { title: "Responsive Team", body: "Our partners and senior lawyers are directly accessible, ensuring speed and continuity on every matter." },
                   ].map(({ title, body }) => (
                     <div key={title} className="flex gap-4">
-                      <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#c6a84a] mt-[7px]" />
+                      <span className="flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#ce5e00] mt-[7px]" />
                       <div>
-                        <h4 className="font-semibold text-[#0c1a2b] text-[0.88rem] mb-1">{title}</h4>
+                        <h4 className="font-semibold text-[#002233] text-[0.88rem] mb-1">{title}</h4>
                         <p className="text-[0.84rem] text-[#4a5a6a] leading-[1.75]">{body}</p>
                       </div>
                     </div>
@@ -115,26 +115,26 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
           {/* Right: services sidebar */}
           <Reveal direction="right">
             <div className="sticky top-32">
-              <div className="bg-[#0c1a2b] p-10">
-                <h3 className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#c6a84a] mb-6">Services</h3>
+              <div className="bg-[#002233] p-10">
+                <h3 className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-6">Services</h3>
                 <ul className="flex flex-col gap-0">
                   {area.services.map((s, i) => (
                     <li key={s} className={`py-4 flex items-start gap-4 text-[0.85rem] text-white/65 leading-[1.6] ${i > 0 ? "border-t border-white/[0.06]" : ""}`}>
-                      <span className="flex-shrink-0 w-5 h-px bg-[#c6a84a]/50 mt-[10px]" />
+                      <span className="flex-shrink-0 w-5 h-px bg-[#ce5e00]/50 mt-[10px]" />
                       {s}
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="mt-1 bg-[#c6a84a] p-8">
-                <h3 className="font-serif text-[#0c1a2b] font-bold text-[1.05rem] mb-3">Speak with a Partner</h3>
-                <p className="text-[0.82rem] text-[#0c1a2b]/65 mb-6 leading-[1.7]">
+              <div className="mt-1 bg-[#ce5e00] p-8">
+                <h3 className="font-serif text-[#002233] font-bold text-[1.05rem] mb-3">Speak with a Partner</h3>
+                <p className="text-[0.82rem] text-[#002233]/65 mb-6 leading-[1.7]">
                   Our specialist lawyers are available to discuss your requirements in confidence.
                 </p>
                 <Link
                   href="/contact"
-                  className="block text-center text-[0.7rem] font-bold tracking-[0.14em] uppercase bg-[#0c1a2b] text-white hover:bg-[#162d47] px-6 py-3.5 transition-colors duration-300"
+                  className="block text-center text-[0.7rem] font-bold tracking-[0.14em] uppercase bg-[#002233] text-white hover:bg-[#003d5a] px-6 py-3.5 transition-colors duration-300"
                 >
                   Get in Touch
                 </Link>
@@ -150,20 +150,20 @@ export default async function PracticeAreaPage({ params }: { params: Promise<{ s
         <div className="max-w-[1260px] mx-auto px-8 md:px-12 grid grid-cols-2">
           {prev ? (
             <Link href={`/expertise/${prev.slug}`} className="group flex flex-col gap-1 py-10 pr-12 border-r border-[#ede9e2] hover:bg-[#f6f3ee] transition-colors duration-300">
-              <span className="text-[0.62rem] font-semibold tracking-[0.22em] uppercase text-[#c6a84a] flex items-center gap-2">
+              <span className="text-[0.62rem] font-semibold tracking-[0.22em] uppercase text-[#ce5e00] flex items-center gap-2">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M9 6H3M5 2L1 6l4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 Previous
               </span>
-              <span className="font-serif text-[0.95rem] font-bold text-[#0c1a2b] leading-[1.3] group-hover:text-[#c6a84a] transition-colors duration-300">{prev.shortTitle}</span>
+              <span className="font-serif text-[0.95rem] font-bold text-[#002233] leading-[1.3] group-hover:text-[#ce5e00] transition-colors duration-300">{prev.shortTitle}</span>
             </Link>
           ) : <div />}
           {next ? (
             <Link href={`/expertise/${next.slug}`} className="group flex flex-col gap-1 py-10 pl-12 text-right hover:bg-[#f6f3ee] transition-colors duration-300">
-              <span className="text-[0.62rem] font-semibold tracking-[0.22em] uppercase text-[#c6a84a] flex items-center justify-end gap-2">
+              <span className="text-[0.62rem] font-semibold tracking-[0.22em] uppercase text-[#ce5e00] flex items-center justify-end gap-2">
                 Next
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 6h6M7 2l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </span>
-              <span className="font-serif text-[0.95rem] font-bold text-[#0c1a2b] leading-[1.3] group-hover:text-[#c6a84a] transition-colors duration-300">{next.shortTitle}</span>
+              <span className="font-serif text-[0.95rem] font-bold text-[#002233] leading-[1.3] group-hover:text-[#ce5e00] transition-colors duration-300">{next.shortTitle}</span>
             </Link>
           ) : <div />}
         </div>

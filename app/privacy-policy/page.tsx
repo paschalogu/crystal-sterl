@@ -89,7 +89,7 @@ To exercise any of these rights, please contact us at info@crystalsterl.com. We 
 
 Crystal Sterl Partners
 Email: info@crystalsterl.com
-Phone: +234 806 331 4898
+Phone: +234 810 092 2401
 Lagos & Abuja, Nigeria`,
   },
 ];
@@ -97,17 +97,17 @@ Lagos & Abuja, Nigeria`,
 export default function PrivacyPolicyPage() {
   return (
     <main>
-      <section className="bg-[#0c1a2b] pt-40 pb-20">
+      <section className="bg-[#002233] pt-40 pb-20">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
-          <div className="flex items-center gap-3 text-[0.68rem] font-semibold tracking-[0.28em] uppercase text-[#c6a84a] mb-5">
-            <span className="block w-7 h-px bg-[#c6a84a]" />
+          <div className="flex items-center gap-3 text-[0.68rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-5">
+            <span className="block w-7 h-px bg-[#ce5e00]" />
             Legal
           </div>
-          <h1 className="font-serif text-[clamp(2.2rem,4.5vw,3.6rem)] font-800 leading-[1.1] text-white max-w-2xl">
+          <h1 className="font-serif text-[clamp(2.2rem,4.5vw,3.6rem)] font-bold leading-[1.1] text-white max-w-2xl">
             Privacy Policy
           </h1>
           <p className="text-white/40 text-[0.85rem] mt-5">Last updated: January 2025</p>
-          <span className="block w-14 h-0.5 bg-[#c6a84a] mt-7" />
+          <span className="block w-14 h-0.5 bg-[#ce5e00] mt-7" />
         </div>
       </section>
 
@@ -117,13 +117,13 @@ export default function PrivacyPolicyPage() {
           {/* Sticky nav */}
           <aside className="hidden lg:block">
             <div className="sticky top-32">
-              <p className="text-[0.6rem] font-semibold tracking-[0.24em] uppercase text-[#c6a84a] mb-4">Contents</p>
+              <p className="text-[0.6rem] font-semibold tracking-[0.24em] uppercase text-[#ce5e00] mb-4">Contents</p>
               <nav className="flex flex-col gap-2.5">
                 {sections.map(s => (
                   <a
                     key={s.title}
                     href={`#${s.title.replace(/\s+/g, "-").toLowerCase()}`}
-                    className="text-[0.78rem] text-[#4a5a6a] hover:text-[#c6a84a] transition-colors duration-300 leading-snug"
+                    className="text-[0.78rem] text-[#4a5a6a] hover:text-[#ce5e00] transition-colors duration-300 leading-snug"
                   >
                     {s.title}
                   </a>
@@ -140,15 +140,15 @@ export default function PrivacyPolicyPage() {
             <div className="flex flex-col gap-12">
               {sections.map(s => (
                 <div key={s.title} id={s.title.replace(/\s+/g, "-").toLowerCase()}>
-                  <h2 className="font-serif text-[1.1rem] font-bold text-[#0c1a2b] mb-4">{s.title}</h2>
+                  <h2 className="font-serif text-[1.1rem] font-bold text-[#002233] mb-4">{s.title}</h2>
                   <div className="text-[0.9rem] text-[#4a5a6a] leading-[1.9] whitespace-pre-line">{s.body}</div>
                 </div>
               ))}
             </div>
             <div className="mt-16 pt-10 border-t border-[#ede9e2] flex flex-wrap gap-6">
-              <Link href="/terms-of-use" className="text-[0.78rem] font-semibold text-[#c6a84a] hover:underline">Terms of Use →</Link>
-              <Link href="/disclaimer"   className="text-[0.78rem] font-semibold text-[#c6a84a] hover:underline">Disclaimer →</Link>
-              <Link href="/contact"      className="text-[0.78rem] font-semibold text-[#c6a84a] hover:underline">Contact Us →</Link>
+              <Link href="/terms-of-use" className="text-[0.78rem] font-semibold text-[#ce5e00] hover:underline">Terms of Use →</Link>
+              <Link href="/disclaimer"   className="text-[0.78rem] font-semibold text-[#ce5e00] hover:underline">Disclaimer →</Link>
+              <Link href="/contact"      className="text-[0.78rem] font-semibold text-[#ce5e00] hover:underline">Contact Us →</Link>
             </div>
           </div>
 
