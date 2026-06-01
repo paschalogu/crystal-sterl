@@ -1,8 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { firm } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
+
+// Initialize EmailJS (do this once)
+emailjs.init("YOUR_PUBLIC_KEY");
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
@@ -12,9 +16,23 @@ export default function ContactForm() {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSent(true);
+    try {
+      await emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+        to_email: "ogupaschal16@gmail.com",
+        from_name: form.name,
+        from_email: form.email,
+        company: form.company,
+        phone: form.phone,
+        subject: form.subject,
+        message: form.message,
+      });
+      setSent(true);
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert("Failed to send message. Please try again.");
+    }
   }
 
   return (
