@@ -66,7 +66,7 @@ export default function HomePage() {
                 </em>
               </h1>
               <p className="font-elegant text-[clamp(1rem,1.7vw,1.22rem)] font-light leading-[1.8] text-white/60 max-w-[540px] mb-11 animate-[fadeUp_0.9s_ease_0.4s_both] text-justify">
-                Delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions.
+                Delivering corporate, transactional, dispute and full-service legal advisory to individuals, businesses, and institutions.
               </p>
               <div className="flex items-center gap-3 text-[0.7rem] font-medium tracking-[0.16em] uppercase text-white/40 mb-12 animate-[fadeUp_0.9s_ease_0.5s_both]">
                 {["Excellence", "Clarity", "Precision", "Execution"].map((p, i) => (
