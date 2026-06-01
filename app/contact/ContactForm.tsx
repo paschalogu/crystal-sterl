@@ -6,7 +6,7 @@ import { firm } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
 
 // Initialize EmailJS (do this once)
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "");
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
