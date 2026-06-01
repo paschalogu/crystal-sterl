@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { philosophy, differentiators, firm } from "@/lib/content";
+import { philosophy, differentiators, firm, team } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
@@ -199,6 +199,77 @@ export default function AboutPage() {
                 </div>
               </Reveal>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Our People ──────────────────────────────────────────────────── */}
+      <section id="people" className="bg-[#f6f3ee] py-28">
+        <div className="max-w-[1260px] mx-auto px-8 md:px-12">
+          <Reveal>
+            <div className="mb-16">
+              <div className="flex items-center gap-3 text-[0.65rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-5">
+                <span className="block w-6 h-px bg-[#ce5e00]" />
+                The Team
+              </div>
+              <h2 className="font-serif text-[clamp(1.8rem,3vw,2.8rem)] font-bold text-[#002233] leading-[1.15] max-w-xl">
+                Partners & Counsel
+              </h2>
+            </div>
+          </Reveal>
+
+          {/* Partners */}
+          <div className="mb-16">
+            <h3 className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-8 flex items-center gap-3">
+              <span className="block w-5 h-px bg-[#ce5e00]" /> Partners
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[#ede9e2]">
+              {team.filter(m => m.tier === "partner").map((member, i) => (
+                <Reveal key={member.initials + i} delay={i * 0.08}>
+                  <div className="group bg-[#f6f3ee] p-8 hover:bg-white transition-colors duration-300 h-full flex flex-col">
+                    <div className="w-16 h-16 bg-[#002233] flex items-center justify-center mb-6 group-hover:bg-[#ce5e00] transition-colors duration-300">
+                      <span className="font-serif text-[1.1rem] font-bold text-[#ce5e00] group-hover:text-[#002233] transition-colors duration-300">{member.initials}</span>
+                    </div>
+                    <h4 className="font-serif text-[1rem] font-bold text-[#002233] mb-1">{member.name}</h4>
+                    <p className="text-[0.65rem] font-semibold tracking-[0.18em] uppercase text-[#ce5e00] mb-4">{member.role}</p>
+                    <div className="w-6 h-0.5 bg-[#ce5e00] mb-4 group-hover:w-10 transition-all duration-500" />
+                    <p className="text-[0.8rem] text-[#4a5a6a] leading-[1.72] flex-1 text-justify">{member.bio}</p>
+                    <div className="mt-5 flex flex-wrap gap-1.5">
+                      {member.practices.map(p => (
+                        <span key={p} className="text-[0.58rem] font-medium tracking-[0.06em] text-[#002233]/60 border border-[#002233]/15 px-2 py-0.5">{p}</span>
+                      ))}
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+
+          {/* Counsel */}
+          <div>
+            <h3 className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-8 flex items-center gap-3">
+              <span className="block w-5 h-px bg-[#ce5e00]" /> Counsel
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#ede9e2]">
+              {team.filter(m => m.tier === "counsel").map((member, i) => (
+                <Reveal key={member.initials + i} delay={i * 0.08}>
+                  <div className="group bg-[#f6f3ee] p-8 hover:bg-white transition-colors duration-300 h-full flex flex-col">
+                    <div className="w-14 h-14 bg-[#002233] flex items-center justify-center mb-5 group-hover:bg-[#ce5e00] transition-colors duration-300">
+                      <span className="font-serif text-[0.95rem] font-bold text-[#ce5e00] group-hover:text-[#002233] transition-colors duration-300">{member.initials}</span>
+                    </div>
+                    <h4 className="font-serif text-[1rem] font-bold text-[#002233] mb-1">{member.name}</h4>
+                    <p className="text-[0.65rem] font-semibold tracking-[0.18em] uppercase text-[#ce5e00] mb-4">{member.role}</p>
+                    <div className="w-6 h-0.5 bg-[#ce5e00] mb-4 group-hover:w-10 transition-all duration-500" />
+                    <p className="text-[0.8rem] text-[#4a5a6a] leading-[1.72] flex-1 text-justify">{member.bio}</p>
+                    <div className="mt-5 flex flex-wrap gap-1.5">
+                      {member.practices.map(p => (
+                        <span key={p} className="text-[0.58rem] font-medium tracking-[0.06em] text-[#002233]/60 border border-[#002233]/15 px-2 py-0.5">{p}</span>
+                      ))}
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>

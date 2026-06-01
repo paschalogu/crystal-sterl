@@ -20,6 +20,7 @@ const sectorImages: Record<string, string> = {
   "transportation":        "https://images.unsplash.com/photo-1494949649109-ecfc3b8c35df?w=800&q=90&auto=format&fit=crop&sat=40",
   "sport-entertainment":   "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=90&auto=format&fit=crop&sat=40",
   "public-sector":         "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800&q=90&auto=format&fit=crop&sat=40",
+  "private-wealth":        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=90&auto=format&fit=crop&sat=40",
 };
 
 export default function SectorsPage() {

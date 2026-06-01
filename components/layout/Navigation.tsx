@@ -10,6 +10,7 @@ const links = [
   { href: "/expertise", label: "Expertise" },
   { href: "/sectors",   label: "Sectors" },
   { href: "/esg",       label: "ESG" },
+  { href: "/insights",  label: "Insights" },
 ];
 
 export default function Navigation() {

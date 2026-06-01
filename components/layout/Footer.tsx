@@ -11,6 +11,7 @@ const navCols = [
       { href: "/about#vision",             label: "Vision & Mission" },
       { href: "/about#differentiators",    label: "What Sets Us Apart" },
       { href: "/esg",                      label: "ESG Compliance" },
+      { href: "/insights",                 label: "Insights" },
     ],
   },
   {
