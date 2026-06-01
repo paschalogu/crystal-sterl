@@ -36,5 +36,5 @@ jobs:
           server: 77.37.37.157         # This is your exact Hostinger FTP IP
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ${{ github.workspace }}/out/      # Takes the built static Next.js files
-          server-dir: ./public_html/         # Places them right into your public folder
+          local-dir: out      # Takes the built static Next.js files
+          server-dir: public_html         # Places them in your public folder
