@@ -170,7 +170,7 @@ export default function ContactForm() {
               <h4 className="text-[0.62rem] font-semibold tracking-[0.24em] uppercase text-[#ce5e00] mb-5">Business Hours</h4>
               <div className="flex flex-col gap-2.5">
                 {[
-                  { day: "Monday – Friday", hours: "8:00 AM – 6:00 PM" },
+                  { day: "Monday – Friday", hours: "9:00 AM – 5:00 PM" },
                   { day: "Saturday",        hours: "By appointment" },
                   { day: "Sunday",          hours: "Closed" },
                 ].map(({ day, hours }) => (
