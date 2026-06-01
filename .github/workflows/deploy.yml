@@ -31,11 +31,11 @@ jobs:
         run: npx next build
 
       - name: Upload via SFTP to Hostinger
-        uses: wangluyao/sftp-upload-action@v1.4.1
+        uses: appleboy/sftp-action@master
         with:
           host: ${{ secrets.SFTP_HOST }}
-          port: ${{ secrets.SFTP_PORT }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local_dir: './out'
-          remote_dir: '/public_html'
+          port: 22
+          local_path: './out/*'
+          remote_path: '/public_html'
