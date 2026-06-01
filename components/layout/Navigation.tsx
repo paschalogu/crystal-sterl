@@ -163,8 +163,8 @@ export default function Navigation() {
       </header>
 
       {/* Mobile Drawer */}
-      <div className={`fixed inset-0 z-40 bg-[#002233] flex flex-col justify-center px-10 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-y-auto ${open ? "translate-x-0" : "translate-x-full"}`}>
-        <nav className="flex flex-col gap-0 py-24">
+      <div className={`fixed inset-0 z-40 bg-[#002233] flex flex-col px-10 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-y-auto ${open ? "translate-x-0" : "translate-x-full"}`}>
+        <nav className="flex flex-col gap-0 pt-28 pb-10">
           {[...links, { href: "/contact", label: "Contact Us", children: undefined }].map((item) => (
             <div key={item.href} className="border-b border-white/[0.07]">
               <div className="flex items-center justify-between">
@@ -205,7 +205,7 @@ export default function Navigation() {
             </div>
           ))}
         </nav>
-        <div className="pb-10 flex items-center gap-6 text-[0.72rem] text-white/30 tracking-widest uppercase">
+        <div className="py-10 flex items-center gap-6 text-[0.72rem] text-white/30 tracking-widest uppercase">
           <span>+234 810 092 2401</span>
           <span>·</span>
           <span>info@crystalsterl.com</span>
