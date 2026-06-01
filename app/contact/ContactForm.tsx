@@ -19,7 +19,7 @@ export default function ContactForm() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     try {
-      await emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+      await emailjs.send("service_yriqdvu", "template_evfs35h", {
         to_email: "ogupaschal16@gmail.com",
         from_name: form.name,
         from_email: form.email,
