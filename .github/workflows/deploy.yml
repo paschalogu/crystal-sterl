@@ -30,25 +30,11 @@ jobs:
           NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}
         run: npx next build
 
-      - name: Deploy to Hostinger via SSH
-        uses: appleboy/ssh-action@master
+      - name: Upload via FTP to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ${{ secrets.SFTP_HOST }}
+          server: ftp://77.37.37.157         # This is your exact Hostinger FTP IP
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 22
-          script: |
-            cd ~/public_html
-            rm -rf *
-            exit 0
-
-      - name: Upload files via SCP
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.SFTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: 22
-          source: "out/*"
-          target: "~/public_html"
-          strip_components: 1
+          local-dir: ./out/                  # Takes the built static Next.js files
+          server-dir: ./public_html/         # Places them right into your public folder
