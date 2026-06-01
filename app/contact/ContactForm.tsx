@@ -19,15 +19,18 @@ export default function ContactForm() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     try {
-      await emailjs.send("service_yriqdvu", "template_evfs35h", {
-        to_email: "ogupaschal16@gmail.com",
-        from_name: form.name,
-        from_email: form.email,
-        company: form.company,
-        phone: form.phone,
-        subject: form.subject,
-        message: form.message,
-      });
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          company: form.company,
+          phone: form.phone,
+          subject: form.subject,
+          message: form.message,
+        },
+      );
       setSent(true);
     } catch (error) {
       console.error("Failed to send email:", error);
