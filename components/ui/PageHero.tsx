@@ -8,18 +8,18 @@ interface PageHeroProps {
 
 export default function PageHero({ eyebrow, title, titleItalic, subtitle, dark = true }: PageHeroProps) {
   return (
-    <section className={`pt-36 pb-20 ${dark ? "bg-[#002233]" : "bg-[#f6f3ee]"}`}>
+    <section className={`pt-36 pb-20 ${dark ? "bg-[#111217]" : "bg-[#f6f3ee]"}`}>
       <div className="max-w-[1260px] mx-auto px-8 md:px-12">
         {eyebrow && (
-          <div className="flex items-center gap-3 text-[0.68rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-5">
-            <span className="block w-7 h-px bg-[#ce5e00]" />
+          <div className="flex items-center gap-3 text-[0.68rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-5">
+            <span className="block w-7 h-px bg-[#B89D6C]" />
             {eyebrow}
           </div>
         )}
-        <h1 className={`font-serif text-[clamp(2.4rem,5vw,4.2rem)] font-bold leading-[1.08] ${dark ? "text-white" : "text-[#002233]"}`}>
+        <h1 className={`font-serif text-[clamp(2.4rem,5vw,4.2rem)] font-bold leading-[1.08] ${dark ? "text-white" : "text-[#111217]"}`}>
           {title}
           {titleItalic && (
-            <> <span className="italic font-normal text-[#ce5e00]">{titleItalic}</span></>
+            <> <span className="italic font-normal text-[#B89D6C]">{titleItalic}</span></>
           )}
         </h1>
         {subtitle && (
@@ -27,7 +27,7 @@ export default function PageHero({ eyebrow, title, titleItalic, subtitle, dark =
             {subtitle}
           </p>
         )}
-        <span className="block w-14 h-0.5 bg-[#ce5e00] mt-7" />
+        <span className="block w-14 h-0.5 bg-[#B89D6C] mt-7" />
       </div>
     </section>
   );

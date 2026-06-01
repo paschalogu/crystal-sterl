@@ -68,7 +68,7 @@ export default function Navigation() {
   }
 
   const navBg = scrolled || !isHome
-    ? "bg-[#002233]/97 backdrop-blur-xl shadow-[0_1px_0_rgba(198,168,74,0.15)]"
+    ? "bg-[#111217]/97 backdrop-blur-xl shadow-[0_1px_0_rgba(198,168,74,0.15)]"
     : "bg-transparent";
 
   return (
@@ -78,12 +78,12 @@ export default function Navigation() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3.5 group flex-shrink-0">
-            <div className="w-11 h-11 rounded-full overflow-hidden flex-shrink-0 ring-1 ring-[#ce5e00]/30 group-hover:ring-[#ce5e00]/60 transition-all duration-300">
+            <div className="w-11 h-11 rounded-full overflow-hidden flex-shrink-0 ring-1 ring-[#B89D6C]/30 group-hover:ring-[#B89D6C]/60 transition-all duration-300">
               <Image src="/logo.jpg" alt="Crystal Sterl Partners" width={44} height={44} className="w-full h-full object-cover" priority />
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-serif text-[1.1rem] font-bold text-white tracking-[0.03em]">Crystal Sterl</span>
-              <span className="text-[0.58rem] font-medium tracking-[0.26em] uppercase text-[#ce5e00] mt-[3px]">Partners</span>
+              <span className="text-[0.58rem] font-medium tracking-[0.26em] uppercase text-[#B89D6C] mt-[3px]">Partners</span>
             </div>
           </Link>
 
@@ -98,10 +98,10 @@ export default function Navigation() {
               >
                 <Link
                   href={item.href}
-                  className={`relative flex items-center gap-1 text-[0.76rem] font-medium tracking-[0.1em] uppercase transition-colors duration-300 after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:right-0 after:h-px after:bg-[#ce5e00] after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 ${
+                  className={`relative flex items-center gap-1 text-[0.76rem] font-medium tracking-[0.1em] uppercase transition-colors duration-300 after:content-[''] after:absolute after:-bottom-0.5 after:left-0 after:right-0 after:h-px after:bg-[#B89D6C] after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 ${
                     pathname.startsWith(item.href)
-                      ? "text-[#ce5e00] after:scale-x-100"
-                      : "text-white/80 hover:text-[#ce5e00]"
+                      ? "text-[#B89D6C] after:scale-x-100"
+                      : "text-white/80 hover:text-[#B89D6C]"
                   }`}
                 >
                   {item.label}
@@ -124,14 +124,14 @@ export default function Navigation() {
                       activeDropdown === item.href ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none -translate-y-1"
                     }`}
                   >
-                    <div className="bg-[#002233] border-t-2 border-[#ce5e00] shadow-[0_20px_60px_rgba(0,0,0,0.4)] min-w-[220px] py-2">
+                    <div className="bg-[#111217] border-t-2 border-[#B89D6C] shadow-[0_20px_60px_rgba(0,0,0,0.4)] min-w-[220px] py-2">
                       {item.children.map((child) => (
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="flex items-center gap-3 px-6 py-3 text-[0.74rem] text-white/60 hover:text-[#ce5e00] hover:bg-white/[0.04] transition-colors duration-200 tracking-[0.06em]"
+                          className="flex items-center gap-3 px-6 py-3 text-[0.74rem] text-white/60 hover:text-[#B89D6C] hover:bg-white/[0.04] transition-colors duration-200 tracking-[0.06em]"
                         >
-                          <span className="w-4 h-px bg-[#ce5e00]/40 flex-shrink-0" />
+                          <span className="w-4 h-px bg-[#B89D6C]/40 flex-shrink-0" />
                           {child.label}
                         </Link>
                       ))}
@@ -143,7 +143,7 @@ export default function Navigation() {
 
             <Link
               href="/contact"
-              className="text-[0.73rem] font-bold tracking-[0.12em] uppercase text-[#002233] bg-[#ce5e00] hover:bg-[#e8740f] px-5 py-2.5 transition-colors duration-300"
+              className="text-[0.73rem] font-bold tracking-[0.12em] uppercase text-[#111217] bg-[#B89D6C] hover:bg-[#7B633A] px-5 py-2.5 transition-colors duration-300"
             >
               Contact Us
             </Link>
@@ -163,7 +163,7 @@ export default function Navigation() {
       </header>
 
       {/* Mobile Drawer */}
-      <div className={`fixed inset-0 z-40 bg-[#002233] flex flex-col px-10 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-y-auto ${open ? "translate-x-0" : "translate-x-full"}`}>
+      <div className={`fixed inset-0 z-40 bg-[#111217] flex flex-col px-10 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] overflow-y-auto ${open ? "translate-x-0" : "translate-x-full"}`}>
         <nav className="flex flex-col gap-0 pt-28 pb-10">
           {[...links, { href: "/contact", label: "Contact Us", children: undefined }].map((item) => (
             <div key={item.href} className="border-b border-white/[0.07]">
@@ -171,14 +171,14 @@ export default function Navigation() {
                 <Link
                   href={item.href}
                   onClick={() => !item.children && setOpen(false)}
-                  className="font-serif text-[1.8rem] font-bold text-white/85 py-4 hover:text-[#ce5e00] transition-colors flex-1"
+                  className="font-serif text-[1.8rem] font-bold text-white/85 py-4 hover:text-[#B89D6C] transition-colors flex-1"
                 >
                   {item.label}
                 </Link>
                 {item.children && (
                   <button
                     onClick={() => setMobileExpanded(mobileExpanded === item.href ? null : item.href)}
-                    className="p-4 text-white/40 hover:text-[#ce5e00] transition-colors"
+                    className="p-4 text-white/40 hover:text-[#B89D6C] transition-colors"
                     aria-label="Expand"
                   >
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className={`transition-transform duration-300 ${mobileExpanded === item.href ? "rotate-180" : ""}`}>
@@ -194,9 +194,9 @@ export default function Navigation() {
                       key={child.href}
                       href={child.href}
                       onClick={() => setOpen(false)}
-                      className="flex items-center gap-3 py-2.5 text-[0.85rem] text-white/45 hover:text-[#ce5e00] transition-colors"
+                      className="flex items-center gap-3 py-2.5 text-[0.85rem] text-white/45 hover:text-[#B89D6C] transition-colors"
                     >
-                      <span className="w-4 h-px bg-[#ce5e00]/40 flex-shrink-0" />
+                      <span className="w-4 h-px bg-[#B89D6C]/40 flex-shrink-0" />
                       {child.label}
                     </Link>
                   ))}

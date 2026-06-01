@@ -19,7 +19,7 @@ const sectorImages: Record<string, string> = {
   "agriculture":           "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&q=90&auto=format&fit=crop&sat=40",
   "transportation":        "https://images.unsplash.com/photo-1494949649109-ecfc3b8c35df?w=800&q=90&auto=format&fit=crop&sat=40",
   "sport-entertainment":   "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=800&q=90&auto=format&fit=crop&sat=40",
-  "public-sector":         "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=800&q=90&auto=format&fit=crop&sat=40",
+  "public-sector":         "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=800&q=90&auto=format&fit=crop&sat=40",
   "private-wealth":        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=90&auto=format&fit=crop&sat=40",
 };
 
@@ -28,7 +28,7 @@ export default function SectorsPage() {
     <main>
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
-      <section className="relative bg-[#002233] overflow-hidden pt-32 pb-20">
+      <section className="relative bg-[#111217] overflow-hidden pt-32 pb-20">
         <Image
           src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&q=90&auto=format&fit=crop&sat=40"
           alt=""
@@ -39,15 +39,15 @@ export default function SectorsPage() {
         <div className="relative z-10 max-w-[1260px] mx-auto px-8 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-12 items-end">
             <div>
-              <div className="flex items-center gap-3 text-[0.65rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-6">
-                <span className="block w-7 h-px bg-[#ce5e00]" />
+              <div className="flex items-center gap-3 text-[0.65rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-6">
+                <span className="block w-7 h-px bg-[#B89D6C]" />
                 Industries We Serve
               </div>
               <h1 className="font-serif text-[clamp(2.6rem,5.5vw,4.4rem)] font-bold leading-[1.06] text-white">
                 Deep Sector{" "}
-                <span className="italic font-normal text-[#ce5e00]">Knowledge</span>
+                <span className="italic font-normal text-[#B89D6C]">Knowledge</span>
               </h1>
-              <span className="block w-14 h-0.5 bg-[#ce5e00] mt-8" />
+              <span className="block w-14 h-0.5 bg-[#B89D6C] mt-8" />
             </div>
             <div className="pb-1">
               <p className="text-[0.88rem] text-white/45 leading-[1.85] text-justify">
@@ -59,14 +59,14 @@ export default function SectorsPage() {
       </section>
 
       {/* ── Banner Strip ────────────────────────────────────────────────── */}
-      <div className="bg-[#ce5e00]">
+      <div className="bg-[#B89D6C]">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12 py-4 flex items-center justify-between gap-6">
-          <p className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#002233]">
+          <p className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#111217]">
             Serving Clients Across 11 Key Sectors
           </p>
           <Link
             href="/expertise"
-            className="flex items-center gap-2 text-[0.62rem] font-semibold tracking-[0.22em] uppercase text-[#002233] hover:opacity-70 transition-opacity"
+            className="flex items-center gap-2 text-[0.62rem] font-semibold tracking-[0.22em] uppercase text-[#111217] hover:opacity-70 transition-opacity"
           >
             View Practice Areas
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -77,7 +77,7 @@ export default function SectorsPage() {
       </div>
 
       {/* ── Sector Grid ─────────────────────────────────────────────────── */}
-      <section className="bg-[#002233] py-20">
+      <section className="bg-[#111217] py-20">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.07]">
             {sectors.map((sector, i) => {
@@ -86,7 +86,7 @@ export default function SectorsPage() {
               const spanTwo = isLast && remainder === 2;
               return (
               <Reveal key={sector.id} delay={i * 0.05} className={`h-full${spanTwo ? " sm:col-span-1 lg:col-span-2" : ""}`}>
-                <div className="group bg-[#002233] flex flex-col h-full">
+                <div className="group bg-[#111217] flex flex-col h-full">
                   <div className="relative h-44 overflow-hidden flex-shrink-0">
                     <Image
                       src={sectorImages[sector.id] ?? sectorImages["financial-services"]}
@@ -94,16 +94,16 @@ export default function SectorsPage() {
                       fill
                       className="object-cover opacity-55 group-hover:opacity-75 group-hover:scale-105 transition-all duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#002233]/20 to-[#002233]/70" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#111217]/20 to-[#111217]/70" />
                   </div>
                   <div className="p-7 flex flex-col flex-1">
-                    <p className="text-[0.58rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-3">
+                    <p className="text-[0.58rem] font-semibold tracking-[0.3em] uppercase text-[#B89D6C] mb-3">
                       {String(i + 1).padStart(2, "0")}
                     </p>
                     <h3 className="font-serif text-[1.02rem] font-bold text-white leading-[1.3] mb-3">
                       {sector.name}
                     </h3>
-                    <div className="w-6 h-0.5 bg-[#ce5e00] mb-4 group-hover:w-10 transition-all duration-500" />
+                    <div className="w-6 h-0.5 bg-[#B89D6C] mb-4 group-hover:w-10 transition-all duration-500" />
                     <p className="text-[0.8rem] text-white/45 leading-[1.72] text-justify">
                       {sector.description}
                     </p>
@@ -124,11 +124,11 @@ export default function SectorsPage() {
 
               {/* Left */}
               <div>
-                <div className="flex items-center gap-3 text-[0.62rem] font-semibold tracking-[0.3em] uppercase text-[#ce5e00] mb-6">
-                  <span className="block w-6 h-px bg-[#ce5e00]" />
+                <div className="flex items-center gap-3 text-[0.62rem] font-semibold tracking-[0.3em] uppercase text-[#B89D6C] mb-6">
+                  <span className="block w-6 h-px bg-[#B89D6C]" />
                   Cross-Practice Integration
                 </div>
-                <h2 className="font-serif text-[clamp(1.7rem,3vw,2.6rem)] font-bold text-[#002233] leading-[1.15] mb-7">
+                <h2 className="font-serif text-[clamp(1.7rem,3vw,2.6rem)] font-bold text-[#111217] leading-[1.15] mb-7">
                   Integrated Legal Solutions Across Every Sector
                 </h2>
                 <p className="text-[0.92rem] text-[#4a5a6a] leading-[1.85] mb-5 text-justify">
@@ -140,15 +140,15 @@ export default function SectorsPage() {
               </div>
 
               {/* Right: 2×2 practice area grid */}
-              <div className="grid grid-cols-2 gap-px bg-[#002233]/10 mt-2">
+              <div className="grid grid-cols-2 gap-px bg-[#111217]/10 mt-2">
                 {practiceAreas.slice(0, 4).map((p) => (
                   <Link
                     key={p.slug}
                     href={`/expertise/${p.slug}`}
-                    className="group bg-[#002233] p-7 hover:bg-[#ce5e00]/[0.08] transition-colors duration-300"
+                    className="group bg-[#111217] p-7 hover:bg-[#B89D6C]/[0.08] transition-colors duration-300"
                   >
-                    <p className="text-[0.57rem] font-semibold tracking-[0.28em] uppercase text-[#ce5e00] mb-3">{p.number}</p>
-                    <h4 className="font-serif text-[0.92rem] font-bold text-white leading-[1.3] group-hover:text-[#ce5e00] transition-colors duration-300">
+                    <p className="text-[0.57rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-3">{p.number}</p>
+                    <h4 className="font-serif text-[0.92rem] font-bold text-white leading-[1.3] group-hover:text-[#B89D6C] transition-colors duration-300">
                       {p.shortTitle}
                     </h4>
                   </Link>
@@ -161,7 +161,7 @@ export default function SectorsPage() {
       </section>
 
       {/* ── CTA ─────────────────────────────────────────────────────────── */}
-      <section className="bg-[#002233] py-20">
+      <section className="bg-[#111217] py-20">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-8">
           <div>
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2.2rem)] font-bold text-white leading-[1.2]">
@@ -171,7 +171,7 @@ export default function SectorsPage() {
           </div>
           <Link
             href="/contact"
-            className="flex-shrink-0 text-[0.7rem] font-bold tracking-[0.14em] uppercase bg-[#ce5e00] text-[#002233] hover:bg-[#e8740f] px-8 py-4 transition-colors duration-300"
+            className="flex-shrink-0 text-[0.7rem] font-bold tracking-[0.14em] uppercase bg-[#B89D6C] text-[#111217] hover:bg-[#7B633A] px-8 py-4 transition-colors duration-300"
           >
             Contact Us
           </Link>
