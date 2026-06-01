@@ -68,7 +68,7 @@ export default function InsightsPage() {
       </section>
 
       {/* ── News ────────────────────────────────────────────────────────── */}
-      <section className="bg-[#f6f3ee] py-24">
+      <section id="news" className="bg-[#f6f3ee] py-24">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <Reveal>
             <div className="flex items-center gap-4 mb-12">
@@ -115,7 +115,7 @@ export default function InsightsPage() {
       </section>
 
       {/* ── Blog ────────────────────────────────────────────────────────── */}
-      <section className="bg-white py-24">
+      <section id="blog" className="bg-white py-24">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <Reveal>
             <div className="flex items-center gap-4 mb-12">
@@ -186,7 +186,7 @@ export default function InsightsPage() {
       </section>
 
       {/* ── Podcasts ────────────────────────────────────────────────────── */}
-      <section className="bg-[#002233] py-24">
+      <section id="podcast" className="bg-[#002233] py-24">
         <div className="max-w-[1260px] mx-auto px-8 md:px-12">
           <Reveal>
             <div className="flex items-center gap-4 mb-12">

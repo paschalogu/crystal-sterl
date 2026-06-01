@@ -323,6 +323,12 @@ export const practiceAreas = [
 
 export const sectors = [
   {
+    id: "private-wealth",
+    name: "Private Wealth & Family Office",
+    shortName: "Private Wealth",
+    description: "High-net-worth individuals, family offices, private foundations, and wealth management structures.",
+  },
+  {
     id: "financial-services",
     name: "Financial Services, Alternative Investment & Fund Formation",
     shortName: "Financial Services",
@@ -387,12 +393,6 @@ export const sectors = [
     name: "Public Sector & Development Finance",
     shortName: "Public Sector",
     description: "Governments, development finance institutions, NGOs, and multilateral organisations.",
-  },
-  {
-    id: "private-wealth",
-    name: "Private Wealth & Family Office",
-    shortName: "Private Wealth",
-    description: "High-net-worth individuals, family offices, private foundations, and wealth management structures.",
   },
 ];
 
