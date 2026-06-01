@@ -30,12 +30,25 @@ jobs:
           NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}
         run: npx next build
 
-      - name: Upload via SFTP to Hostinger
-        uses: appleboy/sftp-action@master
+      - name: Deploy to Hostinger via SSH
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SFTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
-          local_path: './out/*'
-          remote_path: '/public_html'
+          script: |
+            cd ~/public_html
+            rm -rf *
+            exit 0
+
+      - name: Upload files via SCP
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SFTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 22
+          source: "out/*"
+          target: "~/public_html"
+          strip_components: 1
