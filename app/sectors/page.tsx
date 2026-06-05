@@ -4,8 +4,17 @@ import { sectors, practiceAreas } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
-  title: "Sectors | Crystal Sterl Partners",
-  description: "Crystal Sterl Partners advises clients across 11 key sectors in Nigeria and across the African continent.",
+  title: "Sectors",
+  description: "Crystal Sterl Partners advises clients across 12 key industry sectors in Nigeria and across Africa, combining legal expertise with deep sector knowledge.",
+  openGraph: {
+    url: "https://crystalsterl.com/sectors/",
+    title: "Sectors | Crystal Sterl Partners",
+    description: "Crystal Sterl Partners advises clients across 12 key industry sectors in Nigeria and across Africa, combining legal expertise with deep sector knowledge.",
+  },
+  twitter: {
+    title: "Sectors | Crystal Sterl Partners",
+    description: "Crystal Sterl Partners advises clients across 12 key industry sectors in Nigeria and across Africa, combining legal expertise with deep sector knowledge.",
+  },
 };
 
 const sectorImages: Record<string, string> = {

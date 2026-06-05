@@ -1,8 +1,17 @@
 import ContactForm from "./ContactForm";
 
 export const metadata = {
-  title: "Contact Us | Crystal Sterl Partners",
-  description: "Get in touch with Crystal Sterl Partners. Speak directly with our partners about your legal needs.",
+  title: "Contact Us",
+  description: "Contact Crystal Sterl Partners. Call +234 810 092 2401 or email info@crystalsterl.com to speak directly with our team about your legal needs.",
+  openGraph: {
+    url: "https://crystalsterl.com/contact/",
+    title: "Contact Us | Crystal Sterl Partners",
+    description: "Contact Crystal Sterl Partners. Call +234 810 092 2401 or email info@crystalsterl.com to speak directly with our team about your legal needs.",
+  },
+  twitter: {
+    title: "Contact Us | Crystal Sterl Partners",
+    description: "Contact Crystal Sterl Partners. Call +234 810 092 2401 or email info@crystalsterl.com to speak directly with our team about your legal needs.",
+  },
 };
 
 export default function ContactPage() {

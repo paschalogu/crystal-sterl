@@ -23,8 +23,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const area = practiceAreas.find(p => p.slug === slug);
   if (!area) return {};
   return {
-    title: `${area.shortTitle} | Crystal Sterl Partners`,
+    title: area.shortTitle,
     description: area.description,
+    openGraph: {
+      url: `https://crystalsterl.com/expertise/${slug}/`,
+      title: `${area.shortTitle} | Crystal Sterl Partners`,
+      description: area.description,
+    },
+    twitter: {
+      title: `${area.shortTitle} | Crystal Sterl Partners`,
+      description: area.description,
+    },
   };
 }
 

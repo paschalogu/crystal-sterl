@@ -4,8 +4,17 @@ import { insights, type InsightCategory } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
-  title: "Insights | Crystal Sterl Partners",
-  description: "Legal insights, news, thought leadership articles, and podcasts from Crystal Sterl Partners.",
+  title: "Insights",
+  description: "Legal news, thought leadership articles, and podcasts from Crystal Sterl Partners — keeping businesses informed on law and regulation across Africa.",
+  openGraph: {
+    url: "https://crystalsterl.com/insights/",
+    title: "Insights | Crystal Sterl Partners",
+    description: "Legal news, thought leadership articles, and podcasts from Crystal Sterl Partners — keeping businesses informed on law and regulation across Africa.",
+  },
+  twitter: {
+    title: "Insights | Crystal Sterl Partners",
+    description: "Legal news, thought leadership articles, and podcasts from Crystal Sterl Partners — keeping businesses informed on law and regulation across Africa.",
+  },
 };
 
 const categoryConfig: Record<InsightCategory | "all", { label: string; colour: string }> = {

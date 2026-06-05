@@ -27,19 +27,85 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
+const BASE_URL = "https://crystalsterl.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(BASE_URL),
   title: {
-    default: "Crystal Sterl Partners | Excellence · Clarity · Precision · Execution",
+    default: "Crystal Sterl Partners | Nigerian Law Firm",
     template: "%s | Crystal Sterl Partners",
   },
   description:
-    "Crystal Sterl Partners is a leading law firm with a distinctly global outlook, delivering corporate, transactional, dispute and full-service legal advisory to businesses, investors, and institutions across Africa and beyond.",
-  keywords: ["law firm", "Nigeria", "Lagos", "Abuja", "corporate law", "litigation", "Africa", "legal advisory"],
+    "Crystal Sterl Partners is a leading Nigerian law firm delivering corporate, transactional, dispute resolution and full-service legal advisory to businesses, investors, and institutions across Africa.",
+  keywords: [
+    "Crystal Sterl Partners",
+    "Nigerian law firm",
+    "Lagos law firm",
+    "corporate law Nigeria",
+    "litigation Nigeria",
+    "legal advisory Africa",
+    "energy law Nigeria",
+  ],
   openGraph: {
     type: "website",
     locale: "en_NG",
     siteName: "Crystal Sterl Partners",
+    url: BASE_URL,
+    title: "Crystal Sterl Partners | Nigerian Law Firm",
+    description:
+      "Crystal Sterl Partners is a leading Nigerian law firm delivering corporate, transactional, dispute resolution and full-service legal advisory to businesses, investors, and institutions across Africa.",
+    images: [
+      {
+        url: "/logo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Crystal Sterl Partners – Leading Nigerian Law Firm",
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Crystal Sterl Partners | Nigerian Law Firm",
+    description:
+      "Crystal Sterl Partners is a leading Nigerian law firm delivering corporate, transactional, dispute resolution and full-service legal advisory to businesses, investors, and institutions across Africa.",
+    images: ["/logo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": ["LegalService", "Organization"],
+  name: "Crystal Sterl Partners",
+  url: BASE_URL,
+  logo: `${BASE_URL}/logo.jpg`,
+  description:
+    "Crystal Sterl Partners is a leading Nigerian law firm delivering corporate, transactional, dispute resolution, and full-service legal advisory to businesses, investors, and institutions across Africa.",
+  telephone: "+2348100922401",
+  email: "info@crystalsterl.com",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "NG",
+  },
+  areaServed: ["Nigeria", "Africa"],
+  knowsLanguage: "en",
+  serviceType: [
+    "Corporate Law",
+    "Securities Law",
+    "Energy Law",
+    "Litigation",
+    "Arbitration",
+    "Intellectual Property Law",
+    "Data Protection Law",
+    "Tax Law",
+    "Real Estate Law",
+    "Technology Law",
+    "Governance & Compliance",
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -53,6 +119,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navigation />
         <main className="flex-1">{children}</main>
         <Footer />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
       </body>
     </html>
   );

@@ -3,8 +3,17 @@ import { practiceAreas } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
-  title: "Expertise | Crystal Sterl Partners",
-  description: "Our seven core practice areas span corporate, energy, litigation, IP, tax, technology and governance, delivered with world-class precision.",
+  title: "Practice Areas",
+  description: "Crystal Sterl Partners' seven practice areas span corporate law, energy, litigation, IP, data protection, tax, real estate, and technology — delivered with precision.",
+  openGraph: {
+    url: "https://crystalsterl.com/expertise/",
+    title: "Practice Areas | Crystal Sterl Partners",
+    description: "Crystal Sterl Partners' seven practice areas span corporate law, energy, litigation, IP, data protection, tax, real estate, and technology — delivered with precision.",
+  },
+  twitter: {
+    title: "Practice Areas | Crystal Sterl Partners",
+    description: "Crystal Sterl Partners' seven practice areas span corporate law, energy, litigation, IP, data protection, tax, real estate, and technology — delivered with precision.",
+  },
 };
 
 const practiceImages: Record<string, string> = {

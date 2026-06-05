@@ -4,8 +4,17 @@ import { esgPillars } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
-  title: "ESG Compliance | Crystal Sterl Partners",
-  description: "Crystal Sterl Partners is committed to environmental, social, and governance (ESG) principles, integrating responsible practices into everything we do.",
+  title: "ESG Commitment",
+  description: "Crystal Sterl Partners embeds Environmental, Social, and Governance (ESG) principles into every client engagement, helping businesses build resilient, responsible enterprises.",
+  openGraph: {
+    url: "https://crystalsterl.com/esg/",
+    title: "ESG Commitment | Crystal Sterl Partners",
+    description: "Crystal Sterl Partners embeds Environmental, Social, and Governance (ESG) principles into every client engagement, helping businesses build resilient, responsible enterprises.",
+  },
+  twitter: {
+    title: "ESG Commitment | Crystal Sterl Partners",
+    description: "Crystal Sterl Partners embeds Environmental, Social, and Governance (ESG) principles into every client engagement, helping businesses build resilient, responsible enterprises.",
+  },
 };
 
 const pillarColors: Record<string, { bg: string; border: string }> = {

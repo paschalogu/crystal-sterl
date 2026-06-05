@@ -4,6 +4,60 @@ import { Fragment } from "react";
 import Reveal from "@/components/ui/Reveal";
 import { philosophy, practiceAreas, sectors, stats, differentiators } from "@/lib/content";
 
+export const metadata = {
+  title: { absolute: "Crystal Sterl Partners | Nigerian Law Firm" },
+  description:
+    "Crystal Sterl Partners is a leading Nigerian law firm delivering corporate, transactional, dispute resolution and full-service legal advisory to businesses, investors, and institutions across Africa.",
+  openGraph: {
+    url: "https://crystalsterl.com/",
+    title: "Crystal Sterl Partners | Nigerian Law Firm",
+    description:
+      "Crystal Sterl Partners is a leading Nigerian law firm delivering corporate, transactional, dispute resolution and full-service legal advisory to businesses, investors, and institutions across Africa.",
+  },
+  twitter: {
+    title: "Crystal Sterl Partners | Nigerian Law Firm",
+    description:
+      "Crystal Sterl Partners is a leading Nigerian law firm delivering corporate, transactional, dispute resolution and full-service legal advisory to businesses, investors, and institutions across Africa.",
+  },
+};
+
+const faqs = [
+  {
+    q: "What does Crystal Sterl Partners specialise in?",
+    a: "Crystal Sterl Partners is a full-service Nigerian law firm specialising in corporate and securities law, energy and natural resources, litigation and arbitration, intellectual property, data protection, tax, real estate, and technology, media and telecommunications law.",
+  },
+  {
+    q: "Where is Crystal Sterl Partners located?",
+    a: "Crystal Sterl Partners is based in Nigeria and advises clients across Africa and internationally, with a distinctly global outlook on cross-border transactions and regulatory matters.",
+  },
+  {
+    q: "How do I contact Crystal Sterl Partners?",
+    a: "You can reach Crystal Sterl Partners by phone at +234 810 092 2401 or by email at info@crystalsterl.com. Use our contact page to send a direct enquiry to the team.",
+  },
+  {
+    q: "Does Crystal Sterl Partners handle international matters?",
+    a: "Yes. Crystal Sterl Partners advises on cross-border transactions, international arbitration under ICC, LCIA and ICSID rules, multi-jurisdictional regulatory matters, and foreign direct investment across Africa and beyond.",
+  },
+  {
+    q: "Which industries does Crystal Sterl Partners serve?",
+    a: "The firm serves clients in financial services, energy and infrastructure, technology and AI, healthcare, real estate, consumer retail, agriculture, transportation, sport and entertainment, insurance, public sector and private wealth management.",
+  },
+  {
+    q: "What sets Crystal Sterl Partners apart from other Nigerian law firms?",
+    a: "Crystal Sterl Partners combines genuine sector expertise with cross-practice integration, meaning clients benefit from coordinated advice across corporate, regulatory, tax and disputes simultaneously — not siloed opinions from separate teams.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
+
 /* ─── Sector icons (inline SVG map) ─────────────────────────── */
 const SectorIcon = ({ id }: { id: string }) => {
   const icons: Record<string, React.ReactNode> = {
@@ -298,9 +352,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── FAQ ──────────────────────────────────── */}
+      <section className="py-24 bg-[#111217]">
+        <div className="max-w-[1260px] mx-auto px-8 md:px-12">
+          <Reveal>
+            <div className="flex items-center gap-3 text-[0.62rem] font-semibold tracking-[0.3em] uppercase text-[#B89D6C] mb-6">
+              <span className="block w-6 h-px bg-[#B89D6C]" />
+              Common Questions
+            </div>
+            <h2 className="font-serif text-[clamp(1.6rem,2.8vw,2.4rem)] font-bold text-white leading-[1.15] mb-12">
+              Frequently Asked Questions
+            </h2>
+          </Reveal>
+          <dl className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-white/[0.06]">
+            {faqs.map((faq, i) => (
+              <Reveal key={i} delay={i * 0.05} className="h-full">
+                <div className="bg-[#111217] p-8 h-full">
+                  <dt className="font-serif text-[0.98rem] font-bold text-white leading-[1.35] mb-3">
+                    {faq.q}
+                  </dt>
+                  <dd className="text-[0.83rem] text-white/50 leading-[1.8]">
+                    {faq.a}
+                  </dd>
+                </div>
+              </Reveal>
+            ))}
+          </dl>
+        </div>
+      </section>
+
       <style>{`
         @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
       `}</style>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     </>
   );
 }

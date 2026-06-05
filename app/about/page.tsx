@@ -4,8 +4,17 @@ import { philosophy, differentiators, firm, team } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
 
 export const metadata = {
-  title: "About Us | Crystal Sterl Partners",
-  description: "Learn about Crystal Sterl Partners: our history, philosophy, vision, and what sets us apart as a leading African law firm.",
+  title: "About Us",
+  description: "Learn about Crystal Sterl Partners — our history, legal philosophy, vision, and the people who make us one of Africa's premier law firms.",
+  openGraph: {
+    url: "https://crystalsterl.com/about/",
+    title: "About Us | Crystal Sterl Partners",
+    description: "Learn about Crystal Sterl Partners — our history, legal philosophy, vision, and the people who make us one of Africa's premier law firms.",
+  },
+  twitter: {
+    title: "About Us | Crystal Sterl Partners",
+    description: "Learn about Crystal Sterl Partners — our history, legal philosophy, vision, and the people who make us one of Africa's premier law firms.",
+  },
 };
 
 export default function AboutPage() {
