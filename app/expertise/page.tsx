@@ -6,7 +6,7 @@ export const metadata = {
   title: "Practice Areas",
   description: "Crystal Sterl Partners' seven practice areas span corporate law, energy, litigation, IP, data protection, tax, real estate, and technology — delivered with precision.",
   openGraph: {
-    url: "https://crystalsterl.com/expertise/",
+    url: "https://www.crystalsterl.com/expertise/",
     title: "Practice Areas | Crystal Sterl Partners",
     description: "Crystal Sterl Partners' seven practice areas span corporate law, energy, litigation, IP, data protection, tax, real estate, and technology — delivered with precision.",
   },

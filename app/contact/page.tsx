@@ -4,7 +4,7 @@ export const metadata = {
   title: "Contact Us",
   description: "Contact Crystal Sterl Partners. Call +234 810 092 2401 or email info@crystalsterl.com to speak directly with our team about your legal needs.",
   openGraph: {
-    url: "https://crystalsterl.com/contact/",
+    url: "https://www.crystalsterl.com/contact/",
     title: "Contact Us | Crystal Sterl Partners",
     description: "Contact Crystal Sterl Partners. Call +234 810 092 2401 or email info@crystalsterl.com to speak directly with our team about your legal needs.",
   },

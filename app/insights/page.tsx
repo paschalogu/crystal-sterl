@@ -7,7 +7,7 @@ export const metadata = {
   title: "Insights",
   description: "Legal news, thought leadership articles, and podcasts from Crystal Sterl Partners — keeping businesses informed on law and regulation across Africa.",
   openGraph: {
-    url: "https://crystalsterl.com/insights/",
+    url: "https://www.crystalsterl.com/insights/",
     title: "Insights | Crystal Sterl Partners",
     description: "Legal news, thought leadership articles, and podcasts from Crystal Sterl Partners — keeping businesses informed on law and regulation across Africa.",
   },

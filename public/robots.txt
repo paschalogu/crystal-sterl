@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://crystalsterl.com/sitemap.xml
+Sitemap: https://www.crystalsterl.com/sitemap.xml

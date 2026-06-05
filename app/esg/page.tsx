@@ -7,7 +7,7 @@ export const metadata = {
   title: "ESG Commitment",
   description: "Crystal Sterl Partners embeds Environmental, Social, and Governance (ESG) principles into every client engagement, helping businesses build resilient, responsible enterprises.",
   openGraph: {
-    url: "https://crystalsterl.com/esg/",
+    url: "https://www.crystalsterl.com/esg/",
     title: "ESG Commitment | Crystal Sterl Partners",
     description: "Crystal Sterl Partners embeds Environmental, Social, and Governance (ESG) principles into every client engagement, helping businesses build resilient, responsible enterprises.",
   },

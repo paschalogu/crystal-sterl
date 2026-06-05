@@ -27,7 +27,7 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
-const BASE_URL = "https://crystalsterl.com";
+const BASE_URL = "https://www.crystalsterl.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

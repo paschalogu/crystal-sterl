@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: area.shortTitle,
     description: area.description,
     openGraph: {
-      url: `https://crystalsterl.com/expertise/${slug}/`,
+      url: `https://www.crystalsterl.com/expertise/${slug}/`,
       title: `${area.shortTitle} | Crystal Sterl Partners`,
       description: area.description,
     },

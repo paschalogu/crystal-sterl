@@ -7,7 +7,7 @@ export const metadata = {
   title: "About Us",
   description: "Learn about Crystal Sterl Partners — our history, legal philosophy, vision, and the people who make us one of Africa's premier law firms.",
   openGraph: {
-    url: "https://crystalsterl.com/about/",
+    url: "https://www.crystalsterl.com/about/",
     title: "About Us | Crystal Sterl Partners",
     description: "Learn about Crystal Sterl Partners — our history, legal philosophy, vision, and the people who make us one of Africa's premier law firms.",
   },
