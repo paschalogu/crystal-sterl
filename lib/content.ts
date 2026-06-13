@@ -411,7 +411,7 @@ export const foundingPartner = {
   image: "/team/noble-obasi-founding-partner-crystal-sterl.jpg",
   imageAlt:
     "Noble Obasi, Founding Partner at Crystal Sterl Partners, corporate securities and finance lawyer",
-  headline: "Corporate Securities, Finance, Fund Structuring, Fintech",
+  headline: "Corporate Securities, Finance, Fund Structuring, and Fintech.",
   practices: [
     "Corporate Securities & Finance",
     "Funds Structuring",
