@@ -8,6 +8,9 @@ export const metadata = {
   title: { absolute: "Crystal Sterl Partners | Nigerian Law Firm" },
   description:
     "Crystal Sterl Partners is a leading Nigerian law firm delivering corporate, transactional, dispute resolution and full-service legal advisory to businesses, investors, and institutions across Africa.",
+  alternates: {
+    canonical: "https://www.crystalsterl.com/",
+  },
   openGraph: {
     url: "https://www.crystalsterl.com/",
     title: "Crystal Sterl Partners | Nigerian Law Firm",
