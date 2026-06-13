@@ -294,7 +294,7 @@ export default function AboutPage() {
                   <h3 className="font-serif text-[clamp(1.6rem,2.6vw,2.1rem)] font-bold text-[#111217] leading-[1.1] mb-2">
                     <span className="whitespace-nowrap">{foundingPartner.name}</span>
                   </h3>
-                  <p className="font-elegant text-[#4a5a6a] text-[1rem] mb-2">
+                  <p className="text-[#4a5a6a] text-[0.95rem] font-medium mb-2">
                     {foundingPartner.headline}
                   </p>
                   <a
