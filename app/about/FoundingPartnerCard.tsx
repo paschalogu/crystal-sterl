@@ -56,7 +56,7 @@ export default function FoundingPartnerCard() {
               type="button"
               onClick={() => setOpen((v) => !v)}
               aria-expanded={open}
-              className="inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.14em] uppercase border border-[#111217]/20 text-[#111217] hover:bg-[#111217] hover:text-white px-6 py-3 transition-colors duration-300"
+              className="inline-flex items-center gap-2 text-[0.8rem] font-bold tracking-[0.01em] border border-[#111217]/20 text-[#111217] hover:bg-[#111217] hover:text-white px-6 py-3 transition-colors duration-300"
             >
               {open ? "Hide Profile" : "View Profile"}
               <svg
@@ -74,7 +74,7 @@ export default function FoundingPartnerCard() {
             </button>
             <a
               href={`mailto:${foundingPartner.email}`}
-              className="inline-flex items-center text-[0.7rem] font-bold tracking-[0.14em] uppercase bg-[#111217] text-white hover:bg-[#1B1E26] px-6 py-3 transition-colors duration-300"
+              className="inline-flex items-center text-[0.8rem] font-bold tracking-[0.01em] bg-[#111217] text-white hover:bg-[#1B1E26] px-6 py-3 transition-colors duration-300"
             >
               Contact
             </a>
