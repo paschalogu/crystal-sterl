@@ -289,7 +289,7 @@ export default function AboutPage() {
                 </div>
                 <div className="p-8 md:p-11 flex flex-col">
                   <h3 className="font-serif text-[clamp(1.6rem,2.6vw,2.1rem)] font-bold text-[#111217] leading-[1.1] mb-1.5">
-                    {foundingPartner.name}
+                    <span className="whitespace-nowrap">{foundingPartner.name}</span>
                     <span className="font-elegant italic font-normal text-[0.5em] text-[#B89D6C] ml-2.5 whitespace-nowrap">({foundingPartner.role})</span>
                   </h3>
                   <a
