@@ -276,14 +276,14 @@ export default function AboutPage() {
           {/* Founding Partner — featured spotlight */}
           <Reveal>
             <article className="mb-14 bg-white border border-[#ede9e2]">
-              <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,340px)_1fr]">
-                <div className="relative aspect-[4/5] lg:aspect-auto lg:min-h-[440px] overflow-hidden bg-[#111217]">
+              <div className="grid grid-cols-1 lg:grid-cols-[40fr_60fr]">
+                <div className="relative aspect-[1045/1080] lg:aspect-auto overflow-hidden bg-white">
                   <Image
                     src={foundingPartner.image}
                     alt={foundingPartner.imageAlt}
                     fill
-                    sizes="(max-width: 1024px) 100vw, 340px"
-                    className="object-cover object-top"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    className="object-contain object-center"
                     priority
                   />
                 </div>
@@ -294,7 +294,7 @@ export default function AboutPage() {
                   <h3 className="font-serif text-[clamp(1.6rem,2.6vw,2.1rem)] font-bold text-[#111217] leading-[1.1] mb-2">
                     <span className="whitespace-nowrap">{foundingPartner.name}</span>
                   </h3>
-                  <p className="font-elegant italic text-[#4a5a6a] text-[0.9rem] mb-2">
+                  <p className="font-elegant text-[#4a5a6a] text-[1rem] mb-2">
                     {foundingPartner.headline}
                   </p>
                   <a
