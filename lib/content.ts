@@ -410,7 +410,7 @@ export const foundingPartner = {
   image: "/team/noble-obasi-founding-partner-crystal-sterl.jpg",
   imageAlt:
     "Noble Obasi, Founding Partner at Crystal Sterl Partners, corporate securities and finance lawyer",
-  headline: "Leading Corporate Securities, Finance & Funds Structuring",
+  headline: "Corporate Securities, Finance & Funds Structuring",
   practices: [
     "Corporate Securities & Finance",
     "Funds Structuring",
@@ -420,16 +420,35 @@ export const foundingPartner = {
     "Digital Assets",
   ],
   bio: [
-    "Noble Obasi is an astute deal maker, a commercially minded transaction lawyer, and leads the Corporate Securities, Finance and Funds Structuring team at Crystal Sterl Partners. He specializes in private equity, capital markets, finance, fund formation, cross-border transactions, and digital asset offerings, offering clients a unique blend of sharp legal knowledge and sharp business acumen. He is known for combining legal precision with commercial insight, making him a trusted advisor in deal structuring, regulatory compliance, and investment facilitation.",
-    "An alumnus of Coventry University and the University of Warwick, Noble holds a Master’s in International Corporate Governance and Financial Regulations. He is also an SEC-sponsored individual and an Associate of both the Association of Investment Advisers and Portfolio Managers and the Chartered Institute of Securities and Investments (UK). He is also a member of the International Bar Association.",
+    "Noble Obasi is an astute deal maker, a commercially minded transaction lawyer, and leads the Corporate Securities, Finance and Funds Structuring team at Crystal Sterl Partners.",
+    "He specializes in private equity, capital markets, finance, fund formation, cross-border transactions, and digital asset offerings, offering clients a unique blend of sharp legal knowledge and sharp business acumen. He is known for combining legal precision with commercial insight, making him a trusted advisor in deal structuring, regulatory compliance, and investment facilitation.",
   ],
   credentials: [
-    { label: "Education", value: "Coventry University · University of Warwick" },
-    { label: "Postgraduate", value: "MSc, International Corporate Governance & Financial Regulations" },
-    { label: "Regulatory", value: "SEC-Sponsored Individual" },
-    { label: "Memberships", value: "AIAPM · CISI (UK) · International Bar Association" },
+    {
+      title: "Education",
+      items: [
+        { qualification: "BL (Law)", institution: "Nigerian Law School, Nigeria" },
+        { qualification: "LL.M. International Corporate Governance & Financial Regulations", institution: "University of Warwick, UK" },
+        { qualification: "LL.B. (Law)", institution: "Coventry University, UK" },
+        { qualification: "B.A. English & Literary Studies", institution: "University of Ado-Ekiti, Nigeria" },
+      ],
+    },
+    {
+      title: "Professional Credentials",
+      items: [
+        { qualification: "Sponsored Individual", institution: "Securities and Exchange Commission (SEC)" },
+        { qualification: "Associate", institution: "Association of Investment Advisers and Portfolio Managers" },
+        { qualification: "Associate", institution: "Chartered Institute of Securities and Investments, UK" },
+        { qualification: "Member", institution: "International Bar Association" },
+      ],
+    },
   ],
-  alumniOf: ["Coventry University", "University of Warwick"],
+  alumniOf: [
+    "Nigerian Law School",
+    "University of Warwick",
+    "Coventry University",
+    "University of Ado-Ekiti",
+  ],
   memberOf: [
     "Association of Investment Advisers and Portfolio Managers",
     "Chartered Institute of Securities and Investments (UK)",
@@ -437,55 +456,31 @@ export const foundingPartner = {
   ],
 };
 
-export const team = [
-  {
-    name: "[Partner Name]",
-    role: "Managing Partner",
-    tier: "partner" as const,
-    initials: "MP",
-    practices: ["Corporate Securities & Finance", "Capital Markets"],
-    bio: "Placeholder — replace with the Managing Partner's biography, highlighting their leadership of the firm and core areas of practice.",
-  },
-  {
-    name: "[Partner Name]",
-    role: "Senior Partner",
-    tier: "partner" as const,
-    initials: "SP",
-    practices: ["Energy & Natural Resources", "Project Finance"],
-    bio: "Placeholder — replace with the Senior Partner's biography, covering their experience in energy transactions and regulatory matters.",
-  },
-  {
-    name: "[Partner Name]",
-    role: "Partner",
-    tier: "partner" as const,
-    initials: "P1",
-    practices: ["Litigation & Arbitration", "Dispute Resolution"],
-    bio: "Placeholder — replace with this Partner's biography, highlighting their disputes practice and advocacy before Nigerian courts and international arbitral tribunals.",
-  },
-  {
-    name: "[Partner Name]",
-    role: "Partner",
-    tier: "partner" as const,
-    initials: "P2",
-    practices: ["Technology, Media & Telecoms", "IP & Data Privacy"],
-    bio: "Placeholder — replace with this Partner's biography, covering their advisory work for technology companies, fintech businesses, and digital platforms.",
-  },
-  {
-    name: "[Counsel Name]",
-    role: "Senior Counsel",
-    tier: "counsel" as const,
-    initials: "SC",
-    practices: ["IP, Data & Privacy", "Corporate Governance"],
-    bio: "Placeholder — replace with this Counsel's biography, covering their expertise in data protection compliance, intellectual property management, and technology transactions.",
-  },
-  {
-    name: "[Counsel Name]",
-    role: "Counsel",
-    tier: "counsel" as const,
-    initials: "C1",
-    practices: ["Tax & Real Estate", "Privatisation & Procurement"],
-    bio: "Placeholder — replace with this Counsel's biography, highlighting their experience in tax advisory, real estate transactions, and public procurement matters.",
-  },
+export type TeamMember = {
+  name: string;
+  role: string;
+  tier: "partner" | "counsel";
+  initials: string;
+  practices: string[];
+  bio: string;
+  image?: string;
+  imageAlt?: string;
+};
+
+// Additional partners appear automatically in the Partners grid on the About page.
+// To add one, copy the template below, drop the photo in /public/team/, and fill in the fields.
+// Cards render the photo when `image` is set, and fall back to the initials monogram otherwise.
+export const team: TeamMember[] = [
+  // {
+  //   name: "Jane Doe",
+  //   role: "Senior Partner",
+  //   tier: "partner",
+  //   initials: "JD",
+  //   image: "/team/jane-doe-crystal-sterl.jpg",
+  //   imageAlt: "Jane Doe, Senior Partner at Crystal Sterl Partners",
+  //   practices: ["Energy & Natural Resources", "Project Finance"],
+  //   bio: "Short biography highlighting practice focus and notable experience.",
+  // },
 ];
 
 export type InsightCategory = "news" | "blog" | "podcast";

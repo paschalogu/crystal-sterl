@@ -56,6 +56,8 @@ const foundingPartnerJsonLd = {
 };
 
 export default function AboutPage() {
+  const partners = team.filter((m) => m.tier === "partner");
+
   return (
     <main>
 
@@ -265,52 +267,61 @@ export default function AboutPage() {
                 The Team
               </div>
               <h2 className="font-serif text-[clamp(1.8rem,3vw,2.8rem)] font-bold text-[#111217] leading-[1.15] max-w-xl">
-                Partners & Counsel
+                Partners
               </h2>
             </div>
           </Reveal>
 
-          {/* Founding Partner — featured */}
+          {/* Founding Partner — featured spotlight */}
           <Reveal>
-            <article className="mb-20 bg-white border border-[#ede9e2]">
-              <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,420px)_1fr]">
-                <div className="relative aspect-[4/5] lg:aspect-auto lg:min-h-[560px] overflow-hidden bg-[#111217]">
+            <article className="mb-14 bg-white border border-[#ede9e2]">
+              <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,340px)_1fr]">
+                <div className="relative aspect-[4/5] lg:aspect-auto lg:min-h-[440px] overflow-hidden bg-[#111217]">
                   <Image
                     src={foundingPartner.image}
                     alt={foundingPartner.imageAlt}
                     fill
-                    sizes="(max-width: 1024px) 100vw, 420px"
+                    sizes="(max-width: 1024px) 100vw, 340px"
                     className="object-cover object-top"
                     priority
                   />
                 </div>
-                <div className="p-10 md:p-14 flex flex-col">
-                  <div className="flex items-center gap-3 text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-6">
+                <div className="p-8 md:p-11 flex flex-col">
+                  <div className="flex items-center gap-3 text-[0.6rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-4">
                     <span className="block w-5 h-px bg-[#B89D6C]" /> {foundingPartner.role}
                   </div>
-                  <h3 className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] font-bold text-[#111217] leading-[1.1] mb-2">
+                  <h3 className="font-serif text-[clamp(1.6rem,2.6vw,2.1rem)] font-bold text-[#111217] leading-[1.1] mb-1.5">
                     {foundingPartner.name}
                   </h3>
-                  <p className="font-elegant italic text-[#4a5a6a] text-[0.98rem] mb-6">
+                  <p className="font-elegant italic text-[#4a5a6a] text-[0.9rem] mb-5">
                     {foundingPartner.headline}
                   </p>
-                  <span className="block w-12 h-0.5 bg-[#B89D6C] mb-7" />
-                  <div className="space-y-5 text-[0.92rem] text-[#4a5a6a] leading-[1.85] text-justify">
+                  <span className="block w-12 h-0.5 bg-[#B89D6C] mb-6" />
+                  <div className="space-y-3.5 text-[0.86rem] text-[#4a5a6a] leading-[1.75] text-justify">
                     {foundingPartner.bio.map((para, i) => (
                       <p key={i}>{para}</p>
                     ))}
                   </div>
 
-                  <dl className="mt-9 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
-                    {foundingPartner.credentials.map(({ label, value }) => (
-                      <div key={label} className="border-l-2 border-[#B89D6C] pl-4">
-                        <dt className="text-[0.6rem] font-semibold tracking-[0.2em] uppercase text-[#B89D6C] mb-1">{label}</dt>
-                        <dd className="font-serif text-[#111217] text-[0.85rem] leading-snug">{value}</dd>
+                  <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-7">
+                    {foundingPartner.credentials.map(({ title, items }) => (
+                      <div key={title}>
+                        <h4 className="text-[0.58rem] font-semibold tracking-[0.24em] uppercase text-[#B89D6C] mb-4 flex items-center gap-2.5">
+                          <span className="block w-5 h-px bg-[#B89D6C]" /> {title}
+                        </h4>
+                        <ul className="space-y-3.5">
+                          {items.map(({ qualification, institution }) => (
+                            <li key={qualification + institution} className="pl-4 border-l border-[#B89D6C]/30">
+                              <p className="font-serif text-[#111217] text-[0.82rem] font-semibold leading-snug">{qualification}</p>
+                              <p className="text-[0.7rem] text-[#4a5a6a]/80 leading-snug mt-0.5">{institution}</p>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     ))}
-                  </dl>
+                  </div>
 
-                  <div className="mt-9 flex flex-wrap gap-1.5">
+                  <div className="mt-8 flex flex-wrap gap-1.5">
                     {foundingPartner.practices.map((p) => (
                       <span key={p} className="text-[0.58rem] font-medium tracking-[0.06em] text-[#111217]/60 border border-[#111217]/15 px-2 py-0.5">{p}</span>
                     ))}
@@ -320,63 +331,47 @@ export default function AboutPage() {
             </article>
           </Reveal>
 
-          {/* Partners & Counsel placeholder grids — hidden until real bios are added. Set to `true` to restore. */}
-          {false && (
-          <>
-          {/* Partners */}
-          <div className="mb-16">
-            <h3 className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-8 flex items-center gap-3">
-              <span className="block w-5 h-px bg-[#B89D6C]" /> Partners
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[#ede9e2]">
-              {team.filter(m => m.tier === "partner").map((member, i) => (
-                <Reveal key={member.initials + i} delay={i * 0.08}>
-                  <div className="group bg-[#f6f3ee] p-8 hover:bg-white transition-colors duration-300 h-full flex flex-col">
-                    <div className="w-16 h-16 bg-[#111217] flex items-center justify-center mb-6 group-hover:bg-[#B89D6C] transition-colors duration-300">
-                      <span className="font-serif text-[1.1rem] font-bold text-[#B89D6C] group-hover:text-[#111217] transition-colors duration-300">{member.initials}</span>
+          {/* Other Partners — appear automatically when added to `team` in lib/content.ts */}
+          {partners.length > 0 && (
+            <div>
+              <h3 className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-8 flex items-center gap-3">
+                <span className="block w-5 h-px bg-[#B89D6C]" /> The Partnership
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-[#ede9e2]">
+                {partners.map((member, i) => (
+                  <Reveal key={member.initials + i} delay={i * 0.08}>
+                    <div className="group bg-[#f6f3ee] hover:bg-white transition-colors duration-300 h-full flex flex-col">
+                      {member.image ? (
+                        <div className="relative aspect-[4/5] overflow-hidden bg-[#111217]">
+                          <Image
+                            src={member.image}
+                            alt={member.imageAlt ?? `${member.name}, ${member.role} at Crystal Sterl Partners`}
+                            fill
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                            className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                          />
+                        </div>
+                      ) : (
+                        <div className="aspect-[4/5] bg-[#111217] flex items-center justify-center group-hover:bg-[#1B1E26] transition-colors duration-300">
+                          <span className="font-serif text-[1.5rem] font-bold text-[#B89D6C]">{member.initials}</span>
+                        </div>
+                      )}
+                      <div className="p-7 flex flex-col flex-1">
+                        <h4 className="font-serif text-[1.05rem] font-bold text-[#111217] mb-1">{member.name}</h4>
+                        <p className="text-[0.62rem] font-semibold tracking-[0.18em] uppercase text-[#B89D6C] mb-4">{member.role}</p>
+                        <div className="w-6 h-0.5 bg-[#B89D6C] mb-4 group-hover:w-10 transition-all duration-500" />
+                        <p className="text-[0.8rem] text-[#4a5a6a] leading-[1.7] flex-1 text-justify">{member.bio}</p>
+                        <div className="mt-5 flex flex-wrap gap-1.5">
+                          {member.practices.map(p => (
+                            <span key={p} className="text-[0.58rem] font-medium tracking-[0.06em] text-[#111217]/60 border border-[#111217]/15 px-2 py-0.5">{p}</span>
+                          ))}
+                        </div>
+                      </div>
                     </div>
-                    <h4 className="font-serif text-[1rem] font-bold text-[#111217] mb-1">{member.name}</h4>
-                    <p className="text-[0.65rem] font-semibold tracking-[0.18em] uppercase text-[#B89D6C] mb-4">{member.role}</p>
-                    <div className="w-6 h-0.5 bg-[#B89D6C] mb-4 group-hover:w-10 transition-all duration-500" />
-                    <p className="text-[0.8rem] text-[#4a5a6a] leading-[1.72] flex-1 text-justify">{member.bio}</p>
-                    <div className="mt-5 flex flex-wrap gap-1.5">
-                      {member.practices.map(p => (
-                        <span key={p} className="text-[0.58rem] font-medium tracking-[0.06em] text-[#111217]/60 border border-[#111217]/15 px-2 py-0.5">{p}</span>
-                      ))}
-                    </div>
-                  </div>
-                </Reveal>
-              ))}
+                  </Reveal>
+                ))}
+              </div>
             </div>
-          </div>
-
-          {/* Counsel */}
-          <div>
-            <h3 className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-8 flex items-center gap-3">
-              <span className="block w-5 h-px bg-[#B89D6C]" /> Counsel
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#ede9e2]">
-              {team.filter(m => m.tier === "counsel").map((member, i) => (
-                <Reveal key={member.initials + i} delay={i * 0.08}>
-                  <div className="group bg-[#f6f3ee] p-8 hover:bg-white transition-colors duration-300 h-full flex flex-col">
-                    <div className="w-14 h-14 bg-[#111217] flex items-center justify-center mb-5 group-hover:bg-[#B89D6C] transition-colors duration-300">
-                      <span className="font-serif text-[0.95rem] font-bold text-[#B89D6C] group-hover:text-[#111217] transition-colors duration-300">{member.initials}</span>
-                    </div>
-                    <h4 className="font-serif text-[1rem] font-bold text-[#111217] mb-1">{member.name}</h4>
-                    <p className="text-[0.65rem] font-semibold tracking-[0.18em] uppercase text-[#B89D6C] mb-4">{member.role}</p>
-                    <div className="w-6 h-0.5 bg-[#B89D6C] mb-4 group-hover:w-10 transition-all duration-500" />
-                    <p className="text-[0.8rem] text-[#4a5a6a] leading-[1.72] flex-1 text-justify">{member.bio}</p>
-                    <div className="mt-5 flex flex-wrap gap-1.5">
-                      {member.practices.map(p => (
-                        <span key={p} className="text-[0.58rem] font-medium tracking-[0.06em] text-[#111217]/60 border border-[#111217]/15 px-2 py-0.5">{p}</span>
-                      ))}
-                    </div>
-                  </div>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-          </>
           )}
         </div>
       </section>
