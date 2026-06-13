@@ -296,12 +296,12 @@ export default function AboutPage() {
                   </figure>
                 </div>
                 <div className="p-8 md:p-11 flex flex-col">
-                  <div className="text-[0.72rem] font-bold tracking-[0.16em] uppercase text-[#B89D6C] mb-4">
-                    {foundingPartner.role}
-                  </div>
                   <h3 className="font-serif text-[clamp(1.6rem,2.6vw,2.1rem)] font-bold text-[#111217] leading-[1.1] mb-2">
                     <span className="whitespace-nowrap">{foundingPartner.name}</span>
                   </h3>
+                  <div className="text-[0.72rem] font-bold tracking-[0.16em] uppercase text-[#B89D6C] mb-3">
+                    {foundingPartner.role}
+                  </div>
                   <p className="text-[#4a5a6a] text-[0.95rem] font-medium mb-2">
                     {foundingPartner.headline}
                   </p>
