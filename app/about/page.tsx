@@ -36,6 +36,7 @@ const foundingPartnerJsonLd = {
   "@type": "Person",
   name: foundingPartner.name,
   jobTitle: foundingPartner.role,
+  email: foundingPartner.email,
   image: `https://www.crystalsterl.com${foundingPartner.image}`,
   description: foundingPartner.bio.join(" "),
   url: "https://www.crystalsterl.com/about/",
@@ -287,12 +288,16 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="p-8 md:p-11 flex flex-col">
-                  <div className="flex items-center gap-3 text-[0.6rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-4">
-                    <span className="block w-5 h-px bg-[#B89D6C]" /> {foundingPartner.role}
-                  </div>
                   <h3 className="font-serif text-[clamp(1.6rem,2.6vw,2.1rem)] font-bold text-[#111217] leading-[1.1] mb-1.5">
                     {foundingPartner.name}
+                    <span className="font-elegant italic font-normal text-[0.5em] text-[#B89D6C] ml-2.5 whitespace-nowrap">({foundingPartner.role})</span>
                   </h3>
+                  <a
+                    href={`mailto:${foundingPartner.email}`}
+                    className="inline-block self-start text-[0.8rem] font-medium text-[#B89D6C] hover:text-[#111217] transition-colors duration-200 mb-3"
+                  >
+                    {foundingPartner.email}
+                  </a>
                   <p className="font-elegant italic text-[#4a5a6a] text-[0.9rem] mb-5">
                     {foundingPartner.headline}
                   </p>
@@ -306,12 +311,12 @@ export default function AboutPage() {
                   <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-7">
                     {foundingPartner.credentials.map(({ title, items }) => (
                       <div key={title}>
-                        <h4 className="text-[0.58rem] font-semibold tracking-[0.24em] uppercase text-[#B89D6C] mb-4 flex items-center gap-2.5">
-                          <span className="block w-5 h-px bg-[#B89D6C]" /> {title}
+                        <h4 className="text-[0.72rem] font-bold tracking-[0.16em] uppercase text-[#B89D6C] mb-4">
+                          {title}
                         </h4>
                         <ul className="space-y-3.5">
                           {items.map(({ qualification, institution }) => (
-                            <li key={qualification + institution} className="pl-4 border-l border-[#B89D6C]/30">
+                            <li key={qualification + institution}>
                               <p className="font-serif text-[#111217] text-[0.82rem] font-semibold leading-snug">{qualification}</p>
                               <p className="text-[0.7rem] text-[#4a5a6a]/80 leading-snug mt-0.5">{institution}</p>
                             </li>

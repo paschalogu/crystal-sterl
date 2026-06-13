@@ -406,6 +406,7 @@ export const stats = [
 export const foundingPartner = {
   name: "Noble Obasi",
   role: "Founding Partner",
+  email: "Noble@crystalsterl.com",
   initials: "NO",
   image: "/team/noble-obasi-founding-partner-crystal-sterl.jpg",
   imageAlt:
@@ -420,8 +421,9 @@ export const foundingPartner = {
     "Digital Assets",
   ],
   bio: [
-    "Noble Obasi is an astute deal maker, a commercially minded transaction lawyer, and leads the Corporate Securities, Finance and Funds Structuring team at Crystal Sterl Partners.",
-    "He specializes in private equity, capital markets, finance, fund formation, cross-border transactions, and digital asset offerings, offering clients a unique blend of sharp legal knowledge and sharp business acumen. He is known for combining legal precision with commercial insight, making him a trusted advisor in deal structuring, regulatory compliance, and investment facilitation.",
+    "Noble Obasi is an astute deal maker, a commercially minded transaction lawyer and leads the Corporate Securities, Finance and Funds Structuring team at Crystal Sterl Partners.",
+    "He specializes in private equity, mergers & acquisitions, capital markets, finance, fund formation, cross-border transactions, and digital asset offerings.",
+    "Noble routinely offers clients a unique blend of sharp legal knowledge and business acumen. He is known for combining legal precision with commercial insight, making him a trusted advisor in deal structuring, regulatory compliance, and investment facilitation.",
   ],
   credentials: [
     {
