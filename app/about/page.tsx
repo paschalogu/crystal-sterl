@@ -277,15 +277,23 @@ export default function AboutPage() {
           <Reveal>
             <article className="mb-14 bg-white border border-[#ede9e2]">
               <div className="grid grid-cols-1 lg:grid-cols-[40fr_60fr]">
-                <div className="relative aspect-[1045/1080] lg:aspect-auto overflow-hidden bg-white">
-                  <Image
-                    src={foundingPartner.image}
-                    alt={foundingPartner.imageAlt}
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                    className="object-contain object-center"
-                    priority
-                  />
+                <div className="relative flex items-center justify-center p-8 sm:p-10 lg:p-10">
+                  <figure className="relative">
+                    <span
+                      aria-hidden
+                      className="pointer-events-none absolute -top-4 -left-4 hidden h-full w-full border border-[#B89D6C] sm:block"
+                    />
+                    <div className="relative aspect-[1045/1080] w-[280px] sm:w-[340px] lg:w-[380px] overflow-hidden bg-[#111217] shadow-[0_25px_60px_-25px_rgba(17,18,23,0.45)]">
+                      <Image
+                        src={foundingPartner.image}
+                        alt={foundingPartner.imageAlt}
+                        fill
+                        sizes="(max-width: 1024px) 80vw, 380px"
+                        className="object-cover object-center"
+                        priority
+                      />
+                    </div>
+                  </figure>
                 </div>
                 <div className="p-8 md:p-11 flex flex-col">
                   <div className="text-[0.72rem] font-bold tracking-[0.16em] uppercase text-[#B89D6C] mb-4">
