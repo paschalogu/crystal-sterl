@@ -288,19 +288,21 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="p-8 md:p-11 flex flex-col">
-                  <h3 className="font-serif text-[clamp(1.6rem,2.6vw,2.1rem)] font-bold text-[#111217] leading-[1.1] mb-1.5">
+                  <div className="text-[0.72rem] font-bold tracking-[0.16em] uppercase text-[#B89D6C] mb-4">
+                    {foundingPartner.role}
+                  </div>
+                  <h3 className="font-serif text-[clamp(1.6rem,2.6vw,2.1rem)] font-bold text-[#111217] leading-[1.1] mb-2">
                     <span className="whitespace-nowrap">{foundingPartner.name}</span>
-                    <span className="font-elegant italic font-normal text-[0.5em] text-[#B89D6C] ml-2.5 whitespace-nowrap">({foundingPartner.role})</span>
                   </h3>
+                  <p className="font-elegant italic text-[#4a5a6a] text-[0.9rem] mb-2">
+                    {foundingPartner.headline}
+                  </p>
                   <a
                     href={`mailto:${foundingPartner.email}`}
-                    className="inline-block self-start text-[0.8rem] font-medium text-[#B89D6C] hover:text-[#111217] transition-colors duration-200 mb-3"
+                    className="inline-block self-start text-[0.8rem] font-medium text-[#B89D6C] hover:text-[#111217] transition-colors duration-200 mb-5"
                   >
                     {foundingPartner.email}
                   </a>
-                  <p className="font-elegant italic text-[#4a5a6a] text-[0.9rem] mb-5">
-                    {foundingPartner.headline}
-                  </p>
                   <span className="block w-12 h-0.5 bg-[#B89D6C] mb-6" />
                   <div className="space-y-3.5 text-[0.86rem] text-[#4a5a6a] leading-[1.75] text-justify">
                     {foundingPartner.bio.map((para, i) => (
