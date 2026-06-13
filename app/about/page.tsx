@@ -1,25 +1,68 @@
 import Image from "next/image";
 import Link from "next/link";
-import { philosophy, differentiators, firm, team } from "@/lib/content";
+import { philosophy, differentiators, firm, team, foundingPartner } from "@/lib/content";
 import Reveal from "@/components/ui/Reveal";
+
+const aboutDescription =
+  "Learn about Crystal Sterl Partners — our history, legal philosophy, vision, and the people behind one of Africa's premier law firms, led by Founding Partner Noble Obasi.";
 
 export const metadata = {
   title: "About Us",
-  description: "Learn about Crystal Sterl Partners — our history, legal philosophy, vision, and the people who make us one of Africa's premier law firms.",
+  description: aboutDescription,
+  alternates: {
+    canonical: "https://www.crystalsterl.com/about/",
+  },
   openGraph: {
     url: "https://www.crystalsterl.com/about/",
     title: "About Us | Crystal Sterl Partners",
-    description: "Learn about Crystal Sterl Partners — our history, legal philosophy, vision, and the people who make us one of Africa's premier law firms.",
+    description: aboutDescription,
+    images: [
+      {
+        url: `https://www.crystalsterl.com${foundingPartner.image}`,
+        alt: foundingPartner.imageAlt,
+      },
+    ],
   },
   twitter: {
     title: "About Us | Crystal Sterl Partners",
-    description: "Learn about Crystal Sterl Partners — our history, legal philosophy, vision, and the people who make us one of Africa's premier law firms.",
+    description: aboutDescription,
+    images: [`https://www.crystalsterl.com${foundingPartner.image}`],
   },
+};
+
+// Person structured data (schema.org) for the Founding Partner — improves SEO/rich results.
+const foundingPartnerJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: foundingPartner.name,
+  jobTitle: foundingPartner.role,
+  image: `https://www.crystalsterl.com${foundingPartner.image}`,
+  description: foundingPartner.bio.join(" "),
+  url: "https://www.crystalsterl.com/about/",
+  worksFor: {
+    "@type": "LegalService",
+    name: "Crystal Sterl Partners",
+    url: "https://www.crystalsterl.com/",
+  },
+  knowsAbout: foundingPartner.practices,
+  alumniOf: foundingPartner.alumniOf.map((name) => ({
+    "@type": "CollegeOrUniversity",
+    name,
+  })),
+  memberOf: foundingPartner.memberOf.map((name) => ({
+    "@type": "Organization",
+    name,
+  })),
 };
 
 export default function AboutPage() {
   return (
     <main>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(foundingPartnerJsonLd) }}
+      />
 
       {/* ── Hero ────────────────────────────────────────────────────────── */}
       <section className="relative h-[70vh] min-h-[520px] flex items-end bg-[#111217] overflow-hidden">
@@ -227,6 +270,59 @@ export default function AboutPage() {
             </div>
           </Reveal>
 
+          {/* Founding Partner — featured */}
+          <Reveal>
+            <article className="mb-20 bg-white border border-[#ede9e2]">
+              <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,420px)_1fr]">
+                <div className="relative aspect-[4/5] lg:aspect-auto lg:min-h-[560px] overflow-hidden bg-[#111217]">
+                  <Image
+                    src={foundingPartner.image}
+                    alt={foundingPartner.imageAlt}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 420px"
+                    className="object-cover object-top"
+                    priority
+                  />
+                </div>
+                <div className="p-10 md:p-14 flex flex-col">
+                  <div className="flex items-center gap-3 text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-6">
+                    <span className="block w-5 h-px bg-[#B89D6C]" /> {foundingPartner.role}
+                  </div>
+                  <h3 className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] font-bold text-[#111217] leading-[1.1] mb-2">
+                    {foundingPartner.name}
+                  </h3>
+                  <p className="font-elegant italic text-[#4a5a6a] text-[0.98rem] mb-6">
+                    {foundingPartner.headline}
+                  </p>
+                  <span className="block w-12 h-0.5 bg-[#B89D6C] mb-7" />
+                  <div className="space-y-5 text-[0.92rem] text-[#4a5a6a] leading-[1.85] text-justify">
+                    {foundingPartner.bio.map((para, i) => (
+                      <p key={i}>{para}</p>
+                    ))}
+                  </div>
+
+                  <dl className="mt-9 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
+                    {foundingPartner.credentials.map(({ label, value }) => (
+                      <div key={label} className="border-l-2 border-[#B89D6C] pl-4">
+                        <dt className="text-[0.6rem] font-semibold tracking-[0.2em] uppercase text-[#B89D6C] mb-1">{label}</dt>
+                        <dd className="font-serif text-[#111217] text-[0.85rem] leading-snug">{value}</dd>
+                      </div>
+                    ))}
+                  </dl>
+
+                  <div className="mt-9 flex flex-wrap gap-1.5">
+                    {foundingPartner.practices.map((p) => (
+                      <span key={p} className="text-[0.58rem] font-medium tracking-[0.06em] text-[#111217]/60 border border-[#111217]/15 px-2 py-0.5">{p}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </article>
+          </Reveal>
+
+          {/* Partners & Counsel placeholder grids — hidden until real bios are added. Set to `true` to restore. */}
+          {false && (
+          <>
           {/* Partners */}
           <div className="mb-16">
             <h3 className="text-[0.62rem] font-semibold tracking-[0.28em] uppercase text-[#B89D6C] mb-8 flex items-center gap-3">
@@ -280,6 +376,8 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
+          </>
+          )}
         </div>
       </section>
 

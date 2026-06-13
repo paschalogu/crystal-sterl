@@ -403,6 +403,40 @@ export const stats = [
   { number: "Pan-Africa", label: "Cross-Border Reach" },
 ];
 
+export const foundingPartner = {
+  name: "Noble Obasi",
+  role: "Founding Partner",
+  initials: "NO",
+  image: "/team/noble-obasi-founding-partner-crystal-sterl.jpg",
+  imageAlt:
+    "Noble Obasi, Founding Partner at Crystal Sterl Partners, corporate securities and finance lawyer",
+  headline: "Leading Corporate Securities, Finance & Funds Structuring",
+  practices: [
+    "Corporate Securities & Finance",
+    "Funds Structuring",
+    "Private Equity",
+    "Capital Markets",
+    "Cross-Border Transactions",
+    "Digital Assets",
+  ],
+  bio: [
+    "Noble Obasi is an astute deal maker, a commercially minded transaction lawyer, and leads the Corporate Securities, Finance and Funds Structuring team at Crystal Sterl Partners. He specializes in private equity, capital markets, finance, fund formation, cross-border transactions, and digital asset offerings, offering clients a unique blend of sharp legal knowledge and sharp business acumen. He is known for combining legal precision with commercial insight, making him a trusted advisor in deal structuring, regulatory compliance, and investment facilitation.",
+    "An alumnus of Coventry University and the University of Warwick, Noble holds a Master’s in International Corporate Governance and Financial Regulations. He is also an SEC-sponsored individual and an Associate of both the Association of Investment Advisers and Portfolio Managers and the Chartered Institute of Securities and Investments (UK). He is also a member of the International Bar Association.",
+  ],
+  credentials: [
+    { label: "Education", value: "Coventry University · University of Warwick" },
+    { label: "Postgraduate", value: "MSc, International Corporate Governance & Financial Regulations" },
+    { label: "Regulatory", value: "SEC-Sponsored Individual" },
+    { label: "Memberships", value: "AIAPM · CISI (UK) · International Bar Association" },
+  ],
+  alumniOf: ["Coventry University", "University of Warwick"],
+  memberOf: [
+    "Association of Investment Advisers and Portfolio Managers",
+    "Chartered Institute of Securities and Investments (UK)",
+    "International Bar Association",
+  ],
+};
+
 export const team = [
   {
     name: "[Partner Name]",
