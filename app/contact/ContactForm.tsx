@@ -166,7 +166,9 @@ export default function ContactForm() {
 
             {/* Offices */}
             {[
-              { city: "Lagos",  label: "Head Office",   address: ["Lagos, Nigeria"] },
+              { city: "Lagos",  label: "Head Office",   address: ["No 97, Adeola Odeku Street,",
+                                                                  "2nd Floor, Union Bank Building,",
+                                                                  "Victoria Island, Lagos State, Nigeria",] },
               { city: "Abuja",  label: "Second Office",  address: ["Abuja, Nigeria"] },
             ].map(office => (
               <div key={office.city} className="bg-white border border-[#ede9e2] p-8">
